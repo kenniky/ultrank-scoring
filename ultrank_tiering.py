@@ -15,50 +15,6 @@ import re
 import sys
 import time
 
-class TournamentTieringResult:
-    def __init__(self, score, entrants, region, values, dqs, potential, dq_count=-1):
-        self.score = score 
-        self.values = values
-        self.dqs = dqs
-        self.potential = potential
-        self.entrants = entrants
-        self.region = region
-        self.dq_count = dq_count
-
-    def write_result(self, filelike=None):
-        original_stdout = sys.stdout
-
-        if filelike != None:
-            sys.stdout = filelike
-
-        participants_string = '{} - {} DQs = {}'.format(self.entrants + self.dq_count, self.dq_count, self.entrants) if self.dq_count != -1 else str(self.entrants)
-
-        print('Entrants: {} x {} [{}] = {}'.format(participants_string, self.region.multiplier, self.region.note, self.entrants * self.region.multiplier))
-
-        print()
-        print('Top Player Points: ')
-
-        for participant in self.values:
-            print('  {}'.format(str(participant)))
-
-        print()
-        print('Total Score: {}'.format(self.score))
-
-        if len(self.dqs) > 0:
-            print()
-            print('-----')
-            print('DQs')
-            for dq in self.dqs:
-                print('  {}'.format(str(dq)))
-
-        if len(self.potential) > 0:
-            print()
-            print('-----')
-            print('Potentially Mismatched Players')
-            for match in self.potential:
-                print('  {}'.format(str(match)))
-
-        sys.stdout = original_stdout
 
 class PotentialMatch:
     def __init__(self, tag, id_, points, note):
@@ -97,13 +53,17 @@ class CountedValue:
 
     def __init__(self, player_value, total_points, alt_tag):
         self.player_value = player_value
-        self.total_points = total_points
+        self.points = total_points
         self.alt_tag = alt_tag
+        self.tag = player_value.tag
+        self.id_ = player_value.id_
 
     def __str__(self):
-        full_tag = self.alt_tag + (' (aka {})'.format(self.player_value.tag) if self.alt_tag != self.player_value.tag else '')
+        full_tag = self.alt_tag + \
+            (' (aka {})'.format(self.player_value.tag)
+             if self.alt_tag != self.player_value.tag else '')
 
-        return '{} - {} points [{}]'.format(full_tag, self.total_points, self.player_value.note)
+        return '{} - {} points [{}]'.format(full_tag, self.points, self.player_value.note)
 
 
 class PlayerValue:
@@ -118,6 +78,88 @@ class PlayerValue:
 
     def __str__(self):
         return '{} (id {}) - {} (+{}) points [{}]'.format(self.tag, self.id_, self.points, self.invitational, self.note)
+
+
+class TournamentTieringResult:
+    def __init__(self, score, entrants, region, values, dqs, potential, phases=[], dq_count=-1):
+        self.score = score
+        self.values = values
+        self.dqs = dqs
+        self.potential = potential
+        self.entrants = entrants
+        self.region = region
+        self.dq_count = dq_count
+        self.phases = phases
+
+    def write_result(self, filelike=None):
+        original_stdout = sys.stdout
+
+        if filelike != None:
+            sys.stdout = filelike
+
+        print('Phases used: {}'.format(str(self.phases)))
+        print()
+
+        participants_string = '{} - {} DQs = {}'.format(
+            self.entrants + self.dq_count, self.dq_count, self.entrants) if self.dq_count != -1 else str(self.entrants)
+
+        print('Entrants: {} x {} [{}] = {}'.format(
+            participants_string, self.region.multiplier, self.region.note, self.entrants * self.region.multiplier))
+
+        print()
+        print('Top Player Points: ')
+
+        for participant in self.values:
+            print('  {}'.format(str(participant)))
+
+        print()
+        print('Total Score: {}'.format(self.score))
+
+        if len(self.dqs) > 0:
+            print()
+            print('-----')
+            print('DQs')
+            for dq in self.dqs:
+                print('  {}'.format(str(dq)))
+
+        if len(self.potential) > 0:
+            print()
+            print('-----')
+            print('Potentially Mismatched Players')
+            for match in self.potential:
+                print('  {}'.format(str(match)))
+
+        sys.stdout = original_stdout
+
+    def max_potential_score(self):
+        potential_score = self.score
+
+        potential_player_scores = {}
+
+        for pot in self.potential:
+            if isinstance(pot, DisqualificationValue):
+                potential_player_scores[pot.value.id_] = max(
+                    pot.value.points, potential_player_scores.get(pot.value.id_, 0))
+            else:
+                potential_player_scores[pot.id_] = max(
+                    pot.points, potential_player_scores.get(pot.id_, 0))
+
+        dq_scores = {}
+
+        for dq in self.dqs:
+            if isinstance(dq.value, CountedValue):
+                dq_scores[dq.value.player_value.id_] = dq.value.points
+            else:
+                dq_scores[dq.value.id_] = max(
+                    dq.value.points, dq_scores.get(dq.value.id_, 0))
+
+        for value in potential_player_scores.values():
+            potential_score += value
+
+        for value in dq_scores.values():
+            potential_score += value
+
+        return potential_score
 
 
 class RegionValue:
@@ -145,7 +187,7 @@ class RegionValue:
 
             if self.iso2 == '':
                 match += 1
-            elif address.get('ISO3166-2-lvl4', '') == self.iso2:
+            elif address.get('ISO3166-2-lvl4', '') == self.iso2 or address.get('ISO3166-2-lvl3', '') == self.iso2:
                 match += 2
 
                 if self.county == '':
@@ -195,17 +237,17 @@ class RegionValue:
 
 class Entrant:
     # Wrapper class to store player ids and tags
-    def __init__(self, id_num, name):
-        self.id_num = str(id_num)
-        self.name = name
+    def __init__(self, id_num, tag):
+        self.id_ = str(id_num)
+        self.tag = tag
 
     def __eq__(self, other):
         if not isinstance(other, Entrant):
             return False
-        return self.id_num == other.id_num and self.name == other.name
+        return self.id_ == other.id_ and self.tag == other.tag
 
     def __hash__(self):
-        return hash((self.id_num, self.name))
+        return hash((self.id_, self.tag))
 
 
 def send_request(query, variables):
@@ -335,8 +377,8 @@ def phase_list_query(event_slug):
     phases {
       id
       name
-      phaseOrder
       state
+      isExhibition
     }
   }
 }'''
@@ -347,83 +389,10 @@ def phase_list_query(event_slug):
     return query, variables
 
 
-def sets_phase_query(event_slug, phase, page_num=1, per_page=50):
-    # Generates a query to retrieve a list of sets in a particular phase from an event.
-
-    query = '''query getSets($eventSlug: String!, $pageNum: Int!, $perPage: Int!, $phase: ID!) {
-  event(slug: $eventSlug) {
-    sets(page: $pageNum, perPage: $perPage, filters: {phaseIds: [$phase]}) {
-      pageInfo {
-        totalPages
-      }
-      nodes {
-        wPlacement
-        winnerId
-        state
-        slots {
-          entrant {
-            id
-            participants {
-              player {
-                gamerTag
-                id
-              }
-            }
-          }
-          standing {
-            stats {
-              score {
-                value
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}'''
-    variables = '''{{
-        "eventSlug": "{}",
-        "pageNum": {},
-        "perPage": {},
-        "phase": {}
-    }}'''.format(event_slug, page_num, per_page, phase)
-
-    return query, variables
-
-
-def phase_seeds_query(phase_id, page_num=1, per_page=500):
-    # Generates a query to retrieve a list of seeds in a particular phase from an event.
-
-    query = '''query getPhaseSeeds($id: ID!, $pageNum: Int!, $perPage: Int!) {
-  phase(id: $id) {
-    seeds(query: {page: $pageNum, perPage: $perPage}) {
-      pageInfo {
-        totalPages
-      }
-      nodes {
-        progressionSource {
-          originPhase {
-            id
-          }
-        }
-      }
-    }
-  }
-}'''
-    variables = '''{{
-        "id": "{}",
-        "pageNum": {},
-        "perPage": {}
-    }}'''.format(phase_id, page_num, per_page)
-
-    return query, variables
-
-
 def location_query(event_slug):
     # Generates a query to retrieve the location (latitude/longitude) of an event.
 
-    query = '''query getSets($eventSlug: String!) {
+    query = '''query getLoc($eventSlug: String!) {
   event(slug: $eventSlug) {
     tournament {
       lat
@@ -438,16 +407,16 @@ def location_query(event_slug):
     return query, variables
 
 
-def get_sets_in_phase(event_slug, phase_id):
-    # Collects all the sets in a particular phase.
+def get_sets_in_phases(event_slug, phase_ids):
+    # Collects all the sets in a group of phases.
 
     page = 1
 
     sets = []
 
     while True:
-        query, variables = sets_phase_query(
-            event_slug, phase_id, page_num=page)
+        query, variables = sets_query(
+            event_slug, page_num=page, phases=phase_ids)
         resp = send_request(query, variables)
 
         try:
@@ -464,89 +433,6 @@ def get_sets_in_phase(event_slug, phase_id):
     return sets
 
 
-def collect_relevant_sets(event_slug):
-    # Collects all sets in a tournament that lead to the eventual grand finals.
-
-    # Get ordered list of phases
-    query, variables = phase_list_query(event_slug)
-    resp = send_request(query, variables)
-
-    try:
-        phases = resp['data']['event']['phases']
-        phases.sort(key=lambda phase: phase['phaseOrder'])
-    except Exception as e:
-        print(e)
-        print(resp)
-        sys.exit()
-
-    # Iterate through each phase, collecting sets. Check each to see if it has a wPlacement set (final phase)
-    sets_p = {}
-    top_phase = None
-
-    for phase in phases:
-        phase_id = phase['id']
-
-        phase_sets = get_sets_in_phase(event_slug, phase_id)
-        sets_p[phase_id] = phase_sets
-
-        for set_data in phase_sets:
-            if set_data['wPlacement'] == 1:
-                top_phase = phase_id
-
-        if top_phase != None:
-            break
-
-    # Iterate through phases using phase seeds until there are no more.
-    # If the auto-phase getter gets the wrong phase, put the correct phase in this array.
-    phases_to_check = [top_phase]
-    phases_checked = []
-
-    sets = {}
-
-    while len(phases_to_check) > 0:
-        page = 1
-
-        phase_id = phases_to_check.pop()
-        phases_checked.append(phase_id)
-
-        if phase_id in sets_p:
-            sets[phase_id] = sets_p[phase_id]
-        else:
-            sets[phase_id] = get_sets_in_phase(event_slug, phase_id)
-
-        while True:
-            query, variables = phase_seeds_query(phase_id, page_num=1)
-            resp = send_request(query, variables)
-
-            try:
-                for seed_data in resp['data']['phase']['seeds']['nodes']:
-                    if seed_data['progressionSource'] == None:
-                        continue
-                    new_phase_id = seed_data['progressionSource']['originPhase']['id']
-
-                    if new_phase_id not in phases_to_check and new_phase_id not in phases_checked:
-                        phases_to_check.append(new_phase_id)
-
-            except Exception as e:
-                print(e)
-                print(resp)
-                sys.exit()
-
-            if page >= resp['data']['phase']['seeds']['pageInfo']['totalPages']:
-                break
-            page += 1
-
-    phase_names = []
-    for phase in phases_checked:
-        for phase_data in phases:
-            if phase == phase_data['id']:
-                phase_names.append(phase_data['name'])
-
-    print('using following phases: {}'.format(phase_names))
-
-    return sets
-
-
 def check_phase_completed(event_slug):
     # Checks to see if any phases are completed.
 
@@ -556,7 +442,7 @@ def check_phase_completed(event_slug):
 
     try:
         for phase in resp['data']['event']['phases']:
-            if phase.get('state', '') == 'COMPLETED':
+            if phase.get('state', '') == 'COMPLETED' and not phase.get('isExhibition', True):
                 return True
     except Exception as e:
         print(e)
@@ -566,47 +452,6 @@ def check_phase_completed(event_slug):
     return False
 
 
-def find_top_phase(event_slug):
-    # Finds the first phase that reaches a conclusion, which is usually the final phase containing grand finals.
-
-    # Get ordered list of phases
-    query, variables = phase_list_query(event_slug)
-    resp = send_request(query, variables)
-
-    try:
-        phases = resp['data']['event']['phases']
-        phases.sort(key=lambda phase: phase['phaseOrder'])
-    except Exception as e:
-        print(e)
-        print(resp)
-        sys.exit()
-
-    # iterates through phases
-
-    for phase in phases:
-        page = 1
-
-        while True:
-            query, variables = sets_phase_query(
-                event_slug, phase['id'], page_num=page)
-            resp = send_request(query, variables)
-
-            try:
-                for set_data in resp['data']['event']['sets']['nodes']:
-                    if set_data['wPlacement'] == 1:
-                        return phase['id']
-            except Exception as e:
-                print(e)
-                print(resp)
-                sys.exit()
-
-            if page >= resp['data']['event']['sets']['pageInfo']['totalPages']:
-                break
-            page += 1
-
-    return None
-
-
 def collect_phases(event_slug):
     # Collects phases that are part of the main tournament. (Hopefully) excludes amateur brackets.
 
@@ -614,87 +459,7 @@ def collect_phases(event_slug):
     query, variables = phase_list_query(event_slug)
     resp = send_request(query, variables)
 
-    try:
-        phases = resp['data']['event']['phases']
-        phases.sort(key=lambda phase: phase['phaseOrder'])
-    except Exception as e:
-        print(e)
-        print(resp)
-        sys.exit()
-
-    # Find the first phase that reaches a conclusion; 99% of the time this is the actual final phase.
-    top_phase = None
-
-    for phase in phases:
-        page = 1
-
-        while True:
-            query, variables = sets_phase_query(
-                event_slug, phase['id'], page_num=page)
-            resp = send_request(query, variables)
-
-            try:
-                for set_data in resp['data']['event']['sets']['nodes']:
-                    if set_data['wPlacement'] == 1:
-                        top_phase = phase['id']
-                        break
-            except Exception as e:
-                print(e)
-                print(resp)
-                sys.exit()
-
-            if top_phase != None or page >= resp['data']['event']['sets']['pageInfo']['totalPages']:
-                break
-            page += 1
-
-        if top_phase != None:
-            break
-
-    if top_phase == None:
-        return []
-
-    # Iterate through phases using the phase seeds, until there are no more preceding phases.
-    # If the auto-phase getter gets the wrong phase, put the correct phase in this array.
-    phases_to_check = [top_phase]
-    phases_checked = []
-
-    while len(phases_to_check) > 0:
-        page = 1
-
-        phase = phases_to_check.pop()
-        phases_checked.append(phase)
-
-        while True:
-            query, variables = phase_seeds_query(phase, page_num=1)
-            resp = send_request(query, variables)
-
-            try:
-                for seed_data in resp['data']['phase']['seeds']['nodes']:
-                    if seed_data['progressionSource'] == None:
-                        continue
-                    phase_id = seed_data['progressionSource']['originPhase']['id']
-
-                    if phase_id not in phases_to_check and phase_id not in phases_checked:
-                        phases_to_check.append(phase_id)
-
-            except Exception as e:
-                print(e)
-                print(resp)
-                sys.exit()
-
-            if page >= resp['data']['phase']['seeds']['pageInfo']['totalPages']:
-                break
-            page += 1
-
-    phase_names = []
-    for phase in phases_checked:
-        for phase_data in phases:
-            if phase == phase_data['id']:
-                phase_names.append(phase_data['name'])
-
-    print('using following phases: {}'.format(phase_names))
-
-    return phases_checked
+    return [phase for phase in resp['data']['event']['phases'] if not phase['isExhibition']]
 
 
 def get_entrants(event_slug):
@@ -723,14 +488,14 @@ def get_entrants(event_slug):
     return participants
 
 
-def get_dqs(event_slug):
+def get_dqs(event_slug, phase_ids=None):
     # Retrieves DQs of an event.
 
     page = 1
     dq_list = {}
     participants = set()
 
-    for set_data in [item for sublist in collect_relevant_sets(event_slug).values() for item in sublist]:
+    for set_data in get_sets_in_phases(event_slug, phase_ids):
         if set_data['winnerId'] == None:
             continue
 
@@ -767,11 +532,12 @@ def get_dqs(event_slug):
 
     return dq_list, participants
 
+
 def read_players():
     players = {}
     tags = set()
 
-    with open('ultrank_players.csv', newline='') as players_file:
+    with open('ultrank_players.csv', newline='', encoding='utf-8') as players_file:
         reader = csv.DictReader(players_file)
 
         for row in reader:
@@ -797,7 +563,7 @@ def read_players():
 
             tags.add(tag)
 
-    with open('ultrank_invitational.csv', newline='') as invit_file:
+    with open('ultrank_invitational.csv', newline='', encoding='utf-8') as invit_file:
         reader = csv.DictReader(invit_file)
 
         for row in reader:
@@ -834,13 +600,14 @@ def calculate_tier(event_slug, is_invitational):
     event_progressed = check_phase_completed(event_slug)
 
     if event_progressed:
-        # phases = str(collect_phases(event_slug))
+        phases = collect_phases(event_slug)
 
-        dq_list, participants = get_dqs(event_slug)
+        dq_list, participants = get_dqs(
+            event_slug, phase_ids=[phase['id'] for phase in phases])
 
         total_dqs = 0
 
-        participant_ids = [part.id_num for part in participants]
+        participant_ids = [part.id_ for part in participants]
         for player_id, _ in dq_list.items():
             if player_id not in participant_ids:
                 total_dqs += 1
@@ -852,6 +619,7 @@ def calculate_tier(event_slug, is_invitational):
         dq_list = {}
         total_dqs = -1
         total_entrants = len(participants)
+        phases = []
 
     # Comment out if subtracting generic entrant dqs
     total_dqs = -1
@@ -889,46 +657,56 @@ def calculate_tier(event_slug, is_invitational):
     potential_matches = []
 
     for participant in participants:
-        if participant.id_num in dq_list:
+        if participant.id_ in dq_list:
             # Only count fully participating players towards points
 
             continue
-        if participant.id_num in scored_players:
-            player_value = scored_players[participant.id_num]
+        if participant.id_ in scored_players:
+            player_value = scored_players[participant.id_]
 
-            score = player_value.points + (player_value.invitational if is_invitational else 0)
+            score = player_value.points + \
+                (player_value.invitational if is_invitational else 0)
 
             total_score += score
 
-            valued_participants.append(CountedValue(player_value, score, participant.name))
-        elif participant.name in scored_tags:
+            valued_participants.append(CountedValue(
+                player_value, score, participant.tag))
+        elif participant.tag in scored_tags:
             for player_value in scored_players.values():
-                if participant.name.upper() == player_value.tag.upper():
-                    score = player_value.points + (player_value.invitational if is_invitational else 0)
-                    potential_matches.append(PotentialMatch(participant.name, participant.id_num, score, player_value.note))
+                if participant.tag.upper() == player_value.tag.upper():
+                    score = player_value.points + \
+                        (player_value.invitational if is_invitational else 0)
+                    potential_matches.append(PotentialMatch(
+                        participant.tag, participant.id_, score, player_value.note))
 
     # Loop through players with DQs
     participants_with_dqs = []
 
     for participant, num_dqs in dq_list.values():
-        if participant.id_num in scored_players:
-            player_value = scored_players[participant.id_num]
+        if participant.id_ in scored_players:
+            player_value = scored_players[participant.id_]
 
-            score = player_value.points + (player_value.invitational if is_invitational else 0)
+            score = player_value.points + \
+                (player_value.invitational if is_invitational else 0)
 
-            participants_with_dqs.append(DisqualificationValue(CountedValue(player_value, score, participant.name), num_dqs))
-        elif participant.name in scored_tags:
+            participants_with_dqs.append(DisqualificationValue(
+                CountedValue(player_value, score, participant.tag), num_dqs))
+        elif participant.tag in scored_tags:
             for player_value in scored_players.values():
-                if participant.name.upper() == player_value.tag.upper():
-                    score = player_value.points + (player_value.invitational if is_invitational else 0)
-                    potential_matches.append(DisqualificationValue(PotentialMatch(participant.name, participant.id_num, score, player_value.note), num_dqs))
+                if participant.tag.upper() == player_value.tag.upper():
+                    score = player_value.points + \
+                        (player_value.invitational if is_invitational else 0)
+                    potential_matches.append(DisqualificationValue(PotentialMatch(
+                        participant.tag, participant.id_, score, player_value.note), num_dqs))
 
     # Sort for readability
-    valued_participants.sort(reverse=True, key=lambda p: p.total_points)
-    participants_with_dqs.sort(reverse=True, key=lambda p: (p.dqs, p.value.total_points))
-    potential_matches.sort(key=lambda m: (m.dqs if isinstance(m, DisqualificationValue) else 0, m.get_tag()))
+    valued_participants.sort(reverse=True, key=lambda p: p.points)
+    participants_with_dqs.sort(
+        reverse=True, key=lambda p: (p.dqs, p.value.points))
+    potential_matches.sort(key=lambda m: (m.dqs if isinstance(
+        m, DisqualificationValue) else 0, m.get_tag()))
 
-    return TournamentTieringResult(total_score, total_entrants, best_region, valued_participants, participants_with_dqs, potential_matches, total_dqs)
+    return TournamentTieringResult(total_score, total_entrants, best_region, valued_participants, participants_with_dqs, potential_matches, phases=[phase['name'] for phase in phases], dq_count=total_dqs)
 
 
 SMASH_GG_ENDPOINT = 'https://api.smash.gg/gql/alpha'
@@ -938,7 +716,8 @@ ggkey = ggkeyfile.read()
 ggkeyfile.close()
 ggheader = {"Authorization": "Bearer " + ggkey}
 
-startgg_slug_regex = re.compile(r'tournament\/[a-z0-9\-]+\/event\/[a-z0-9\-]+')
+startgg_slug_regex = re.compile(
+    r'tournament\/[a-z0-9\-_]+\/event\/[a-z0-9\-_]+')
 
 
 scored_players, scored_tags = read_players()
@@ -956,3 +735,4 @@ if __name__ == '__main__':
     result = calculate_tier(event_slug, is_invitational)
     result.write_result()
 
+    print(result.max_potential_score())
