@@ -615,8 +615,6 @@ def calculate_tier(event_slug, is_invitational):
             if player_id not in participant_ids:
                 total_dqs += 1
 
-        print(total_dqs)
-
         total_entrants = len(participants) + total_dqs
 
     else:
