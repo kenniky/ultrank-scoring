@@ -238,7 +238,7 @@ class RegionValue:
 class Entrant:
     # Wrapper class to store player ids and tags
     def __init__(self, id_num, tag):
-        self.id_ = str(id_num)
+        self.id_ = id_num
         self.tag = tag
 
     def __eq__(self, other):
@@ -544,6 +544,8 @@ def read_players():
             id_ = row['Start.gg Num ID']
             if id_ == '':
                 id_ = row['Player']
+            else:
+                id_ = int(id_)
 
             tag = row['Player'].strip()
             if tag == '':
@@ -608,9 +610,12 @@ def calculate_tier(event_slug, is_invitational):
         total_dqs = 0
 
         participant_ids = [part.id_ for part in participants]
+
         for player_id, _ in dq_list.items():
             if player_id not in participant_ids:
                 total_dqs += 1
+
+        print(total_dqs)
 
         total_entrants = len(participants) + total_dqs
 
