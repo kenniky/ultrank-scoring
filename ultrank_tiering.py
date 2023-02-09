@@ -1,19 +1,24 @@
-# Script to generate UltRank tiers.
+"""Script to generate UltRank tiers.
 
-# Requirements:
-#  geopy installed: pip install geopy
-#  start.gg API key stored in a file 'smashgg.key'
-#  From the UltRank TTS Scraping Sheet:
-#   ultrank_players.csv
-#   ultrank_regions.csv
-#   ultrank_invitational.csv
+Requirements:
+ geopy installed: pip install geopy
+ start.gg API key stored in a file 'smashgg.key'
+ From the UltRank TTS Scraping Sheet:
+  ultrank_players.csv
+  ultrank_regions.csv
+  ultrank_invitational.csv
+"""
 
+from startgg_toolkit import send_request, startgg_slug_regex
 from geopy.geocoders import Nominatim
 import csv
 import requests
 import re
 import sys
 import time
+
+SCORE_FLOOR = 250
+NUM_PLAYERS_FLOOR = 2
 
 
 class PotentialMatch:
@@ -31,7 +36,7 @@ class PotentialMatch:
 
 
 class DisqualificationValue:
-    # Stores a player value with DQ count.
+    """Stores a player value with DQ count."""
 
     def __init__(self, value, dqs):
         self.value = value
@@ -49,7 +54,7 @@ class DisqualificationValue:
 
 
 class CountedValue:
-    # Stores a counted player value with additional data.
+    """Stores a counted player value with additional data."""
 
     def __init__(self, player_value, total_points, alt_tag):
         self.player_value = player_value
@@ -67,7 +72,7 @@ class CountedValue:
 
 
 class PlayerValue:
-    # Stores scores for players.
+    """Stores scores for players."""
 
     def __init__(self, tag, id_, points=0, note='', invitational=0):
         self.tag = tag
@@ -81,15 +86,21 @@ class PlayerValue:
 
 
 class TournamentTieringResult:
-    def __init__(self, score, entrants, region, values, dqs, potential, phases=[], dq_count=-1):
+    def __init__(self, slug, score, entrants, region, values, dqs, potential, is_invitational=False, phases=[], dq_count=-1):
+        self.slug = slug
         self.score = score
         self.values = values
         self.dqs = dqs
         self.potential = potential
         self.entrants = entrants
         self.region = region
+        self.is_invitational = is_invitational
         self.dq_count = dq_count
         self.phases = phases
+
+        name = get_name(slug)
+        self.tournament = name['tournament']
+        self.event = name['event']
 
     def write_result(self, filelike=None):
         original_stdout = sys.stdout
@@ -97,6 +108,7 @@ class TournamentTieringResult:
         if filelike != None:
             sys.stdout = filelike
 
+        print('{} - {} ({}){}'.format(self.tournament, self.event, self.slug, ' (invitational)' if self.is_invitational else ''))
         print('Phases used: {}'.format(str(self.phases)))
         print()
 
@@ -161,21 +173,27 @@ class TournamentTieringResult:
 
         return potential_score
 
+    def should_count(self):
+        return self.entrants >= self.region.entrant_floor or (self.score >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
+
 
 class RegionValue:
-    # Stores region multipliers.
+    """Stores region multipliers."""
 
-    def __init__(self, country_code='', iso2='', county='', jp_postal='', multiplier=1, note=''):
+    def __init__(self, country_code='', iso2='', county='', jp_postal='', multiplier=1, entrant_floor=64, note=''):
         self.country_code = country_code
         self.iso2 = iso2
         self.county = county
         self.jp_postal = jp_postal
         self.multiplier = multiplier
+        self.entrant_floor = entrant_floor
         self.note = note
 
     def match(self, address):
-        # Compares an address derived from Nominatim module to the stored region.
-        # Higher number = larger match.
+        """Compares an address derived from Nominatim module to the stored 
+        region.
+        Higher number = larger match.
+        """
 
         if self.country_code == '':
             return 1
@@ -236,7 +254,8 @@ class RegionValue:
 
 
 class Entrant:
-    # Wrapper class to store player ids and tags
+    """Wrapper class to store player ids and tags."""
+    
     def __init__(self, id_num, tag):
         self.id_ = id_num
         self.tag = tag
@@ -248,50 +267,6 @@ class Entrant:
 
     def __hash__(self):
         return hash((self.id_, self.tag))
-
-
-def send_request(query, variables):
-    # Sends a request to the startgg server.
-    progress = False
-
-    tries = 0
-
-    response_json = {}
-
-    while not progress:
-        json_payload = {
-            "query": query,
-            "variables": variables
-        }
-        try:
-            response = requests.post(
-                SMASH_GG_ENDPOINT, json=json_payload, headers=ggheader)
-
-            if response.status_code == 200:
-                progress = True
-                response_json = response.json()
-            else:
-                tries += 1
-                if response.status_code == 429:
-                    print(f'try {tries}: rate limit exceeded... sleeping then trying again... ', end='', flush=True)
-                elif response.status_code == 502:
-                    print(f'try {tries}: 502 bad gateway... sleeping then trying again... ', end='', flush=True)
-                else:
-                    print(f'try {tries}: received non-200 response... sleeping then trying again... ', end='', flush=True)
-                    print(response.text)
-                    print(response.status_code)
-
-                time.sleep(60)
-                print('retrying')
-
-        except Exception as e:
-            print(f'try {tries}: requests failure... sleeping then trying again... ', end='', flush=True)
-            print(e)
-            time.sleep(60)
-            tries += 1
-            print('retrying')
-
-    return response_json
 
 
 def entrants_query(event_slug, page_num=1, per_page=200):
@@ -326,7 +301,7 @@ def entrants_query(event_slug, page_num=1, per_page=200):
 
 
 def sets_query(event_slug, page_num=1, per_page=50, phases=None):
-    # Generates a query to retrieve sets from an event.
+    """Generates a query to retrieve sets from an event."""
 
     query = '''query getSets($eventSlug: String!, $pageNum: Int!, $perPage: Int!, $phases: [ID]!) {
   event(slug: $eventSlug) {
@@ -370,7 +345,7 @@ def sets_query(event_slug, page_num=1, per_page=50, phases=None):
 
 
 def phase_list_query(event_slug):
-    # Generates a query to retrieve a list of phases from an event.
+    """Generates a query to retrieve a list of phases from an event."""
 
     query = '''query getPhases($eventSlug: String!) {
   event(slug: $eventSlug) {
@@ -390,7 +365,9 @@ def phase_list_query(event_slug):
 
 
 def location_query(event_slug):
-    # Generates a query to retrieve the location (latitude/longitude) of an event.
+    """Generates a query to retrieve the location (latitude/longitude)
+    of an event.
+    """
 
     query = '''query getLoc($eventSlug: String!) {
   event(slug: $eventSlug) {
@@ -406,9 +383,25 @@ def location_query(event_slug):
 
     return query, variables
 
+def name_query(event_slug):
+    """Generates a query to retrieve tournament and event name given a slug."""
+
+    query = '''query nameQuery($eventSlug: String!) {
+  event(slug: $eventSlug) {
+    name
+    tournament {
+      name
+    }
+  }
+}'''
+    variables = '''{{
+        "eventSlug": "{}"
+    }}'''.format(event_slug)
+
+    return query, variables
 
 def get_sets_in_phases(event_slug, phase_ids):
-    # Collects all the sets in a group of phases.
+    """Collects all the sets in a group of phases."""
 
     page = 1
 
@@ -434,7 +427,7 @@ def get_sets_in_phases(event_slug, phase_ids):
 
 
 def check_phase_completed(event_slug):
-    # Checks to see if any phases are completed.
+    """Checks to see if any phases are completed."""
 
     # Get ordered list of phases
     query, variables = phase_list_query(event_slug)
@@ -453,7 +446,9 @@ def check_phase_completed(event_slug):
 
 
 def collect_phases(event_slug):
-    # Collects phases that are part of the main tournament. (Hopefully) excludes amateur brackets.
+    """Collects phases that are part of the main tournament.
+    (Hopefully) excludes amateur brackets.
+    """
 
     # Get ordered list of phases
     query, variables = phase_list_query(event_slug)
@@ -489,9 +484,8 @@ def get_entrants(event_slug):
 
 
 def get_dqs(event_slug, phase_ids=None):
-    # Retrieves DQs of an event.
+    """Retrieves DQs of an event."""
 
-    page = 1
     dq_list = {}
     participants = set()
 
@@ -533,6 +527,12 @@ def get_dqs(event_slug, phase_ids=None):
     return dq_list, participants
 
 
+def get_name(event_slug):
+    query, variables = name_query(event_slug)
+    resp = send_request(query, variables)
+
+    return {'event': resp['data']['event']['name'], 'tournament': resp['data']['event']['tournament']['name']}
+
 def read_players():
     players = {}
     tags = set()
@@ -572,6 +572,8 @@ def read_players():
             id_ = row['Num']
             if id_ == '':
                 id_ = row['Player']
+            else:
+                id_ = int(id_)
 
             if id_ in players:
                 player_value = players[id_]
@@ -588,15 +590,17 @@ def read_regions():
 
         for row in reader:
             region_value = RegionValue(country_code=row['country_code'], iso2=row['ISO3166-2'], county=row['county'],
-                                       jp_postal=row['jp-postal-code'], multiplier=int(row['Multiplier']), note=row['Note'])
+                                       jp_postal=row['jp-postal-code'], multiplier=int(row['Multiplier']),
+                                       entrant_floor=int(row['Entrant Floor']), note=row['Note'])
             regions.add(region_value)
 
     return regions
 
 
 def calculate_tier(event_slug, is_invitational):
-    # Check if the event has progressed enough to detect DQs.
+    """Calculates point value of event."""
 
+    # Check if the event has progressed enough to detect DQs.
     total_dqs = -1  # Placeholder value
 
     event_progressed = check_phase_completed(event_slug)
@@ -709,18 +713,9 @@ def calculate_tier(event_slug, is_invitational):
     potential_matches.sort(key=lambda m: (m.dqs if isinstance(
         m, DisqualificationValue) else 0, m.get_tag()))
 
-    return TournamentTieringResult(total_score, total_entrants, best_region, valued_participants, participants_with_dqs, potential_matches, phases=[phase['name'] for phase in phases], dq_count=total_dqs)
-
-
-SMASH_GG_ENDPOINT = 'https://api.smash.gg/gql/alpha'
-
-ggkeyfile = open('smashgg.key')
-ggkey = ggkeyfile.read()
-ggkeyfile.close()
-ggheader = {"Authorization": "Bearer " + ggkey}
-
-startgg_slug_regex = re.compile(
-    r'tournament\/[a-z0-9\-_]+\/event\/[a-z0-9\-_]+')
+    return TournamentTieringResult(event_slug, total_score, total_entrants, best_region, valued_participants,
+                                   participants_with_dqs, potential_matches, is_invitational=is_invitational,
+                                   phases=[phase['name'] for phase in phases], dq_count=total_dqs)
 
 
 scored_players, scored_tags = read_players()
@@ -738,4 +733,5 @@ if __name__ == '__main__':
     result = calculate_tier(event_slug, is_invitational)
     result.write_result()
 
-    print(result.max_potential_score())
+    print()
+    print('Maximum potential total: {}'.format(int(result.max_potential_score())))
