@@ -112,6 +112,13 @@ class TournamentTieringResult:
         print('Phases used: {}'.format(str(self.phases)))
         print()
 
+        if not self.should_count():
+            print('WARNING: This tournament does not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+            print()
+        elif not self.should_count_strict():
+            print('WARNING: This tournament may not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+            print()
+
         participants_string = '{} - {} DQs = {}'.format(
             self.entrants + self.dq_count, self.dq_count, self.entrants) if self.dq_count != -1 else str(self.entrants)
 
@@ -173,8 +180,11 @@ class TournamentTieringResult:
 
         return potential_score
 
-    def should_count(self):
+    def should_count_strict(self):
         return self.entrants >= self.region.entrant_floor or (self.score >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
+
+    def should_count(self):
+        return self.entrants >= self.region.entrant_floor or (self.max_potential_score() >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
 
 
 class RegionValue:
@@ -417,7 +427,7 @@ def get_sets_in_phases(event_slug, phase_ids):
         except Exception as e:
             print(e)
             print(resp)
-            sys.exit()
+            raise e
 
         if page >= resp['data']['event']['sets']['pageInfo']['totalPages']:
             break
@@ -440,7 +450,7 @@ def check_phase_completed(event_slug):
     except Exception as e:
         print(e)
         print(resp)
-        sys.exit()
+        raise e
 
     return False
 
@@ -474,7 +484,7 @@ def get_entrants(event_slug):
             except Exception as e:
                 print(e)
                 print(resp)
-                sys.exit()
+                raise e
 
         if page >= resp['data']['event']['entrants']['pageInfo']['totalPages']:
             break
@@ -642,7 +652,7 @@ def calculate_tier(event_slug, is_invitational):
     except Exception as e:
         print(e)
         print(resp)
-        sys.exit()
+        raise e
 
     address = geo.reverse('{}, {}'.format(lat, lng)).raw['address']
 

@@ -201,20 +201,9 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
 
                     added_event = False
 
-                    potential_weekly = check_potential_weekly(
-                        tournament['slug'])
+                    potential_weekly = "not checked"
 
                     for event in events:
-                        if isinstance(potential_weekly, Tournament):
-                            days_since = str(
-                                round(potential_weekly.time_since / (24 * 60 * 60)))
-
-                            writer.writerow({'Tournament': tournament['name'],
-                                             'Event': event['name'],
-                                             'Slug': event['slug'],
-                                             'Used': 'False',
-                                             'Skip Reason': 'Probable Weekly (found tournament {} [{}] which precedes by {} days)'.format(potential_weekly.name, potential_weekly.slug, days_since)})
-                            continue
 
                         if tournament['name'].lower().find('weekly') != -1 or event['name'].lower().find('weekly') != -1:
                             writer.writerow({'Tournament': tournament['name'],
@@ -222,6 +211,38 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Slug': event['slug'],
                                              'Used': 'False',
                                              'Skip Reason': 'Probable Weekly (contains string "weekly")'})
+                            continue
+
+                        if event['name'].lower().find('ladder') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "ladder")'})
+                            continue
+
+                        if event['name'].lower().find('redemption') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "redemption")'})
+                            continue
+
+                        if event['name'].lower().find('buster') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "buster")'})
+                            continue
+
+                        if event['name'].lower().find('amateur') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "amateur")'})
                             continue
 
                         if event['name'].lower().find('squad') != -1:
@@ -278,6 +299,30 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Slug': event['slug'],
                                              'Used': 'False',
                                              'Skip Reason': 'Other Larger Event in Tournament'})
+                            continue
+
+                        if event['name'].lower().find('monthly') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'True'})
+
+                            slugs.append(event['slug'])
+                            added_event = True
+                            continue
+
+                        if potential_weekly == "not checked":
+                            potential_weekly = check_potential_weekly(tournament['slug'])
+
+                        if isinstance(potential_weekly, Tournament):
+                            days_since = str(
+                                round(potential_weekly.time_since / (24 * 60 * 60)))
+
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Weekly (found tournament {} [{}] which precedes by {} days)'.format(potential_weekly.name, potential_weekly.slug, days_since)})
                             continue
 
                         writer.writerow({'Tournament': tournament['name'],
