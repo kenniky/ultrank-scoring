@@ -6,9 +6,9 @@ Allows for quick scoring of events for UltRank.
 
 - Python
 - Necessary packages: run `pip install -r ultrank_requirements.txt` to install all necessary packages.
- - geopy
- - dateparser
- - levenshtein
+  - geopy
+  - dateparser
+  - levenshtein
 - startgg API key stored in a `smashgg.key` file in the same directory
 - versions of the three CSVs included.
 
