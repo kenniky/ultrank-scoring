@@ -15,7 +15,7 @@ import csv
 import requests
 import re
 import sys
-import time
+import datetime
 
 SCORE_FLOOR = 250
 NUM_PLAYERS_FLOOR = 2
@@ -74,15 +74,53 @@ class CountedValue:
 class PlayerValue:
     """Stores scores for players."""
 
-    def __init__(self, tag, id_, points=0, note='', invitational=0):
+    def __init__(self, id_, tag, points=0, note='', invitational=0, start_time=None, end_time=None):
         self.tag = tag
         self.id_ = id_
         self.points = points
         self.note = note
-        self.invitational = invitational
+        self.invitational_val = invitational
+        self.start_time = start_time
+        self.end_time = end_time
 
     def __str__(self):
-        return '{} (id {}) - {} (+{}) points [{}]'.format(self.tag, self.id_, self.points, self.invitational, self.note)
+        return '{} (id {}) - {} (+{}) points [{}]'.format(self.tag, self.id_, self.points, self.invitational_val, self.note)
+
+    def is_within_timeframe(self, time):
+        if self.start_time != None and time < self.start_time:
+            return False
+        if self.end_time != None and time >= self.end_time:
+            return False
+
+        return True
+
+
+class PlayerValueGroup:
+    """Stores multiple scores for players."""
+
+    def __init__(self, id_, tag, invitational_val=0):
+        self.tag = tag
+        self.id_ = id_
+        self.invitational_val = invitational_val
+        self.values = []
+
+    def set_invitational_val(self, value):
+        self.invitational_val = value
+
+        for value in self.values:
+            value.invitational_val = value
+
+    def add_value(self, points, note='', start_time=None, end_time=None):
+        self.values.append(PlayerValue(
+            self.id_, self.tag, points, note, self.invitational_val, start_time, end_time))
+
+        self.values.sort(reverse=True, key=lambda val: val.points)
+
+    def retrieve_value(self, tournament):
+        for value in self.values:
+            if value.is_within_timeframe(tournament.start_time):
+                return value
+        return None
 
 
 class TournamentTieringResult:
@@ -108,15 +146,18 @@ class TournamentTieringResult:
         if filelike != None:
             sys.stdout = filelike
 
-        print('{} - {} ({}){}'.format(self.tournament, self.event, self.slug, ' (invitational)' if self.is_invitational else ''))
+        print('{} - {} ({}){}'.format(self.tournament, self.event,
+                                      self.slug, ' (invitational)' if self.is_invitational else ''))
         print('Phases used: {}'.format(str(self.phases)))
         print()
 
         if not self.should_count():
-            print('WARNING: This tournament does not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+            print('WARNING: This tournament does not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(
+                self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
             print()
         elif not self.should_count_strict():
-            print('WARNING: This tournament may not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+            print('WARNING: This tournament may not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(
+                self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
             print()
 
         participants_string = '{} - {} DQs = {}'.format(
@@ -265,7 +306,7 @@ class RegionValue:
 
 class Entrant:
     """Wrapper class to store player ids and tags."""
-    
+
     def __init__(self, id_num, tag):
         self.id_ = id_num
         self.tag = tag
@@ -277,6 +318,173 @@ class Entrant:
 
     def __hash__(self):
         return hash((self.id_, self.tag))
+
+
+class Tournament:
+    """Stores tournament info/metadata."""
+
+    def __init__(self, event_slug, is_invitational=False):
+        """Populates tournament metadata with tournament slug/invitational status."""
+
+        self.event_slug = event_slug
+        self.is_invitational = is_invitational
+        self.tier = None
+
+        self.gather_entrant_counts()
+        self.gather_location_info()
+        self.retrieve_start_time()
+
+    def gather_entrant_counts(self):
+        # Check if the event has progressed enough to detect DQs.
+        self.total_dqs = -1  # Placeholder value
+
+        event_progressed = check_phase_completed(self.event_slug)
+
+        if event_progressed:
+            self.phases = collect_phases(self.event_slug)
+
+            self.dq_list, self.participants = get_dqs(
+                self.event_slug, phase_ids=[phase['id'] for phase in self.phases])
+
+            self.total_dqs = 0
+
+            participant_ids = [part.id_ for part in self.participants]
+
+            for player_id, _ in self.dq_list.items():
+                if player_id not in participant_ids:
+                    self.total_dqs += 1
+
+            self.total_entrants = len(self.participants) + self.total_dqs
+
+        else:
+            self.participants = get_entrants(self.event_slug)
+            self.dq_list = {}
+            self.total_dqs = -1
+            self.total_entrants = len(self.participants)
+            self.phases = []
+
+        # Comment out if subtracting generic entrant dqs
+        self.total_dqs = -1
+
+    def gather_location_info(self):
+        geo = Nominatim(user_agent='ultrank')
+
+        query, variables = location_query(self.event_slug)
+        resp = send_request(query, variables)
+
+        try:
+            self.lat = resp['data']['event']['tournament']['lat']
+            self.lng = resp['data']['event']['tournament']['lng']
+        except Exception as e:
+            print(e)
+            print(resp)
+            raise e
+
+        self.address = geo.reverse('{}, {}'.format(
+            self.lat, self.lng)).raw['address']
+
+    def retrieve_start_time(self):
+        query, variables = time_query(self.event_slug)
+        resp = send_request(query, variables)
+
+        try:
+            self.start_time = datetime.date.fromtimestamp(
+                resp['data']['event']['startAt'])
+        except Exception as e:
+            print(e)
+            print(resp)
+            raise e
+
+    def calculate_tier(self):
+        """Calculates point value of event."""
+
+        if self.tier != None:
+            return self.tier
+
+        # add things up
+        total_score = 0
+
+        # Entrant score
+        best_match = 0
+        best_region = None
+
+        for region in region_mults:
+            match = region.match(self.address)
+            if match > best_match:
+                best_region = region
+                best_match = match
+
+        total_score += self.total_entrants * best_region.multiplier
+
+        # Player values
+        valued_participants = []
+        potential_matches = []
+
+        for participant in self.participants:
+            if participant.id_ in self.dq_list:
+                # Only count fully participating players towards points
+
+                continue
+            if participant.id_ in scored_players:
+                player_value = scored_players[participant.id_].retrieve_value(
+                    self)
+
+                if player_value != None:
+                    score = player_value.points + \
+                        (player_value.invitational if self.is_invitational else 0)
+
+                    total_score += score
+
+                    valued_participants.append(CountedValue(
+                        player_value, score, participant.tag))
+            elif participant.tag in scored_tags:
+                for player_value_group in scored_players.values():
+                    if participant.tag.upper() == player_value_group.tag.upper():
+                        player_value = player_value_group.retrieve_value(self)
+
+                        if player_value != None:
+                            score = player_value.points + \
+                                (player_value.invitational if self.is_invitational else 0)
+                            potential_matches.append(PotentialMatch(
+                                participant.tag, participant.id_, score, player_value.note))
+
+        # Loop through players with DQs
+        participants_with_dqs = []
+
+        for participant, num_dqs in self.dq_list.values():
+            if participant.id_ in scored_players:
+                player_value = scored_players[participant.id_].retrieve_value(
+                    self)
+
+                if player_value != None:
+                    score = player_value.points + \
+                        (player_value.invitational if self.is_invitational else 0)
+
+                    participants_with_dqs.append(DisqualificationValue(
+                        CountedValue(player_value, score, participant.tag), num_dqs))
+            elif participant.tag in scored_tags:
+                for player_value in scored_players.values():
+                    if participant.tag.upper() == player_value.tag.upper():
+                        player_value = player_value_group.retrieve_value(self)
+
+                        if player_value != None:
+                            score = player_value.points + \
+                                (player_value.invitational if self.is_invitational else 0)
+                            potential_matches.append(DisqualificationValue(PotentialMatch(
+                                participant.tag, participant.id_, score, player_value.note), num_dqs))
+
+        # Sort for readability
+        valued_participants.sort(reverse=True, key=lambda p: p.points)
+        participants_with_dqs.sort(
+            reverse=True, key=lambda p: (p.dqs, p.value.points))
+        potential_matches.sort(key=lambda m: (m.dqs if isinstance(
+            m, DisqualificationValue) else 0, m.get_tag()))
+
+        self.tier = TournamentTieringResult(self.event_slug, total_score, self.total_entrants, best_region, valued_participants,
+                                            participants_with_dqs, potential_matches, is_invitational=self.is_invitational,
+                                            phases=[phase['name'] for phase in self.phases], dq_count=self.total_dqs)
+
+        return self.tier
 
 
 def entrants_query(event_slug, page_num=1, per_page=200):
@@ -393,6 +601,23 @@ def location_query(event_slug):
 
     return query, variables
 
+
+def time_query(event_slug):
+    """Generates a query to retrieve the start time of an event.
+    """
+
+    query = '''query getLoc($eventSlug: String!) {
+  event(slug: $eventSlug) {
+    startAt
+  }
+}'''
+    variables = '''{{
+        "eventSlug": "{}"
+    }}'''.format(event_slug)
+
+    return query, variables
+
+
 def name_query(event_slug):
     """Generates a query to retrieve tournament and event name given a slug."""
 
@@ -409,6 +634,7 @@ def name_query(event_slug):
     }}'''.format(event_slug)
 
     return query, variables
+
 
 def get_sets_in_phases(event_slug, phase_ids):
     """Collects all the sets in a group of phases."""
@@ -543,6 +769,7 @@ def get_name(event_slug):
 
     return {'event': resp['data']['event']['name'], 'tournament': resp['data']['event']['tournament']['name']}
 
+
 def read_players():
     players = {}
     tags = set()
@@ -563,15 +790,16 @@ def read_players():
 
             points = int(row['Points'])
 
-            if id_ not in players:
-                player_value = PlayerValue(tag, id_, points, row['Note'])
-                players[id_] = player_value
-            else:
-                player_value = players[id_]
+            start_date = datetime.date.fromisoformat(
+                row['Start Date']) if row['Start Date'] != '' else None
+            end_date = datetime.date.fromisoformat(
+                row['End Date']) if row['End Date'] != '' else None
 
-                if player_value.points < points:
-                    player_value.points = points
-                player_value.note += ", " + row['Note']
+            if id_ not in players:
+                player_value_group = PlayerValueGroup(id_, tag)
+                players[id_] = player_value_group
+
+            players[id_].add_value(points, row['Note'], start_date, end_date)
 
             tags.add(tag)
 
@@ -587,7 +815,8 @@ def read_players():
 
             if id_ in players:
                 player_value = players[id_]
-                player_value.invitational = int(row['Additional Points'])
+                player_value.set_invitational_val(
+                    int(row['Additional Points']))
 
     return players, tags
 
@@ -600,7 +829,8 @@ def read_regions():
 
         for row in reader:
             region_value = RegionValue(country_code=row['country_code'], iso2=row['ISO3166-2'], county=row['county'],
-                                       jp_postal=row['jp-postal-code'], multiplier=int(row['Multiplier']),
+                                       jp_postal=row['jp-postal-code'], multiplier=int(
+                                           row['Multiplier']),
                                        entrant_floor=int(row['Entrant Floor']), note=row['Note'])
             regions.add(region_value)
 
@@ -740,8 +970,11 @@ if __name__ == '__main__':
     is_invitational = input('is this an invitational? (y/n) ')
     is_invitational = is_invitational.upper() == 'Y' or is_invitational.upper() == 'YES'
 
-    result = calculate_tier(event_slug, is_invitational)
+    tournament = Tournament(event_slug, is_invitational)
+
+    result = tournament.calculate_tier()
     result.write_result()
 
     print()
-    print('Maximum potential total: {}'.format(int(result.max_potential_score())))
+    print('Maximum potential total: {}'.format(
+        int(result.max_potential_score())))
