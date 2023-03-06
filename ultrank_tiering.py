@@ -431,20 +431,20 @@ class Tournament:
 
                 if player_value != None:
                     score = player_value.points + \
-                        (player_value.invitational if self.is_invitational else 0)
+                        (player_value.invitational_val if self.is_invitational else 0)
 
                     total_score += score
 
                     valued_participants.append(CountedValue(
                         player_value, score, participant.tag))
-            elif participant.tag in scored_tags:
+            elif participant.tag.upper() in scored_tags:
                 for player_value_group in scored_players.values():
                     if participant.tag.upper() == player_value_group.tag.upper():
                         player_value = player_value_group.retrieve_value(self)
 
                         if player_value != None:
                             score = player_value.points + \
-                                (player_value.invitational if self.is_invitational else 0)
+                                (player_value.invitational_val if self.is_invitational else 0)
                             potential_matches.append(PotentialMatch(
                                 participant.tag, participant.id_, score, player_value.note))
 
@@ -458,18 +458,18 @@ class Tournament:
 
                 if player_value != None:
                     score = player_value.points + \
-                        (player_value.invitational if self.is_invitational else 0)
+                        (player_value.invitational_val if self.is_invitational else 0)
 
                     participants_with_dqs.append(DisqualificationValue(
                         CountedValue(player_value, score, participant.tag), num_dqs))
-            elif participant.tag in scored_tags:
-                for player_value in scored_players.values():
+            elif participant.tag.upper() in scored_tags:
+                for player_value_group in scored_players.values():
                     if participant.tag.upper() == player_value.tag.upper():
                         player_value = player_value_group.retrieve_value(self)
 
                         if player_value != None:
                             score = player_value.points + \
-                                (player_value.invitational if self.is_invitational else 0)
+                                (player_value.invitational_val if self.is_invitational else 0)
                             potential_matches.append(DisqualificationValue(PotentialMatch(
                                 participant.tag, participant.id_, score, player_value.note), num_dqs))
 
@@ -801,7 +801,7 @@ def read_players():
 
             players[id_].add_value(points, row['Note'], start_date, end_date)
 
-            tags.add(tag)
+            tags.add(tag.upper())
 
     with open('ultrank_invitational.csv', newline='', encoding='utf-8') as invit_file:
         reader = csv.DictReader(invit_file)
@@ -836,126 +836,6 @@ def read_regions():
 
     return regions
 
-
-def calculate_tier(event_slug, is_invitational):
-    """Calculates point value of event."""
-
-    # Check if the event has progressed enough to detect DQs.
-    total_dqs = -1  # Placeholder value
-
-    event_progressed = check_phase_completed(event_slug)
-
-    if event_progressed:
-        phases = collect_phases(event_slug)
-
-        dq_list, participants = get_dqs(
-            event_slug, phase_ids=[phase['id'] for phase in phases])
-
-        total_dqs = 0
-
-        participant_ids = [part.id_ for part in participants]
-
-        for player_id, _ in dq_list.items():
-            if player_id not in participant_ids:
-                total_dqs += 1
-
-        total_entrants = len(participants) + total_dqs
-
-    else:
-        participants = get_entrants(event_slug)
-        dq_list = {}
-        total_dqs = -1
-        total_entrants = len(participants)
-        phases = []
-
-    # Comment out if subtracting generic entrant dqs
-    total_dqs = -1
-
-    geo = Nominatim(user_agent='ultrank')
-
-    query, variables = location_query(event_slug)
-    resp = send_request(query, variables)
-
-    try:
-        lat = resp['data']['event']['tournament']['lat']
-        lng = resp['data']['event']['tournament']['lng']
-    except Exception as e:
-        print(e)
-        print(resp)
-        raise e
-
-    address = geo.reverse('{}, {}'.format(lat, lng)).raw['address']
-
-    # add things up
-    total_score = 0
-
-    best_match = 0
-    best_region = None
-
-    for region in region_mults:
-        match = region.match(address)
-        if match > best_match:
-            best_region = region
-            best_match = match
-
-    total_score += total_entrants * best_region.multiplier
-
-    valued_participants = []
-    potential_matches = []
-
-    for participant in participants:
-        if participant.id_ in dq_list:
-            # Only count fully participating players towards points
-
-            continue
-        if participant.id_ in scored_players:
-            player_value = scored_players[participant.id_]
-
-            score = player_value.points + \
-                (player_value.invitational if is_invitational else 0)
-
-            total_score += score
-
-            valued_participants.append(CountedValue(
-                player_value, score, participant.tag))
-        elif participant.tag in scored_tags:
-            for player_value in scored_players.values():
-                if participant.tag.upper() == player_value.tag.upper():
-                    score = player_value.points + \
-                        (player_value.invitational if is_invitational else 0)
-                    potential_matches.append(PotentialMatch(
-                        participant.tag, participant.id_, score, player_value.note))
-
-    # Loop through players with DQs
-    participants_with_dqs = []
-
-    for participant, num_dqs in dq_list.values():
-        if participant.id_ in scored_players:
-            player_value = scored_players[participant.id_]
-
-            score = player_value.points + \
-                (player_value.invitational if is_invitational else 0)
-
-            participants_with_dqs.append(DisqualificationValue(
-                CountedValue(player_value, score, participant.tag), num_dqs))
-        elif participant.tag in scored_tags:
-            for player_value in scored_players.values():
-                if participant.tag.upper() == player_value.tag.upper():
-                    score = player_value.points + \
-                        (player_value.invitational if is_invitational else 0)
-                    potential_matches.append(DisqualificationValue(PotentialMatch(
-                        participant.tag, participant.id_, score, player_value.note), num_dqs))
-
-    # Sort for readability
-    valued_participants.sort(reverse=True, key=lambda p: p.points)
-    participants_with_dqs.sort(
-        reverse=True, key=lambda p: (p.dqs, p.value.points))
-    potential_matches.sort(key=lambda m: (m.dqs if isinstance(
-        m, DisqualificationValue) else 0, m.get_tag()))
-
-    return TournamentTieringResult(event_slug, total_score, total_entrants, best_region, valued_participants,
-                                   participants_with_dqs, potential_matches, is_invitational=is_invitational,
-                                   phases=[phase['name'] for phase in phases], dq_count=total_dqs)
 
 
 scored_players, scored_tags = read_players()

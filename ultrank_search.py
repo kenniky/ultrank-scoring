@@ -1,7 +1,6 @@
 # Requires dateparser, which you can install via `pip install dateparser`.
 
 from startgg_toolkit import send_request
-from ultrank_tiering import calculate_tier
 import dateparser
 import csv
 import os

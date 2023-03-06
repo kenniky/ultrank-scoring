@@ -1,4 +1,4 @@
-from ultrank_tiering import calculate_tier, startgg_slug_regex, TournamentTieringResult
+from ultrank_tiering import Tournament, startgg_slug_regex, TournamentTieringResult
 import csv
 import os 
 import sys
@@ -23,7 +23,8 @@ def bulk_score(slugs):
             print('calculating for slug {}'.format(slug))
 
             try:
-                result = calculate_tier(slug, invit)
+                t = Tournament(slug, invit)
+                result = t.calculate_tier()
 
                 results.append(result)
 
@@ -72,7 +73,7 @@ def write_results(results, directory='tts_values'):
         if isinstance(result, TournamentTieringResult):
             print('writing for slug {}'.format(result.slug))
 
-            with open(os.path.join(directory, '{}.txt'.format(result.slug.replace('/', '_'))), mode='w') as write_file:
+            with open(os.path.join(directory, '{}.txt'.format(result.slug.replace('/', '_').replace('tournament__', '', 1))), mode='w') as write_file:
                 result.write_result(write_file)
 
 
