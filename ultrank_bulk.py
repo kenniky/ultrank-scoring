@@ -1,6 +1,7 @@
 from ultrank_tiering import Tournament, startgg_slug_regex, TournamentTieringResult
 import csv
 import os 
+import re
 import sys
 
 true_values = ['true', 't', '1']
@@ -75,7 +76,7 @@ def write_results(results, directory='tts_values'):
         if isinstance(result, TournamentTieringResult):
             print('writing for slug {}'.format(result.slug))
 
-            with open(os.path.join(directory, '{}.txt'.format(result.slug.replace('/', '_').replace('tournament__', '', 1))), mode='w') as write_file:
+            with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w') as write_file:
                 result.write_result(write_file)
 
 
@@ -92,7 +93,7 @@ if __name__ == '__main__':
 
     _, ext = os.path.splitext(file)
 
-    if ext == 'csv':
+    if ext == '.csv':
         with open(file, newline='') as file_obj:
             reader = csv.reader(file_obj)
 

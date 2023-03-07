@@ -381,6 +381,7 @@ Kyushu,2,Japan,jp,,,88,48
 Kyushu,2,Japan,jp,,,89,48
 Luxembourg,2,Luxembourg,lu,,,,48
 Manitoba,2,Canada,ca,CA-MB,,,48
+Mid-South,2,United States,`,US-KS,Morton County,,48
 Mid-South,2,United States,us,US-AR,,,48
 Mid-South,2,United States,us,US-KS,Allen County,,48
 Mid-South,2,United States,us,US-KS,Anderson County,,48
@@ -435,7 +436,6 @@ Mid-South,2,United States,us,US-KS,Meade County,,48
 Mid-South,2,United States,us,US-KS,Mitchell County,,48
 Mid-South,2,United States,us,US-KS,Montgomery County,,48
 Mid-South,2,United States,us,US-KS,Morris County,,48
-Mid-South,2,United States,us,US-KS,Morton County,,48
 Mid-South,2,United States,us,US-KS,Neosho County,,48
 Mid-South,2,United States,us,US-KS,Ness County,,48
 Mid-South,2,United States,us,US-KS,Norton County,,48
@@ -678,6 +678,7 @@ Hokuriku,3,Japan,jp,,,93,32
 Hokuriku,3,Japan,jp,,,94,32
 Hokuriku,3,Japan,jp,,,95,32
 Ireland,3,Ireland,ie,,,,32
+Isle of Man,3,Isle of Man,im,,,,32
 Italy,3,Italy,it,,,,32
 Middle East,3,Bahrain,bh,,,,32
 Middle East,3,Israel,il,,,,32
@@ -685,6 +686,7 @@ Middle East,3,Kuwait,kw,,,,32
 Middle East,3,Lebanon,lb,,,,32
 Middle East,3,Qatar,qa,,,,32
 Middle East,3,Saudi Arabia,sa,,,,32
+Middle East,3,Turkey,tr,,,,32
 Middle East,3,United Arab Emirates,ae,,,,32
 New Zealand,3,New Zealand,nz,,,,32
 Northern EU,3,Denmark,dk,,,,32
