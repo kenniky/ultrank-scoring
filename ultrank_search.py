@@ -300,7 +300,7 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Skip Reason': 'Other Larger Event in Tournament'})
                             continue
 
-                        if event['name'].lower().find('monthly') != -1:
+                        if tournament['name'].lower().find('monthly') != -1 or event['name'].lower().find('monthly') != -1:
                             writer.writerow({'Tournament': tournament['name'],
                                              'Event': event['name'],
                                              'Slug': event['slug'],
@@ -322,6 +322,8 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Slug': event['slug'],
                                              'Used': 'False',
                                              'Skip Reason': 'Probable Weekly (found tournament {} [{}] which precedes by {} days)'.format(potential_weekly.name, potential_weekly.slug, days_since)})
+                            added_event = True
+
                             continue
 
                         writer.writerow({'Tournament': tournament['name'],

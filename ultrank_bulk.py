@@ -47,7 +47,7 @@ def write_results(results, directory='tts_values'):
         os.mkdir(directory)
 
     with open(os.path.join(directory, 'summary.csv'), newline='', mode='w') as summary_file:
-        writer = csv.DictWriter(summary_file, ['Tournament', 'Event', 'Slug', 'Invitational?', 'Score', 'Max Potential Score', 'Num Entrants', 'Meets Reqs'])
+        writer = csv.DictWriter(summary_file, ['Tournament', 'Event', 'Slug', 'URL', 'Invitational?', 'Score', 'Max Potential Score', 'Num Entrants', 'Meets Reqs'])
         writer.writeheader()
 
         for result in results:
@@ -55,6 +55,7 @@ def write_results(results, directory='tts_values'):
                 writer.writerow({'Tournament': result.tournament,
                                  'Event': result.event,
                                  'Slug': result.slug,
+                                 'URL': 'https://start.gg/' + result.slug,
                                  'Invitational?': str(result.is_invitational),
                                  'Score': result.score,
                                  'Max Potential Score': result.max_potential_score(),
@@ -64,6 +65,7 @@ def write_results(results, directory='tts_values'):
                 writer.writerow({'Tournament': '',
                                  'Event': '',
                                  'Slug': str(result),
+                                 'URL': '',
                                  'Invitational?': '',
                                  'Score': '',
                                  'Max Potential Score': '',

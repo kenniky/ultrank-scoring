@@ -12,9 +12,9 @@ Requirements:
 from startgg_toolkit import send_request, startgg_slug_regex
 from geopy.geocoders import Nominatim
 import csv
-import requests
 import re
 import sys
+import json
 import datetime
 
 SCORE_FLOOR = 250
@@ -22,17 +22,19 @@ NUM_PLAYERS_FLOOR = 2
 
 
 class PotentialMatch:
-    def __init__(self, tag, id_, points, note):
+    def __init__(self, tag, id_, points, note, actual_tag=''):
         self.tag = tag
         self.id_ = id_
         self.points = points
         self.note = note
+        self.actual_tag = actual_tag if actual_tag != '' else self.tag
 
     def get_tag(self):
         return self.tag
 
     def __str__(self):
-        return '{} (id {}) - {} points [{}]'.format(self.tag, self.id_, self.points, self.note)
+        actual_tag_portion = '' if self.actual_tag == self.tag else self.actual_tag + ': '
+        return '{} (id {}) - {}{} points [{}]'.format(self.tag, self.id_, actual_tag_portion, self.points, self.note)
 
 
 class DisqualificationValue:
@@ -98,11 +100,12 @@ class PlayerValue:
 class PlayerValueGroup:
     """Stores multiple scores for players."""
 
-    def __init__(self, id_, tag, invitational_val=0):
+    def __init__(self, id_, tag, invitational_val=0, other_tags=[]):
         self.tag = tag
         self.id_ = id_
         self.invitational_val = invitational_val
         self.values = []
+        self.other_tags = [tag_.lower() for tag_ in other_tags]
 
     def set_invitational_val(self, value):
         self.invitational_val = value
@@ -121,6 +124,9 @@ class PlayerValueGroup:
             if value.is_within_timeframe(tournament.start_time):
                 return value
         return None
+
+    def match_tag(self, tag):
+        return tag.lower() == self.tag.lower() or tag.lower() in self.other_tags
 
 
 class TournamentTieringResult:
@@ -437,16 +443,16 @@ class Tournament:
 
                     valued_participants.append(CountedValue(
                         player_value, score, participant.tag))
-            elif participant.tag.upper() in scored_tags:
+            elif participant.tag.lower() in scored_tags:
                 for player_value_group in scored_players.values():
-                    if participant.tag.upper() == player_value_group.tag.upper():
+                    if player_value_group.match_tag(participant.tag):
                         player_value = player_value_group.retrieve_value(self)
 
                         if player_value != None:
                             score = player_value.points + \
                                 (player_value.invitational_val if self.is_invitational else 0)
                             potential_matches.append(PotentialMatch(
-                                participant.tag, participant.id_, score, player_value.note))
+                                participant.tag, participant.id_, score, player_value.note, player_value.tag))
 
         # Loop through players with DQs
         participants_with_dqs = []
@@ -462,16 +468,16 @@ class Tournament:
 
                     participants_with_dqs.append(DisqualificationValue(
                         CountedValue(player_value, score, participant.tag), num_dqs))
-            elif participant.tag.upper() in scored_tags:
+            elif participant.tag.lower() in scored_tags:
                 for player_value_group in scored_players.values():
-                    if participant.tag.upper() == player_value.tag.upper():
+                    if player_value_group.match_tag(participant.tag):
                         player_value = player_value_group.retrieve_value(self)
 
                         if player_value != None:
                             score = player_value.points + \
                                 (player_value.invitational_val if self.is_invitational else 0)
                             potential_matches.append(DisqualificationValue(PotentialMatch(
-                                participant.tag, participant.id_, score, player_value.note), num_dqs))
+                                participant.tag, participant.id_, score, player_value.note, player_value.tag), num_dqs))
 
         # Sort for readability
         valued_participants.sort(reverse=True, key=lambda p: p.points)
@@ -773,6 +779,21 @@ def get_name(event_slug):
 def read_players():
     players = {}
     tags = set()
+    alt_tags = {}
+
+    try:
+        with open('ultrank_tags.csv', newline='', encoding='utf-8') as tags_file:
+            reader = csv.DictReader(tags_file)
+
+            for row in reader:
+                if row['Alternative Tags'] != '':
+                    alt_tag_list = json.loads(row['Alternative Tags'])
+                    alt_tags[row['Player']] = alt_tag_list
+                    for tag in alt_tag_list:
+                        tags.add(tag.lower())
+
+    except FileNotFoundError:
+        pass
 
     with open('ultrank_players.csv', newline='', encoding='utf-8') as players_file:
         reader = csv.DictReader(players_file)
@@ -796,12 +817,13 @@ def read_players():
                 row['End Date']) if row['End Date'] != '' else None
 
             if id_ not in players:
-                player_value_group = PlayerValueGroup(id_, tag)
+                player_value_group = PlayerValueGroup(
+                    id_, tag, other_tags=alt_tags.get(row['Player'], []))
                 players[id_] = player_value_group
 
             players[id_].add_value(points, row['Note'], start_date, end_date)
 
-            tags.add(tag.upper())
+            tags.add(tag.lower())
 
     with open('ultrank_invitational.csv', newline='', encoding='utf-8') as invit_file:
         reader = csv.DictReader(invit_file)
@@ -837,7 +859,6 @@ def read_regions():
     return regions
 
 
-
 scored_players, scored_tags = read_players()
 region_mults = read_regions()
 
@@ -848,7 +869,7 @@ if __name__ == '__main__':
         sys.exit()
 
     is_invitational = input('is this an invitational? (y/n) ')
-    is_invitational = is_invitational.upper() == 'Y' or is_invitational.upper() == 'YES'
+    is_invitational = is_invitational.lower() == 'Y' or is_invitational.lower() == 'YES'
 
     tournament = Tournament(event_slug, is_invitational)
 
