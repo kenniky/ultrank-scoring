@@ -783,12 +783,17 @@ def read_players():
 
     try:
         with open('ultrank_tags.csv', newline='', encoding='utf-8') as tags_file:
-            reader = csv.DictReader(tags_file)
+            reader = csv.reader(tags_file)
 
             for row in reader:
-                if row['Alternative Tags'] != '':
-                    alt_tag_list = json.loads(row['Alternative Tags'])
-                    alt_tags[row['Player']] = alt_tag_list
+                alt_tag_list = []
+                for tag in row[1:]:
+                    if tag != '':
+                        alt_tag_list.append(tag)
+
+                if len(alt_tag_list) != 0:
+                    alt_tags[row[0]] = alt_tag_list
+                    
                     for tag in alt_tag_list:
                         tags.add(tag.lower())
 
