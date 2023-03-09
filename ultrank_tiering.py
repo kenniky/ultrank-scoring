@@ -793,7 +793,7 @@ def read_players():
 
                 if len(alt_tag_list) != 0:
                     alt_tags[row[0]] = alt_tag_list
-                    
+
                     for tag in alt_tag_list:
                         tags.add(tag.lower())
 
@@ -874,7 +874,7 @@ if __name__ == '__main__':
         sys.exit()
 
     is_invitational = input('is this an invitational? (y/n) ')
-    is_invitational = is_invitational.lower() == 'Y' or is_invitational.lower() == 'YES'
+    is_invitational = is_invitational.lower() == 'y' or is_invitational.lower() == 'yes'
 
     tournament = Tournament(event_slug, is_invitational)
 
