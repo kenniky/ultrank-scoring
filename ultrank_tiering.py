@@ -340,7 +340,7 @@ class Tournament:
         if location:
             self.gather_location_info()
         else:
-            self.address = {'country_code': 'US'}
+            self.address = {'country_code': 'us'}
         self.retrieve_start_time()
 
     def gather_entrant_counts(self):
