@@ -329,7 +329,7 @@ class Entrant:
 class Tournament:
     """Stores tournament info/metadata."""
 
-    def __init__(self, event_slug, is_invitational=False):
+    def __init__(self, event_slug, is_invitational=False, location=True):
         """Populates tournament metadata with tournament slug/invitational status."""
 
         self.event_slug = event_slug
@@ -337,7 +337,10 @@ class Tournament:
         self.tier = None
 
         self.gather_entrant_counts()
-        self.gather_location_info()
+        if location:
+            self.gather_location_info()
+        else:
+            self.address = {'country_code': 'US'}
         self.retrieve_start_time()
 
     def gather_entrant_counts(self):
