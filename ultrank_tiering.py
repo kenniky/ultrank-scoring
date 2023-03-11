@@ -110,8 +110,8 @@ class PlayerValueGroup:
     def set_invitational_val(self, value):
         self.invitational_val = value
 
-        for value in self.values:
-            value.invitational_val = value
+        for val in self.values:
+            val.invitational_val = value
 
     def add_value(self, points, note='', start_time=None, end_time=None):
         self.values.append(PlayerValue(
