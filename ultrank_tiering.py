@@ -21,20 +21,19 @@ SCORE_FLOOR = 250
 NUM_PLAYERS_FLOOR = 2
 
 
-class PotentialMatch:
-    def __init__(self, tag, id_, points, note, actual_tag=''):
+class PotentialMatchWithDqs:
+    def __init__(self, tag, id_, points, note, actual_tag='', dqs=0):
         self.tag = tag
         self.id_ = id_
         self.points = points
         self.note = note
         self.actual_tag = actual_tag if actual_tag != '' else self.tag
-
-    def get_tag(self):
-        return self.tag
+        self.dqs = dqs
 
     def __str__(self):
         actual_tag_portion = '' if self.actual_tag == self.tag else self.actual_tag + ': '
-        return '{} (id {}) - {}{} points [{}]'.format(self.tag, self.id_, actual_tag_portion, self.points, self.note)
+        dq_portion = '' if self.dqs == 0 else ' - {} DQ{}'.format(self.dqs, 's' if self.dqs == 1 else '')
+        return '{} (id {}) - {}{} points [{}]{}'.format(self.tag, self.id_, actual_tag_portion, self.points, self.note, dq_portion)
 
 
 class DisqualificationValue:
@@ -43,13 +42,6 @@ class DisqualificationValue:
     def __init__(self, value, dqs):
         self.value = value
         self.dqs = dqs
-
-    def get_tag(self):
-        if isinstance(self.value, PotentialMatch):
-            return self.value.get_tag()
-        elif isinstance(self.value, CountedValue):
-            return self.player_value.tag
-        return ''
 
     def __str__(self):
         return '{} - {} DQ{}'.format(str(self.value), str(self.dqs), '' if self.dqs == 1 else 's')
@@ -454,7 +446,7 @@ class Tournament:
                         if player_value != None:
                             score = player_value.points + \
                                 (player_value.invitational_val if self.is_invitational else 0)
-                            potential_matches.append(PotentialMatch(
+                            potential_matches.append(PotentialMatchWithDqs(
                                 participant.tag, participant.id_, score, player_value.note, player_value.tag))
 
         # Loop through players with DQs
@@ -479,15 +471,14 @@ class Tournament:
                         if player_value != None:
                             score = player_value.points + \
                                 (player_value.invitational_val if self.is_invitational else 0)
-                            potential_matches.append(DisqualificationValue(PotentialMatch(
-                                participant.tag, participant.id_, score, player_value.note, player_value.tag), num_dqs))
+                            potential_matches.append(PotentialMatchWithDqs(
+                                participant.tag, participant.id_, score, player_value.note, player_value.tag, num_dqs))
 
         # Sort for readability
         valued_participants.sort(reverse=True, key=lambda p: p.points)
         participants_with_dqs.sort(
             reverse=True, key=lambda p: (p.dqs, p.value.points))
-        potential_matches.sort(key=lambda m: (m.dqs if isinstance(
-            m, DisqualificationValue) else 0, m.get_tag()))
+        potential_matches.sort(key=lambda m: (m.dqs, m.tag))
 
         self.tier = TournamentTieringResult(self.event_slug, total_score, self.total_entrants, best_region, valued_participants,
                                             participants_with_dqs, potential_matches, is_invitational=self.is_invitational,
