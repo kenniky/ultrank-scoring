@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js'></script>
+    <title>UltRank Tournament Tierer</title>
+</head>
+<body>
+    <center>
+        <div>
+            <label for='startggkey'>Start.gg key:</label>
+            <input type='text' id='startggkey'>
+        </div>
+
+        <div>
+            <label for='tournament'>Event URL:</label>
+            <input type='text' id='tournament'>
+        </div>
+        
+        <div>
+            <label for='invitational'>Invitational?</label>
+            <input type='checkbox' id='invitational'>
+        </div>
+
+        <div>
+            <button id='button'>Tier tournament!</button>
+        </div>
+
+        <div>
+            Note that tournament calculation may take a bit to occur.
+        </div>
+        <div>
+            Due to technical limitations, all events are currently assumed to take place in a region with a x1 entrant multiplier.
+            <br>
+            Please refer to the <a href="https://docs.google.com/spreadsheets/d/1sno_lCDwendy0WT6r9DxFq6OpfPeWkJE8yC3AUD9cs0/edit#gid=1064305668">player values</a> portion of the UltRank TTS to find your region's actual multiplier.
+        </div>
+
+        <div id='result'></div>
+    </center>
+    <script type='text/javascript'>
+        let startggKeyRegex = /tournament\/[a-z0-9-_]*\/event\/[a-z0-9-_]*/;
+        let filesImported = false;
+        let packagesImported = false;
+
+        async function getPyodide() {
+            let pyodide = await loadPyodide();
+            return pyodide;
+        }
+
+        let pyodideReadyPromise = getPyodide();
+
+        function showResult(result) {
+            let resultDiv = document.getElementById('result');
+
+            // Clear div
+            while (resultDiv.firstChild) {
+                resultDiv.removeChild(resultDiv.firstChild);
+            }
+
+            let header = document.createElement('h2');
+            header.textContent = `${result.tournament} - ${result.event}`;
+            resultDiv.appendChild(header)
+
+            if (result.is_invitational) {
+                let invitationalNode = document.createElement('div');
+                invitationalNode.textContent = `<i>Invitational</i>`;
+                resultDiv.appendChild(invitationalNode);
+            }
+
+            if (!result.should_count()) {
+                let warningNode = document.createElement('div');
+                warningNode.textContent = `<b>WARNING: This tournament does not qualify for UltRank.</b>`;
+                resultDiv.appendChild(warningNode);
+            }
+            else if (!result.should_count_strict()) {
+                let warningNode = document.createElement('div');
+                warningNode.textContent = `<b>WARNING: This tournament may not qualify for UltRank.</b>`;
+                resultDiv.appendChild(warningNode);
+            }
+
+            let entrantsNode = document.createElement('div');
+            entrantsNode.textContent = `Entrants: ${result.entrants}`;
+            resultDiv.appendChild(entrantsNode);
+
+            if (result.values.length > 0) {
+                let tableNode = document.createElement('table');
+
+                let tableHead = tableNode.createTHead();
+                let tableHeadRow = tableHead.insertRow();
+                let headers = ['Player', 'Points', ''];
+                for (let headerText of headers) {
+                    let th = document.createElement("th");
+                    let text = document.createTextNode(headerText);
+                    th.appendChild(text);
+                    tableHeadRow.appendChild(th);
+                }
+
+                for (let value in result.values) {
+                    let row = tableNode.insertRow();
+                    
+                    let playerName = value.alt_tag;
+                    if (value.alt_tag === value.tag) {
+                        playerName += ' ';
+                        playerName += value.tag;
+                    }
+                    let cell = row.insertCell();
+                    let text = document.createTextNode(playerName);
+                    cell.appendChild(text);
+
+                    cell = row.insertCell();
+                    text = document.createTextNode(value.points);
+                    cell.appendChild(text);
+
+                    cell = row.insertCell();
+                    text = document.createTextNode('hi');
+                    cell.appendChild(text);
+                }
+
+                resultDiv.appendChild(tableNode);
+            }
+        }
+
+        async function submit() {
+            let resultDiv = document.getElementById('result');
+
+            try {
+                let pyodide = await pyodideReadyPromise;
+
+                if (!packagesImported) {
+                    await pyodide.loadPackage("micropip");
+                    const micropip = pyodide.pyimport("micropip");
+                    packages = ['geopy', 'ssl'];
+
+                    for (const package of packages) {
+                        await micropip.install(package);
+                    }
+                    packagesImported = true;
+                }
+
+                startggKey = document.getElementById('startggkey').value;
+
+                if (startggKey === '') {
+                    resultDiv.textContent = 'no startgg key provided!';
+                    return;
+                }
+
+                pyodide.runPython(`
+                    from pyodide.http import pyfetch
+                    from js import startggKey
+
+                    with open('smashgg.key', 'w') as f:
+                        f.write(startggKey)
+                `);
+
+                let tournament = document.getElementById('tournament').value;
+
+                let matches = tournament.match(startggKeyRegex);
+
+                if (matches === null) {
+                    resultDiv.textContent = 'not a valid event URL';
+                    return;
+                }
+                tournamentSlug = matches[0];
+
+                isInvitational = document.getElementById('invitational').checked;
+
+                if (!filesImported) {
+                    await pyodide.runPythonAsync(`
+from pyodide.http import pyfetch
+
+files = ['ultrank_invitational.csv', 'ultrank_players.csv', 'ultrank_regions.csv', 'ultrank_tags.csv', 'ultrank_tiering.py']
+
+for file_name in files:
+    response = await pyfetch('https://raw.githubusercontent.com/kenniky/ultrank-scoring/main/' + file_name)
+    with open(file_name, 'wb') as f:
+        f.write(await response.bytes())
+
+with open('startgg_toolkit.py', 'w') as f:
+    f.write('''import json
+from js import XMLHttpRequest
+import re
+
+SMASH_GG_ENDPOINT = 'https://api.smash.gg/gql/alpha'
+startgg_slug_regex = re.compile(
+    r'tournament\/[a-z0-9\-_]+\/event\/[a-z0-9\-_]+')
+
+ggkeyfile = open('smashgg.key')
+ggkey = ggkeyfile.read()
+ggkeyfile.close()
+ggheader = {"Authorization": "Bearer " + ggkey}
+
+def send_request(query, variables, quiet=False):
+    # Sends a request to the startgg server.
+    progress = False
+
+    tries = 0
+
+    response_json = {}
+
+    json_payload = json.dumps({
+        "query": query,
+        "variables": variables
+    })
+    req = XMLHttpRequest.new()
+    req.open('POST', SMASH_GG_ENDPOINT, False)
+    req.setRequestHeader("Authorization", "Bearer " + ggkey)
+    req.send(json_payload)
+
+    if req.status == 200:
+        return json.loads(req.responseText)
+        progress = True
+    else:
+        raise Exception''')
+                    `);
+                    filesImported = true;
+                }
+
+                let result = pyodide.runPython(`
+                        from io import StringIO
+                        import importlib
+                        importlib.invalidate_caches()
+                        from js import tournamentSlug, isInvitational
+
+                        from ultrank_tiering import Tournament 
+
+                        # Note: since geopy relies on sockets, we can't use it.
+                        tournament = Tournament(tournamentSlug, isInvitational, location=False)
+
+                        tournament.calculate_tier()
+                    `);
+
+                showResult(result);
+
+                result.destroy();
+            } catch(err) {
+                resultDiv.textContent = 'Something went wrong. Wait a bit then try again';
+                console.log(err);
+            }
+        }
+
+        let button = document.getElementById('button');
+        button.addEventListener('click', submit);
+
+    </script>
+</body>
+</html>
