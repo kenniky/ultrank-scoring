@@ -295,6 +295,16 @@ Kanto,1,Japan,jp,,,34,64
 Kanto,1,Japan,jp,,,35,64
 Kanto,1,Japan,jp,,,36,64
 Kanto,1,Japan,jp,,,37,64
+Kyushu,1,Japan,jp,,,80,64
+Kyushu,1,Japan,jp,,,81,64
+Kyushu,1,Japan,jp,,,82,64
+Kyushu,1,Japan,jp,,,83,64
+Kyushu,1,Japan,jp,,,84,64
+Kyushu,1,Japan,jp,,,85,64
+Kyushu,1,Japan,jp,,,86,64
+Kyushu,1,Japan,jp,,,87,64
+Kyushu,1,Japan,jp,,,88,64
+Kyushu,1,Japan,jp,,,89,64
 Mexico Blanket,1,Mexico,mx,,,,64
 Tristate,1,United States,us,US-NY,Bronx County,,64
 Tristate,1,United States,us,US-NY,Kings County,,64
@@ -369,19 +379,8 @@ Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,48
 Inland/Gulf Southeast,2,United States,us,US-LA,,,48
 Inland/Gulf Southeast,2,United States,us,US-MS,,,48
 Inland/Gulf Southeast,2,United States,us,US-TN,,,48
-Kyushu,2,Japan,jp,,,80,48
-Kyushu,2,Japan,jp,,,81,48
-Kyushu,2,Japan,jp,,,82,48
-Kyushu,2,Japan,jp,,,83,48
-Kyushu,2,Japan,jp,,,84,48
-Kyushu,2,Japan,jp,,,85,48
-Kyushu,2,Japan,jp,,,86,48
-Kyushu,2,Japan,jp,,,87,48
-Kyushu,2,Japan,jp,,,88,48
-Kyushu,2,Japan,jp,,,89,48
 Luxembourg,2,Luxembourg,lu,,,,48
 Manitoba,2,Canada,ca,CA-MB,,,48
-Mid-South,2,United States,`,US-KS,Morton County,,48
 Mid-South,2,United States,us,US-AR,,,48
 Mid-South,2,United States,us,US-KS,Allen County,,48
 Mid-South,2,United States,us,US-KS,Anderson County,,48
@@ -436,6 +435,7 @@ Mid-South,2,United States,us,US-KS,Meade County,,48
 Mid-South,2,United States,us,US-KS,Mitchell County,,48
 Mid-South,2,United States,us,US-KS,Montgomery County,,48
 Mid-South,2,United States,us,US-KS,Morris County,,48
+Mid-South,2,United States,us,US-KS,Morton County,,48
 Mid-South,2,United States,us,US-KS,Neosho County,,48
 Mid-South,2,United States,us,US-KS,Ness County,,48
 Mid-South,2,United States,us,US-KS,Norton County,,48

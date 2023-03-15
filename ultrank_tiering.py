@@ -21,6 +21,10 @@ SCORE_FLOOR = 250
 NUM_PLAYERS_FLOOR = 2
 
 
+class InvalidEventUrlException(Exception):
+    pass
+
+
 class PotentialMatchWithDqs:
     def __init__(self, tag, id_, points, note, actual_tag='', dqs=0):
         self.tag = tag
@@ -133,6 +137,7 @@ class TournamentTieringResult:
         self.is_invitational = is_invitational
         self.dq_count = dq_count
         self.phases = phases
+        self.max_score = None
 
         name = get_name(slug)
         self.tournament = name['tournament']
@@ -190,6 +195,9 @@ class TournamentTieringResult:
         sys.stdout = original_stdout
 
     def max_potential_score(self):
+        if self.max_score != None:
+            return self.max_score
+
         potential_score = self.score
 
         potential_player_scores = {}
@@ -217,10 +225,12 @@ class TournamentTieringResult:
         for value in dq_scores.values():
             potential_score += value
 
+        self.max_score = potential_score
+
         return potential_score
 
     def should_count_strict(self):
-        return self.entrants >= self.region.entrant_floor or (self.score >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
+        return self.entrants >= self.region.entrant_floor or (self.score >= SCORE_FLOOR and len(self.values) >= NUM_PLAYERS_FLOOR)
 
     def should_count(self):
         return self.entrants >= self.region.entrant_floor or (self.max_potential_score() >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
@@ -324,7 +334,12 @@ class Tournament:
     def __init__(self, event_slug, is_invitational=False, location=True):
         """Populates tournament metadata with tournament slug/invitational status."""
 
-        self.event_slug = event_slug
+        match = startgg_slug_regex.search(event_slug)
+
+        if not match:
+            raise InvalidEventUrlException
+
+        self.event_slug = match.group(0)
         self.is_invitational = is_invitational
         self.tier = None
 
@@ -862,10 +877,7 @@ scored_players, scored_tags = read_players()
 region_mults = read_regions()
 
 if __name__ == '__main__':
-    event_slug = input('input event slug: ')
-    if not startgg_slug_regex.fullmatch(event_slug):
-        print('Invalid slug! Must be of form "tournament/.../event/..."')
-        sys.exit()
+    event_slug = input('input event url: ')
 
     is_invitational = input('is this an invitational? (y/n) ')
     is_invitational = is_invitational.lower() == 'y' or is_invitational.lower() == 'yes'

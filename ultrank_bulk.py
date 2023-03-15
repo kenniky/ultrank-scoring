@@ -79,6 +79,8 @@ def write_results(results, directory='tts_values'):
             with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w') as write_file:
                 result.write_result(write_file)
 
+    print('done writing')
+
 
 if __name__ == '__main__':
     # Get file
