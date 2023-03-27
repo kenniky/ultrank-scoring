@@ -649,20 +649,20 @@ East Asia,3,Mongolia,mn,,,,32
 East Asia,3,North Korea,kp,,,,32
 East Asia,3,South Korea,kr,,,,32
 East Asia,3,Taiwan,tw,,,,32
-Eastern Europe,3,Armenia,am,,,,16
-Eastern Europe,3,Azerbaijan,az,,,,16
-Eastern Europe,3,Belarus,by,,,,16
-Eastern Europe,3,Estonia,ee,,,,16
-Eastern Europe,3,Georgia,ge,,,,16
-Eastern Europe,3,Kazakhstan,kz,,,,16
-Eastern Europe,3,Kyrgyzstan,kg,,,,16
-Eastern Europe,3,Latvia,lv,,,,16
-Eastern Europe,3,Lithuania,lt,,,,16
-Eastern Europe,3,Russia,ru,,,,16
-Eastern Europe,3,Tajikistan,tj,,,,16
-Eastern Europe,3,Turkmenistan,tm,,,,16
-Eastern Europe,3,Uzbekistan,uz,,,,16
-Everything Else,3,,,,,,16
+Eastern Europe,3,Armenia,am,,,,32
+Eastern Europe,3,Azerbaijan,az,,,,32
+Eastern Europe,3,Belarus,by,,,,32
+Eastern Europe,3,Estonia,ee,,,,32
+Eastern Europe,3,Georgia,ge,,,,32
+Eastern Europe,3,Kazakhstan,kz,,,,32
+Eastern Europe,3,Kyrgyzstan,kg,,,,32
+Eastern Europe,3,Latvia,lv,,,,32
+Eastern Europe,3,Lithuania,lt,,,,32
+Eastern Europe,3,Russia,ru,,,,32
+Eastern Europe,3,Tajikistan,tj,,,,32
+Eastern Europe,3,Turkmenistan,tm,,,,32
+Eastern Europe,3,Uzbekistan,uz,,,,32
+Everything Else,3,,,,,,32
 Greece,3,Greece,gr,,,,32
 Hawaii,3,United States,us,US-HI,,,32
 Hokkaido,3,Japan,jp,,,00,32
@@ -696,12 +696,12 @@ Northern EU,3,Norway,no,,,,32
 Northern EU,3,Sweden,se,,,,32
 Oceania,3,New Caledonia,fr,FR-NC,,,32
 Okinawa,3,Japan,jp,,,90,32
-Overseas France,3,Clipperton,fr,FR-CP,,,16
-Overseas France,3,French Polynesia,fr,FR-PF,,,16
-Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,16
-Overseas France,3,Mayotte,fr,FR-976,,,16
-Overseas France,3,Reunion,fr,FR-974,,,16
-Overseas France,3,Wallis and Futuna,fr,FR-WF,,,16
+Overseas France,3,Clipperton,fr,FR-CP,,,32
+Overseas France,3,French Polynesia,fr,FR-PF,,,32
+Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,32
+Overseas France,3,Mayotte,fr,FR-976,,,32
+Overseas France,3,Reunion,fr,FR-974,,,32
+Overseas France,3,Wallis and Futuna,fr,FR-WF,,,32
 Portugal,3,Portugal,pt,,,,32
 Shikoku,3,Japan,jp,,,76,32
 Shikoku,3,Japan,jp,,,77,32
