@@ -17,7 +17,6 @@ import sys
 import json
 import datetime
 
-SCORE_FLOOR = 250
 NUM_PLAYERS_FLOOR = 2
 
 
@@ -36,7 +35,8 @@ class PotentialMatchWithDqs:
 
     def __str__(self):
         actual_tag_portion = '' if self.actual_tag == self.tag else self.actual_tag + ': '
-        dq_portion = '' if self.dqs == 0 else ' - {} DQ{}'.format(self.dqs, 's' if self.dqs == 1 else '')
+        dq_portion = '' if self.dqs == 0 else ' - {} DQ{}'.format(
+            self.dqs, 's' if self.dqs == 1 else '')
         return '{} (id {}) - {}{} points [{}]{}'.format(self.tag, self.id_, actual_tag_portion, self.points, self.note, dq_portion)
 
 
@@ -156,11 +156,11 @@ class TournamentTieringResult:
 
         if not self.should_count():
             print('WARNING: This tournament does not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(
-                self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+                self.region.entrant_floor, self.region.score_floor, NUM_PLAYERS_FLOOR))
             print()
         elif not self.should_count_strict():
             print('WARNING: This tournament may not meet the criteria of at least {} entrants or a score of at least {} with {} qualified players'.format(
-                self.region.entrant_floor, SCORE_FLOOR, NUM_PLAYERS_FLOOR))
+                self.region.entrant_floor, self.region.score_floor, NUM_PLAYERS_FLOOR))
             print()
 
         participants_string = '{} - {} DQs = {}'.format(
@@ -230,22 +230,23 @@ class TournamentTieringResult:
         return potential_score
 
     def should_count_strict(self):
-        return self.entrants >= self.region.entrant_floor or (self.score >= SCORE_FLOOR and len(self.values) >= NUM_PLAYERS_FLOOR)
+        return self.entrants >= self.region.entrant_floor or (self.score >= self.region.score_floor and len(self.values) >= NUM_PLAYERS_FLOOR)
 
     def should_count(self):
-        return self.entrants >= self.region.entrant_floor or (self.max_potential_score() >= SCORE_FLOOR and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
+        return self.entrants >= self.region.entrant_floor or (self.max_potential_score() >= self.region.score_floor and len(self.values) + len(self.potential) + len(self.dqs) >= NUM_PLAYERS_FLOOR)
 
 
 class RegionValue:
     """Stores region multipliers."""
 
-    def __init__(self, country_code='', iso2='', county='', jp_postal='', multiplier=1, entrant_floor=64, note=''):
+    def __init__(self, country_code='', iso2='', county='', jp_postal='', multiplier=1, entrant_floor=64, score_floor=250, note=''):
         self.country_code = country_code
         self.iso2 = iso2
         self.county = county
         self.jp_postal = jp_postal
         self.multiplier = multiplier
         self.entrant_floor = entrant_floor
+        self.score_floor = score_floor
         self.note = note
 
     def match(self, address):
@@ -383,7 +384,7 @@ class Tournament:
         self.total_dqs = -1
 
     def gather_location_info(self):
-        geo = Nominatim(user_agent='ultrank')
+        geo = Nominatim(user_agent='ultrank', timeout=5)
 
         query, variables = location_query(self.event_slug)
         resp = send_request(query, variables)
@@ -867,7 +868,7 @@ def read_regions():
             region_value = RegionValue(country_code=row['country_code'], iso2=row['ISO3166-2'], county=row['county'],
                                        jp_postal=row['jp-postal-code'], multiplier=int(
                                            row['Multiplier']),
-                                       entrant_floor=int(row['Entrant Floor']), note=row['Note'])
+                                       entrant_floor=int(row['Entrant Floor']), score_floor=int(row['Score Floor']), note=row['Note'])
             regions.add(region_value)
 
     return regions

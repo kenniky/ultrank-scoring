@@ -100,10 +100,10 @@ if __name__ == '__main__':
             reader = csv.reader(file_obj)
 
             for row in reader:
-                slug = row[0]
+                slug = row[2]
 
                 if len(row) > 1:
-                    is_invit = row[1].lower() in true_values
+                    is_invit = row[3].lower() in true_values
                 else:
                     is_invit = False
 
