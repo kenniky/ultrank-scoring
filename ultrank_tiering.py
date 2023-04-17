@@ -384,7 +384,7 @@ class Tournament:
         self.total_dqs = -1
 
     def gather_location_info(self):
-        geo = Nominatim(user_agent='ultrank', timeout=5)
+        geo = Nominatim(user_agent='ultrank', timeout=10)
 
         query, variables = location_query(self.event_slug)
         resp = send_request(query, variables)
@@ -397,8 +397,15 @@ class Tournament:
             print(resp)
             raise e
 
-        self.address = geo.reverse('{}, {}'.format(
-            self.lat, self.lng)).raw['address']
+        # Try 10 times
+        for i in range(5):
+            try:
+                self.address = geo.reverse('{}, {}'.format(
+                    self.lat, self.lng)).raw['address']
+                break
+            except Exception:
+                print(f'Nominatim error {i}')
+                pass
 
     def retrieve_start_time(self):
         query, variables = time_query(self.event_slug)

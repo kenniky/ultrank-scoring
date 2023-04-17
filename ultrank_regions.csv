@@ -599,135 +599,135 @@ Yucatan Peninsula,2,Mexico,mx,MX-CAM,,,48,200
 Yucatan Peninsula,2,Mexico,mx,MX-ROO,,,48,200
 Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,48,200
 Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,48,200
-Alaska,3,United States,us,US-AK,,,32,150
-American Territories,3,American Samoa,us,US-AS,,,32,150
-American Territories,3,Guam,us,US-GU,,,32,150
-American Territories,3,Northern Mariana Islands,us,US-MP,,,32,150
-American Territories,3,US Minor Outlying Islands,us,US-UM,,,32,150
-Bolivarian North,3,Bolivia,bo,,,,32,150
-Bolivarian North,3,Colombia,co,,,,32,150
-Bolivarian North,3,Ecuador,ec,,,,32,150
-Bolivarian North,3,French Guiana,fr,FR-973,,,32,150
-Bolivarian North,3,Guyana,gy,,,,32,150
-Bolivarian North,3,Peru,pe,,,,32,150
-Bolivarian North,3,Suriname,sr,,,,32,150
-Bolivarian North,3,Venezuela,ve,,,,32,150
-Brazil,3,Brazil,br,,,,32,150
-Caribbean,3,Aruba,nl,NL-AW,,,32,150
-Caribbean,3,Bahamas,bs,,,,32,150
-Caribbean,3,Barbados,bb,,,,32,150
-Caribbean,3,Cuba,cu,,,,32,150
-Caribbean,3,Dominica,dm,,,,32,150
-Caribbean,3,Dominican Republic,do,,,,32,150
-Caribbean,3,Guadeloupe,fr,FR-971,,,32,150
-Caribbean,3,Haiti,ht,,,,32,150
-Caribbean,3,Jamaica,jm,,,,32,150
-Caribbean,3,Martinique,fr,FR-972,,,32,150
-Caribbean,3,Puerto Rico,us,US-PR,,,32,150
-Caribbean,3,Saint Barthelemy,fr,FR-BL,,,32,150
-Caribbean,3,Saint Lucia,lc,,,,32,150
-Caribbean,3,Saint Martin,fr,FR-MF,,,32,150
-Caribbean,3,Trinidad & Tobago,tt,,,,32,150
-Caribbean,3,Virgin Islands,us,US-VI,,,32,150
-Central America,3,Belize,bz,,,,32,150
-Central America,3,Costa Rica,cr,,,,32,150
-Central America,3,El Salvador,sv,,,,32,150
-Central America,3,Guatemala,gt,,,,32,150
-Central America,3,Honduras,hn,,,,32,150
-Central America,3,Nicaragua,ni,,,,32,150
-Central America,3,Panama,pa,,,,32,150
-Chugoku,3,Japan,jp,,,68,32,150
-Chugoku,3,Japan,jp,,,69,32,150
-Chugoku,3,Japan,jp,,,70,32,150
-Chugoku,3,Japan,jp,,,71,32,150
-Chugoku,3,Japan,jp,,,72,32,150
-Chugoku,3,Japan,jp,,,73,32,150
-Chugoku,3,Japan,jp,,,74,32,150
-Chugoku,3,Japan,jp,,,75,32,150
-East Asia,3,China,cn,,,,32,150
-East Asia,3,Hong Kong,cn,CN-HK,,,32,150
-East Asia,3,Mongolia,mn,,,,32,150
-East Asia,3,North Korea,kp,,,,32,150
-East Asia,3,South Korea,kr,,,,32,150
-East Asia,3,Taiwan,tw,,,,32,150
-Eastern Europe,3,Armenia,am,,,,32,150
-Eastern Europe,3,Azerbaijan,az,,,,32,150
-Eastern Europe,3,Belarus,by,,,,32,150
-Eastern Europe,3,Estonia,ee,,,,32,150
-Eastern Europe,3,Georgia,ge,,,,32,150
-Eastern Europe,3,Kazakhstan,kz,,,,32,150
-Eastern Europe,3,Kyrgyzstan,kg,,,,32,150
-Eastern Europe,3,Latvia,lv,,,,32,150
-Eastern Europe,3,Lithuania,lt,,,,32,150
-Eastern Europe,3,Russia,ru,,,,32,150
-Eastern Europe,3,Tajikistan,tj,,,,32,150
-Eastern Europe,3,Turkmenistan,tm,,,,32,150
-Eastern Europe,3,Uzbekistan,uz,,,,32,150
-Everything Else,3,,,,,,32,150
-Greece,3,Greece,gr,,,,32,150
-Hawaii,3,United States,us,US-HI,,,32,150
-Hokkaido,3,Japan,jp,,,00,32,150
-Hokkaido,3,Japan,jp,,,04,32,150
-Hokkaido,3,Japan,jp,,,05,32,150
-Hokkaido,3,Japan,jp,,,06,32,150
-Hokkaido,3,Japan,jp,,,07,32,150
-Hokkaido,3,Japan,jp,,,08,32,150
-Hokkaido,3,Japan,jp,,,09,32,150
-Hokuriku,3,Japan,jp,,,91,32,150
-Hokuriku,3,Japan,jp,,,92,32,150
-Hokuriku,3,Japan,jp,,,93,32,150
-Hokuriku,3,Japan,jp,,,94,32,150
-Hokuriku,3,Japan,jp,,,95,32,150
-Ireland,3,Ireland,ie,,,,32,150
-Isle of Man,3,Isle of Man,im,,,,32,150
-Middle East,3,Bahrain,bh,,,,32,150
-Middle East,3,Israel,il,,,,32,150
-Middle East,3,Kuwait,kw,,,,32,150
-Middle East,3,Lebanon,lb,,,,32,150
-Middle East,3,Qatar,qa,,,,32,150
-Middle East,3,Saudi Arabia,sa,,,,32,150
-Middle East,3,Turkey,tr,,,,32,150
-Middle East,3,United Arab Emirates,ae,,,,32,150
-New Zealand,3,New Zealand,nz,,,,32,150
-Northern EU,3,Denmark,dk,,,,32,150
-Northern EU,3,Finland,fi,,,,32,150
-Northern EU,3,Iceland,is,,,,32,150
-Northern EU,3,Norway,no,,,,32,150
-Northern EU,3,Sweden,se,,,,32,150
-Northern Ireland,3,Northern Ireland,gb,GB-NIR,,,32,150
-Oceania,3,New Caledonia,fr,FR-NC,,,32,150
-Okinawa,3,Japan,jp,,,90,32,150
-Overseas France,3,Clipperton,fr,FR-CP,,,32,150
-Overseas France,3,French Polynesia,fr,FR-PF,,,32,150
-Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,32,150
-Overseas France,3,Mayotte,fr,FR-976,,,32,150
-Overseas France,3,Reunion,fr,FR-974,,,32,150
-Overseas France,3,Wallis and Futuna,fr,FR-WF,,,32,150
-Portugal,3,Portugal,pt,,,,32,150
-Shikoku,3,Japan,jp,,,76,32,150
-Shikoku,3,Japan,jp,,,77,32,150
-Shikoku,3,Japan,jp,,,78,32,150
-Shikoku,3,Japan,jp,,,79,32,150
-Southeast Asia,3,Brunei,bn,,,,32,150
-Southeast Asia,3,Cambodia,kh,,,,32,150
-Southeast Asia,3,Indonesia,id,,,,32,150
-Southeast Asia,3,Laos,la,,,,32,150
-Southeast Asia,3,Malaysia,my,,,,32,150
-Southeast Asia,3,Myanmar,mm,,,,32,150
-Southeast Asia,3,Philippines,ph,,,,32,150
-Southeast Asia,3,Singapore,sg,,,,32,150
-Southeast Asia,3,Thailand,th,,,,32,150
-Southeast Asia,3,Timor-Leste,tl,,,,32,150
-Southeast Asia,3,Viet Nam,vn,,,,32,150
-Southern Cone,3,Argentina,ar,,,,32,150
-Southern Cone,3,Chile,cl,,,,32,150
-Southern Cone,3,Falkland Islands,fk,,,,32,150
-Southern Cone,3,Paraguay,py,,,,32,150
-Southern Cone,3,Uruguay,uy,,,,32,150
-Tohoku,3,Japan,jp,,,96,32,150
-Tohoku,3,Japan,jp,,,97,32,150
-Tohoku,3,Japan,jp,,,98,32,150
-Tohoku,3,Japan,jp,,,99,32,150
-Tohoku,3,Japan,jp,,,01,32,150
-Tohoku,3,Japan,jp,,,02,32,150
-Tohoku,3,Japan,jp,,,03,32,150
+Alaska,3,United States,us,US-AK,,,32,200
+American Territories,3,American Samoa,us,US-AS,,,32,200
+American Territories,3,Guam,us,US-GU,,,32,200
+American Territories,3,Northern Mariana Islands,us,US-MP,,,32,200
+American Territories,3,US Minor Outlying Islands,us,US-UM,,,32,200
+Bolivarian North,3,Bolivia,bo,,,,32,200
+Bolivarian North,3,Colombia,co,,,,32,200
+Bolivarian North,3,Ecuador,ec,,,,32,200
+Bolivarian North,3,French Guiana,fr,FR-973,,,32,200
+Bolivarian North,3,Guyana,gy,,,,32,200
+Bolivarian North,3,Peru,pe,,,,32,200
+Bolivarian North,3,Suriname,sr,,,,32,200
+Bolivarian North,3,Venezuela,ve,,,,32,200
+Brazil,3,Brazil,br,,,,32,200
+Caribbean,3,Aruba,nl,NL-AW,,,32,200
+Caribbean,3,Bahamas,bs,,,,32,200
+Caribbean,3,Barbados,bb,,,,32,200
+Caribbean,3,Cuba,cu,,,,32,200
+Caribbean,3,Dominica,dm,,,,32,200
+Caribbean,3,Dominican Republic,do,,,,32,200
+Caribbean,3,Guadeloupe,fr,FR-971,,,32,200
+Caribbean,3,Haiti,ht,,,,32,200
+Caribbean,3,Jamaica,jm,,,,32,200
+Caribbean,3,Martinique,fr,FR-972,,,32,200
+Caribbean,3,Puerto Rico,us,US-PR,,,32,200
+Caribbean,3,Saint Barthelemy,fr,FR-BL,,,32,200
+Caribbean,3,Saint Lucia,lc,,,,32,200
+Caribbean,3,Saint Martin,fr,FR-MF,,,32,200
+Caribbean,3,Trinidad & Tobago,tt,,,,32,200
+Caribbean,3,Virgin Islands,us,US-VI,,,32,200
+Central America,3,Belize,bz,,,,32,200
+Central America,3,Costa Rica,cr,,,,32,200
+Central America,3,El Salvador,sv,,,,32,200
+Central America,3,Guatemala,gt,,,,32,200
+Central America,3,Honduras,hn,,,,32,200
+Central America,3,Nicaragua,ni,,,,32,200
+Central America,3,Panama,pa,,,,32,200
+Chugoku,3,Japan,jp,,,68,32,200
+Chugoku,3,Japan,jp,,,69,32,200
+Chugoku,3,Japan,jp,,,70,32,200
+Chugoku,3,Japan,jp,,,71,32,200
+Chugoku,3,Japan,jp,,,72,32,200
+Chugoku,3,Japan,jp,,,73,32,200
+Chugoku,3,Japan,jp,,,74,32,200
+Chugoku,3,Japan,jp,,,75,32,200
+East Asia,3,China,cn,,,,32,200
+East Asia,3,Hong Kong,cn,CN-HK,,,32,200
+East Asia,3,Mongolia,mn,,,,32,200
+East Asia,3,North Korea,kp,,,,32,200
+East Asia,3,South Korea,kr,,,,32,200
+East Asia,3,Taiwan,tw,,,,32,200
+Eastern Europe,3,Armenia,am,,,,32,200
+Eastern Europe,3,Azerbaijan,az,,,,32,200
+Eastern Europe,3,Belarus,by,,,,32,200
+Eastern Europe,3,Estonia,ee,,,,32,200
+Eastern Europe,3,Georgia,ge,,,,32,200
+Eastern Europe,3,Kazakhstan,kz,,,,32,200
+Eastern Europe,3,Kyrgyzstan,kg,,,,32,200
+Eastern Europe,3,Latvia,lv,,,,32,200
+Eastern Europe,3,Lithuania,lt,,,,32,200
+Eastern Europe,3,Russia,ru,,,,32,200
+Eastern Europe,3,Tajikistan,tj,,,,32,200
+Eastern Europe,3,Turkmenistan,tm,,,,32,200
+Eastern Europe,3,Uzbekistan,uz,,,,32,200
+Everything Else,3,,,,,,32,200
+Greece,3,Greece,gr,,,,32,200
+Hawaii,3,United States,us,US-HI,,,32,200
+Hokkaido,3,Japan,jp,,,00,32,200
+Hokkaido,3,Japan,jp,,,04,32,200
+Hokkaido,3,Japan,jp,,,05,32,200
+Hokkaido,3,Japan,jp,,,06,32,200
+Hokkaido,3,Japan,jp,,,07,32,200
+Hokkaido,3,Japan,jp,,,08,32,200
+Hokkaido,3,Japan,jp,,,09,32,200
+Hokuriku,3,Japan,jp,,,91,32,200
+Hokuriku,3,Japan,jp,,,92,32,200
+Hokuriku,3,Japan,jp,,,93,32,200
+Hokuriku,3,Japan,jp,,,94,32,200
+Hokuriku,3,Japan,jp,,,95,32,200
+Ireland,3,Ireland,ie,,,,32,200
+Isle of Man,3,Isle of Man,im,,,,32,200
+Middle East,3,Bahrain,bh,,,,32,200
+Middle East,3,Israel,il,,,,32,200
+Middle East,3,Kuwait,kw,,,,32,200
+Middle East,3,Lebanon,lb,,,,32,200
+Middle East,3,Qatar,qa,,,,32,200
+Middle East,3,Saudi Arabia,sa,,,,32,200
+Middle East,3,Turkey,tr,,,,32,200
+Middle East,3,United Arab Emirates,ae,,,,32,200
+New Zealand,3,New Zealand,nz,,,,32,200
+Northern EU,3,Denmark,dk,,,,32,200
+Northern EU,3,Finland,fi,,,,32,200
+Northern EU,3,Iceland,is,,,,32,200
+Northern EU,3,Norway,no,,,,32,200
+Northern EU,3,Sweden,se,,,,32,200
+Northern Ireland,3,Northern Ireland,gb,GB-NIR,,,32,200
+Oceania,3,New Caledonia,fr,FR-NC,,,32,200
+Okinawa,3,Japan,jp,,,90,32,200
+Overseas France,3,Clipperton,fr,FR-CP,,,32,200
+Overseas France,3,French Polynesia,fr,FR-PF,,,32,200
+Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,32,200
+Overseas France,3,Mayotte,fr,FR-976,,,32,200
+Overseas France,3,Reunion,fr,FR-974,,,32,200
+Overseas France,3,Wallis and Futuna,fr,FR-WF,,,32,200
+Portugal,3,Portugal,pt,,,,32,200
+Shikoku,3,Japan,jp,,,76,32,200
+Shikoku,3,Japan,jp,,,77,32,200
+Shikoku,3,Japan,jp,,,78,32,200
+Shikoku,3,Japan,jp,,,79,32,200
+Southeast Asia,3,Brunei,bn,,,,32,200
+Southeast Asia,3,Cambodia,kh,,,,32,200
+Southeast Asia,3,Indonesia,id,,,,32,200
+Southeast Asia,3,Laos,la,,,,32,200
+Southeast Asia,3,Malaysia,my,,,,32,200
+Southeast Asia,3,Myanmar,mm,,,,32,200
+Southeast Asia,3,Philippines,ph,,,,32,200
+Southeast Asia,3,Singapore,sg,,,,32,200
+Southeast Asia,3,Thailand,th,,,,32,200
+Southeast Asia,3,Timor-Leste,tl,,,,32,200
+Southeast Asia,3,Viet Nam,vn,,,,32,200
+Southern Cone,3,Argentina,ar,,,,32,200
+Southern Cone,3,Chile,cl,,,,32,200
+Southern Cone,3,Falkland Islands,fk,,,,32,200
+Southern Cone,3,Paraguay,py,,,,32,200
+Southern Cone,3,Uruguay,uy,,,,32,200
+Tohoku,3,Japan,jp,,,96,32,200
+Tohoku,3,Japan,jp,,,97,32,200
+Tohoku,3,Japan,jp,,,98,32,200
+Tohoku,3,Japan,jp,,,99,32,200
+Tohoku,3,Japan,jp,,,01,32,200
+Tohoku,3,Japan,jp,,,02,32,200
+Tohoku,3,Japan,jp,,,03,32,200
