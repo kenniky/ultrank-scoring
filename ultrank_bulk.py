@@ -97,13 +97,13 @@ if __name__ == '__main__':
 
     if ext == '.csv':
         with open(file, newline='') as file_obj:
-            reader = csv.reader(file_obj)
+            reader = csv.DictReader(file_obj)
 
             for row in reader:
-                slug = row[2]
+                slug = row['startgg slug']
 
                 if len(row) > 1:
-                    is_invit = row[3].lower() in true_values
+                    is_invit = row['Is Invitational?'].lower() in true_values
                 else:
                     is_invit = False
 
