@@ -10,7 +10,7 @@ from ultrank_bulk import bulk_score, write_results
 
 # defines the minimum Jaro-Winkler similarity to
 # categorize a tournament as a related iteration.
-MINIMUM_JARO_SIMILARITY = 0.6
+MINIMUM_JARO_SIMILARITY = 0.8
 
 
 class Tournament:
