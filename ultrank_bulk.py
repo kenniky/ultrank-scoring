@@ -31,6 +31,7 @@ def bulk_score(slugs):
 
             except Exception as e:
                 print(e)
+                print('catastrophic failure')
                 results.append(slug)
         else:
             print('skipping slug {}'.format(slug))
