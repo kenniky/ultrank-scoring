@@ -27,7 +27,7 @@ Tiers multiple events in succession based on an input file. Writes the results t
   - If this file is a CSV, it requires the columns to be named.
     - start.gg slugs should be headered under `startgg slug`
     - truthy invitational values should be headered under `Is Invitational?`
- - You will be asked to input the path to this file in the user interface
+  - You will be asked to input the path to this file in the user interface
  
 ### Notes
  
