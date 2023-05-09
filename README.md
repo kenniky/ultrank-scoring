@@ -24,9 +24,9 @@ Tiers multiple events in succession based on an input file. Writes the results t
 
 - all requirements for `ultrank_tiering.py`
 - file containing a list of tournament keys to evaluate
- - If this file is a CSV, it requires the columns to be named.
-  - start.gg slugs should be headered under `startgg slug`
-  - truthy invitational values should be headered under `Is Invitational?`
+  - If this file is a CSV, it requires the columns to be named.
+    - start.gg slugs should be headered under `startgg slug`
+    - truthy invitational values should be headered under `Is Invitational?`
  - You will be asked to input the path to this file in the user interface
  
 ### Notes
