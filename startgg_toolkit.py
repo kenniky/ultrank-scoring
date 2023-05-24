@@ -54,12 +54,22 @@ def send_request(query, variables, quiet=False):
                     print('retrying')
 
         except Exception as e:
+            tries += 1
             if not quiet:
                 print(f'try {tries}: requests failure... sleeping then trying again... ', end='', flush=True)
                 print(e)
             time.sleep(60)
-            tries += 1
             if not quiet:
                 print('retrying')
 
+
     return response_json
+
+
+def isolate_slug(url):
+    match = startgg_slug_regex.search(url)
+
+    if not match:
+        raise Exception 
+
+    return match.group(0)
