@@ -1609,6 +1609,11 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 2.2.1 - Canada,Newfoundland #3,Fuzzydyne,7e0d9edc,184817,30,,,
 2.2.1 - Canada,Newfoundland #4,Brando,6150c1d5,65888,20,,,
 2.2.1 - Canada,Newfoundland #5,Slick,d1b26795,184993,10,,,
+2.2.1 - Canada,Northern Ontario #1,NCF | Canadien Poutine,c8aeff41,1623837,50,,,
+2.2.1 - Canada,Northern Ontario #2,Raiko,40a25152,5579,40,,,
+2.2.1 - Canada,Northern Ontario #3,Sefaro,879ece15,989882,30,,,
+2.2.1 - Canada,Northern Ontario #4,Asaaj,6128cbf7,6937,20,,,
+2.2.1 - Canada,Northern Ontario #5,DragonFruit,95c604c5,1362860,10,,,
 2.2.1 - Canada,Nova Scotia #1,Vapor,af41a48e,50180,50,,,
 2.2.1 - Canada,Nova Scotia #2,Raziek,51580772,21187,40,,,
 2.2.1 - Canada,Nova Scotia #3,Croi,960a1502,55964,30,,,
@@ -1905,10 +1910,10 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 8.1.1 - East Asia,Beijing #4,维京VikingFire,d8f1b00d,1812907,20,,,
 8.1.1 - East Asia,Beijing #5,Huezo,e81fc5f4,1765177,10,,,
 8.1.1 - East Asia,Guangzhou #1,yooo冰,5067d27a,1329903,50,,,
-8.1.1 - East Asia,Guangzhou #2,小明,45967ddf,1534319,40,,,
-8.1.1 - East Asia,Guangzhou #3,111,1e3482fe,1812436,30,,,
-8.1.1 - East Asia,Guangzhou #4,Nero,cc7339a3,1806993,20,,,
-8.1.1 - East Asia,Guangzhou #5,bushihunzi,3fc05ec9,1399496,10,,,
+8.1.1 - East Asia,Guangzhou #2,eric42,a5429d44,2082351,40,,,
+8.1.1 - East Asia,Guangzhou #3,ky-9,2a6cc0e5,1812323,30,,,
+8.1.1 - East Asia,Guangzhou #4,风向,88b32886,2706128,20,,,
+8.1.1 - East Asia,Guangzhou #5,Poro,dd589f59,1399419,10,,,
 8.1.1 - East Asia,Hong Kong #1,BIGTTARFAN600,fcaa95b7,985580,50,,,
 8.1.1 - East Asia,Hong Kong #2,VenJimX,fdd74349,1295066,40,,,
 8.1.1 - East Asia,Hong Kong #3,TeaTimeTony,6af10927,1084365,30,,,
@@ -1969,11 +1974,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 9 - Other,India [22] #3,DDIS,cb438d0c,2778934,30,,2023-05-31,https://braacket.com/league/ssbindia/ranking/18EA38E3-10C4-4DE4-916F-8D3B3B9CEF07
 9 - Other,India [22] #4,FLOR,fa65d943,1788063,20,,2023-05-31,https://braacket.com/league/ssbindia/ranking/18EA38E3-10C4-4DE4-916F-8D3B3B9CEF07
 9 - Other,India [22] #5,aj__siv,b185accd,1821059,10,,2023-05-31,https://braacket.com/league/ssbindia/ranking/18EA38E3-10C4-4DE4-916F-8D3B3B9CEF07
-9 - Other,India [23 S] #1,Jolt,bdf7af10,1989029,50,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
-9 - Other,India [23 S] #2,DDIS,cb438d0c,2778934,40,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
-9 - Other,India [23 S] #3,CheesetheGamer,8493a4cf,1980716,30,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
-9 - Other,India [23 S] #4,FLOR,fa65d943,1788063,20,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
-9 - Other,India [23 S] #5,aj__siv,b185accd,1821059,10,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #01,Jolt,bdf7af10,1989029,50,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #02,DDIS,cb438d0c,2778934,50,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #03,CheesetheGamer,8493a4cf,1980716,40,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #04,FLOR,fa65d943,1788063,40,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #05,aj__siv,b185accd,1821059,30,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #06,Eyeris,6483f75b,2215692,30,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #07,Krimson101,1bc024ec,1971084,20,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #08,McChutney,ba0f6a7c,1891169,20,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #09,Shunitsu,9c293ea3,689500,10,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
+9 - Other,India [23 S] #10,Quaylectra,dce1631e,986976,10,2023-05-31,,https://twitter.com/SSBMIndia/status/1664102052556079106
 9 - Other,Madagascar #1,Kazuya virus,950f395f,2924221,50,,,
 9 - Other,Madagascar #2,Ok,de1b97ba,2847960,40,,,
 9 - Other,Madagascar #3,The favy,5b6b0376,2938213,30,,,

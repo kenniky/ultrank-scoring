@@ -239,11 +239,12 @@ class TournamentTieringResult:
 class RegionValue:
     """Stores region multipliers."""
 
-    def __init__(self, country_code='', iso2='', county='', city='', jp_postal='', multiplier=1, entrant_floor=64, score_floor=250, note=''):
+    def __init__(self, country_code='', iso2='', county='', city='', state_district='', jp_postal='', multiplier=1, entrant_floor=64, score_floor=250, note=''):
         self.country_code = country_code
         self.iso2 = iso2
         self.county = county
         self.city = city
+        self.state_district = state_district
         self.jp_postal = jp_postal
         self.multiplier = multiplier
         self.entrant_floor = entrant_floor
@@ -269,11 +270,13 @@ class RegionValue:
             elif address.get('ISO3166-2-lvl4', '') == self.iso2 or address.get('ISO3166-2-lvl3', '') == self.iso2:
                 match += 2
 
-                if self.county == '' and self.city == '':
+                if self.county == '' and self.city == '' and self.state_district == '':
                     match += 1
                 elif self.county != '' and address.get('county', '') == self.county:
                     match += 2
                 elif self.city != '' and address.get('city', '') == self.city:
+                    match += 2
+                elif self.state_district != '' and address.get('state_district', '') == self.state_district:
                     match += 2
 
             if self.country_code == 'jp':
@@ -290,10 +293,21 @@ class RegionValue:
         if not isinstance(other, RegionValue):
             return False
 
-        return self.country_code == other.country_code and self.iso2 == other.iso2 and self.county == other.county and self.city == other.city and self.jp_postal == other.jp_postal and self.multiplier == other.multiplier
+        return self.get_equality_measures == other.get_equality_measures()
+
+    def get_equality_measures(self):
+        return (self.country_code,
+            self.iso2,
+            self.county,
+            self.city,
+            self.state_district,
+            self.jp_postal,
+            self.multiplier,
+            self.entrant_floor,
+            self.score_floor)
 
     def __hash__(self):
-        return hash((self.country_code, self.iso2, self.county, self.city, self.jp_postal, self.multiplier))
+        return hash(self.get_equality_measures())
 
     def __str__(self):
         ret = ''
@@ -307,6 +321,8 @@ class RegionValue:
                     ret += '/{}'.format(self.county)
                 elif self.city != '':
                     ret += '/{}'.format(self.city)
+                elif self.state_district != '':
+                    ret += '/{}'.format(self.state_district)
 
             if self.jp_postal != '':
                 ret += '/JP Postal {}'.format(self.jp_postal)
@@ -878,9 +894,9 @@ def read_regions():
 
         for row in reader:
             region_value = RegionValue(country_code=row['country_code'], iso2=row['ISO3166-2'], county=row['county'],
-                                       city = row['city'], jp_postal=row['jp-postal-code'], multiplier=int(
-                                           row['Multiplier']),
-                                       entrant_floor=int(row['Entrant Floor']), score_floor=int(row['Score Floor']), note=row['Note'])
+                                       city = row['city'], state_district = row['state_district'], jp_postal=row['jp-postal-code'],
+                                       multiplier=int(row['Multiplier']), entrant_floor=int(row['Entrant Floor']),
+                                       score_floor=int(row['Score Floor']), note=row['Note'])
             regions.add(region_value)
 
     return regions
