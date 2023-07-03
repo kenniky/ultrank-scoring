@@ -212,6 +212,14 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Skip Reason': 'Probable Weekly (contains string "weekly")'})
                             continue
 
+                        if tournament['name'].lower().find('weeklies') != -1 or event['name'].lower().find('weeklies') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Weekly (contains string "weeklies")'})
+                            continue
+
                         if tournament['name'].lower().find('arcadian') != -1 or event['name'].lower().find('arcadian') != -1:
                             writer.writerow({'Tournament': tournament['name'],
                                              'Event': event['name'],
