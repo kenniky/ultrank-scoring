@@ -1,376 +1,728 @@
-Note,Multiplier,Entity,country_code,ISO3166-2,county,city,state_district,jp-postal-code,Entrant Floor,Score Floor
-Baja California,1,Mexico,mx,MX-BCN,,,,,64,250
-Baja California,1,Mexico,mx,MX-BCS,,,,,64,250
-Canada Blanket,1,Canada,ca,,,,,,64,250
-Central Mexico,1,Mexico,mx,MX-CMX,,,,,64,250
-Central Mexico,1,Mexico,mx,MX-MEX,,,,,64,250
-Europe Blanket,1,France,fr,,,,,,64,250
-Europe Blanket,1,Great Britain,gb,,,,,,64,250
-Florida,1,United States,us,US-FL,,,,,64,250
-Great Lakes Midwest,1,United States,us,US-KY,,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Atchison County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Brown County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Doniphan County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Douglas County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Franklin County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Jackson County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Jefferson County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Johnson County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Leavenworth County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Marshall County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Miami County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Nemaha County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Republic County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Shawnee County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Washington County,,,,64,250
-Heartland Midwest,1,United States,us,US-KS,Wyandotte County,,,,64,250
-Heartland Midwest,1,United States,us,US-MO,,,,,64,250
-Japan Blanket,1,Japan,jp,,,,,,64,250
-Kansai,1,Japan,jp,,,,,51,64,250
-Kansai,1,Japan,jp,,,,,52,64,250
-Kansai,1,Japan,jp,,,,,53,64,250
-Kansai,1,Japan,jp,,,,,54,64,250
-Kansai,1,Japan,jp,,,,,55,64,250
-Kansai,1,Japan,jp,,,,,56,64,250
-Kansai,1,Japan,jp,,,,,57,64,250
-Kansai,1,Japan,jp,,,,,58,64,250
-Kansai,1,Japan,jp,,,,,59,64,250
-Kansai,1,Japan,jp,,,,,60,64,250
-Kansai,1,Japan,jp,,,,,61,64,250
-Kansai,1,Japan,jp,,,,,62,64,250
-Kansai,1,Japan,jp,,,,,63,64,250
-Kansai,1,Japan,jp,,,,,64,64,250
-Kansai,1,Japan,jp,,,,,65,64,250
-Kansai,1,Japan,jp,,,,,66,64,250
-Kansai,1,Japan,jp,,,,,67,64,250
-Kanto,1,Japan,jp,,,,,10,64,250
-Kanto,1,Japan,jp,,,,,11,64,250
-Kanto,1,Japan,jp,,,,,12,64,250
-Kanto,1,Japan,jp,,,,,13,64,250
-Kanto,1,Japan,jp,,,,,14,64,250
-Kanto,1,Japan,jp,,,,,15,64,250
-Kanto,1,Japan,jp,,,,,16,64,250
-Kanto,1,Japan,jp,,,,,17,64,250
-Kanto,1,Japan,jp,,,,,18,64,250
-Kanto,1,Japan,jp,,,,,19,64,250
-Kanto,1,Japan,jp,,,,,20,64,250
-Kanto,1,Japan,jp,,,,,21,64,250
-Kanto,1,Japan,jp,,,,,22,64,250
-Kanto,1,Japan,jp,,,,,23,64,250
-Kanto,1,Japan,jp,,,,,24,64,250
-Kanto,1,Japan,jp,,,,,25,64,250
-Kanto,1,Japan,jp,,,,,26,64,250
-Kanto,1,Japan,jp,,,,,27,64,250
-Kanto,1,Japan,jp,,,,,28,64,250
-Kanto,1,Japan,jp,,,,,29,64,250
-Kanto,1,Japan,jp,,,,,30,64,250
-Kanto,1,Japan,jp,,,,,31,64,250
-Kanto,1,Japan,jp,,,,,32,64,250
-Kanto,1,Japan,jp,,,,,33,64,250
-Kanto,1,Japan,jp,,,,,34,64,250
-Kanto,1,Japan,jp,,,,,35,64,250
-Kanto,1,Japan,jp,,,,,36,64,250
-Kanto,1,Japan,jp,,,,,37,64,250
-Kyushu,1,Japan,jp,,,,,80,64,250
-Kyushu,1,Japan,jp,,,,,81,64,250
-Kyushu,1,Japan,jp,,,,,82,64,250
-Kyushu,1,Japan,jp,,,,,83,64,250
-Kyushu,1,Japan,jp,,,,,84,64,250
-Kyushu,1,Japan,jp,,,,,85,64,250
-Kyushu,1,Japan,jp,,,,,86,64,250
-Kyushu,1,Japan,jp,,,,,87,64,250
-Kyushu,1,Japan,jp,,,,,88,64,250
-Kyushu,1,Japan,jp,,,,,89,64,250
-Mexico Blanket,1,Mexico,mx,,,,,,64,250
-Ontario,1,Canada,ca,CA-ON,,,Central Ontario,,64,250
-Ontario,1,Canada,ca,CA-ON,,,Golden Horseshoe,,64,250
-Ontario,1,Canada,ca,CA-ON,,,,,64,250
-Tristate,1,United States,us,US-NY,Bronx County,,,,64,250
-Tristate,1,United States,us,US-NY,Kings County,,,,64,250
-Tristate,1,United States,us,US-NY,Nassau County,,,,64,250
-Tristate,1,United States,us,US-NY,New York County,,,,64,250
-Tristate,1,United States,us,US-NY,Queens County,,,,64,250
-Tristate,1,United States,us,US-NY,Richmond County,,,,64,250
-Tristate,1,United States,us,US-NY,Rockland County,,,,64,250
-Tristate,1,United States,us,US-NY,Suffolk County,,,,64,250
-Tristate,1,United States,us,US-NY,Westchester County,,,,64,250
-United States Blanket,1,United States,us,,,,,,64,250
-Alberta,2,Canada,ca,CA-AB,,,,,48,200
-Atlantic Canada,2,Canada,ca,CA-NB,,,,,48,200
-Atlantic Canada,2,Canada,ca,CA-NL,,,,,48,200
-Atlantic Canada,2,Canada,ca,CA-NS,,,,,48,200
-Atlantic Canada,2,Canada,ca,CA-PE,,,,,48,200
-Atlantic Canada,2,Saint Pierre and Miquelon,fr,FR-PM,,,,,48,200
-Australia,2,Australia,au,,,,,,48,200
-Austria,2,Austria,at,,,,,,48,200
-Belgium,2,Belgium,be,,,,,,48,200
-Carolinas,2,United States,us,US-NC,,,,,48,200
-Carolinas,2,United States,us,US-SC,,,,,48,200
-Chubu,2,Japan,jp,,,,,38,48,200
-Chubu,2,Japan,jp,,,,,39,48,200
-Chubu,2,Japan,jp,,,,,40,48,200
-Chubu,2,Japan,jp,,,,,41,48,200
-Chubu,2,Japan,jp,,,,,42,48,200
-Chubu,2,Japan,jp,,,,,43,48,200
-Chubu,2,Japan,jp,,,,,44,48,200
-Chubu,2,Japan,jp,,,,,45,48,200
-Chubu,2,Japan,jp,,,,,46,48,200
-Chubu,2,Japan,jp,,,,,47,48,200
-Chubu,2,Japan,jp,,,,,48,48,200
-Chubu,2,Japan,jp,,,,,49,48,200
-Chubu,2,Japan,jp,,,,,50,48,200
-East Mexico,2,Mexico,mx,MX-HID,,,,,48,200
-East Mexico,2,Mexico,mx,MX-PUE,,,,,48,200
-East Mexico,2,Mexico,mx,MX-TLA,,,,,48,200
-East Mexico,2,Mexico,mx,MX-VER,,,,,48,200
-Germany,2,Germany,de,,,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-AL,,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-FL,Escambia County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-FL,Okaloosa County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-FL,Santa Rosa County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-FL,Walton County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Allen County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Ballard County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Barren County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Butler County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Caldwell County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Calloway County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Carlisle County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Christian County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Crittenden County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Edmonson County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Fulton County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Graves County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Green County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Hart County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Hickman County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Livingston County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Logan County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Lyon County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Marshall County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,McCracken County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Metcalfe County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Monroe County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Simpson County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Todd County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-LA,,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-MS,,,,,48,200
-Inland/Gulf Southeast,2,United States,us,US-TN,,,,,48,200
-Italy,2,Italy,it,,,,,,48,200
-Luxembourg,2,Luxembourg,lu,,,,,,48,200
-Manitoba,2,Canada,ca,CA-MB,,,,,48,200
-Mid-South,2,United States,us,US-AR,,,,,48,200
-Mid-South,2,United States,us,US-KS,,,,,48,200
-Mid-South,2,United States,us,US-MO,Barry County,,,,48,200
-Mid-South,2,United States,us,US-MO,Barton County,,,,48,200
-Mid-South,2,United States,us,US-MO,Bates County,,,,48,200
-Mid-South,2,United States,us,US-MO,Bollinger County,,,,48,200
-Mid-South,2,United States,us,US-MO,Butler County,,,,48,200
-Mid-South,2,United States,us,US-MO,Caldwell County,,,,48,200
-Mid-South,2,United States,us,US-MO,Cape Girardeau County,,,,48,200
-Mid-South,2,United States,us,US-MO,Carter County,,,,48,200
-Mid-South,2,United States,us,US-MO,Cedar County,,,,48,200
-Mid-South,2,United States,us,US-MO,Christian County,,,,48,200
-Mid-South,2,United States,us,US-MO,Dade County,,,,48,200
-Mid-South,2,United States,us,US-MO,Dallas County,,,,48,200
-Mid-South,2,United States,us,US-MO,Dent County,,,,48,200
-Mid-South,2,United States,us,US-MO,Douglas County,,,,48,200
-Mid-South,2,United States,us,US-MO,Dunklin County,,,,48,200
-Mid-South,2,United States,us,US-MO,Greene County,,,,48,200
-Mid-South,2,United States,us,US-MO,Howell County,,,,48,200
-Mid-South,2,United States,us,US-MO,Iron County,,,,48,200
-Mid-South,2,United States,us,US-MO,Jasper County,,,,48,200
-Mid-South,2,United States,us,US-MO,Laclede County,,,,48,200
-Mid-South,2,United States,us,US-MO,Lawrence County,,,,48,200
-Mid-South,2,United States,us,US-MO,Madison County,,,,48,200
-Mid-South,2,United States,us,US-MO,McDonald County,,,,48,200
-Mid-South,2,United States,us,US-MO,Mississippi County,,,,48,200
-Mid-South,2,United States,us,US-MO,New Madrid County,,,,48,200
-Mid-South,2,United States,us,US-MO,Newton County,,,,48,200
-Mid-South,2,United States,us,US-MO,Oregon County,,,,48,200
-Mid-South,2,United States,us,US-MO,Ozark County,,,,48,200
-Mid-South,2,United States,us,US-MO,Pemiscot County,,,,48,200
-Mid-South,2,United States,us,US-MO,Phelps County,,,,48,200
-Mid-South,2,United States,us,US-MO,Polk County,,,,48,200
-Mid-South,2,United States,us,US-MO,Pulaski County,,,,48,200
-Mid-South,2,United States,us,US-MO,Reynolds County,,,,48,200
-Mid-South,2,United States,us,US-MO,Ripley County,,,,48,200
-Mid-South,2,United States,us,US-MO,Saint Clair County,,,,48,200
-Mid-South,2,United States,us,US-MO,Scott County,,,,48,200
-Mid-South,2,United States,us,US-MO,Shannon County,,,,48,200
-Mid-South,2,United States,us,US-MO,Stoddard County,,,,48,200
-Mid-South,2,United States,us,US-MO,Stone County,,,,48,200
-Mid-South,2,United States,us,US-MO,Taney County,,,,48,200
-Mid-South,2,United States,us,US-MO,Texas County,,,,48,200
-Mid-South,2,United States,us,US-MO,Vernon County,,,,48,200
-Mid-South,2,United States,us,US-MO,Wayne County,,,,48,200
-Mid-South,2,United States,us,US-MO,Webster County,,,,48,200
-Mid-South,2,United States,us,US-MO,Wright County,,,,48,200
-Mid-South,2,United States,us,US-OK,,,,,48,200
-Netherlands,2,Netherlands,nl,,,,,,48,200
-North Central MX,2,Mexico,mx,MX-AGU,,,,,48,200
-North Central MX,2,Mexico,mx,MX-GUA,,,,,48,200
-North Central MX,2,Mexico,mx,MX-QUE,,,,,48,200
-North Central MX,2,Mexico,mx,MX-SLP,,,,,48,200
-North Central MX,2,Mexico,mx,MX-ZAC,,,,,48,200
-Northeast MX,2,Mexico,mx,MX-COA,,,,,48,200
-Northeast MX,2,Mexico,mx,MX-NLE,,,,,48,200
-Northeast MX,2,Mexico,mx,MX-TAM,,,,,48,200
-Northwest MX,2,Mexico,mx,MX-CHH,,,,,48,200
-Northwest MX,2,Mexico,mx,MX-DUR,,,,,48,200
-Northwest MX,2,Mexico,mx,MX-SIN,,,,,48,200
-Northwest MX,2,Mexico,mx,MX-SON,,,,,48,200
-Saskatchewan,2,Canada,ca,CA-SK,,,,,48,200
-South Mexico,2,Mexico,mx,MX-CHP,,,,,48,200
-South Mexico,2,Mexico,mx,MX-GRO,,,,,48,200
-South Mexico,2,Mexico,mx,MX-MOR,,,,,48,200
-South Mexico,2,Mexico,mx,MX-OAX,,,,,48,200
-Spain,2,Spain,es,,,,,,48,200
-Switzerland,2,Switzerland,ch,,,,,,48,200
-Upstate NY,2,United States,us,US-NY,,,,,48,200
-West Mexico,2,Mexico,mx,MX-COL,,,,,48,200
-West Mexico,2,Mexico,mx,MX-JAL,,,,,48,200
-West Mexico,2,Mexico,mx,MX-MIC,,,,,48,200
-West Mexico,2,Mexico,mx,MX-NAY,,,,,48,200
-Yucatan Peninsula,2,Mexico,mx,MX-CAM,,,,,48,200
-Yucatan Peninsula,2,Mexico,mx,MX-ROO,,,,,48,200
-Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,,,48,200
-Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,,,48,200
-Alaska,3,United States,us,US-AK,,,,,32,200
-American Territories,3,American Samoa,us,US-AS,,,,,32,200
-American Territories,3,Guam,us,US-GU,,,,,32,200
-American Territories,3,Northern Mariana Islands,us,US-MP,,,,,32,200
-American Territories,3,US Minor Outlying Islands,us,US-UM,,,,,32,200
-Bolivarian North,3,Bolivia,bo,,,,,,32,200
-Bolivarian North,3,Colombia,co,,,,,,32,200
-Bolivarian North,3,Ecuador,ec,,,,,,32,200
-Bolivarian North,3,French Guiana,fr,FR-973,,,,,32,200
-Bolivarian North,3,Guyana,gy,,,,,,32,200
-Bolivarian North,3,Peru,pe,,,,,,32,200
-Bolivarian North,3,Suriname,sr,,,,,,32,200
-Bolivarian North,3,Venezuela,ve,,,,,,32,200
-Brazil,3,Brazil,br,,,,,,32,200
-Caribbean,3,Aruba,nl,NL-AW,,,,,32,200
-Caribbean,3,Bahamas,bs,,,,,,32,200
-Caribbean,3,Barbados,bb,,,,,,32,200
-Caribbean,3,Cuba,cu,,,,,,32,200
-Caribbean,3,Dominica,dm,,,,,,32,200
-Caribbean,3,Dominican Republic,do,,,,,,32,200
-Caribbean,3,Guadeloupe,fr,FR-971,,,,,32,200
-Caribbean,3,Haiti,ht,,,,,,32,200
-Caribbean,3,Jamaica,jm,,,,,,32,200
-Caribbean,3,Martinique,fr,FR-972,,,,,32,200
-Caribbean,3,Puerto Rico,us,US-PR,,,,,32,200
-Caribbean,3,Saint Barthelemy,fr,FR-BL,,,,,32,200
-Caribbean,3,Saint Lucia,lc,,,,,,32,200
-Caribbean,3,Saint Martin,fr,FR-MF,,,,,32,200
-Caribbean,3,Trinidad & Tobago,tt,,,,,,32,200
-Caribbean,3,Virgin Islands,us,US-VI,,,,,32,200
-Central America,3,Belize,bz,,,,,,32,200
-Central America,3,Costa Rica,cr,,,,,,32,200
-Central America,3,El Salvador,sv,,,,,,32,200
-Central America,3,Guatemala,gt,,,,,,32,200
-Central America,3,Honduras,hn,,,,,,32,200
-Central America,3,Nicaragua,ni,,,,,,32,200
-Central America,3,Panama,pa,,,,,,32,200
-Chugoku,3,Japan,jp,,,,,68,32,200
-Chugoku,3,Japan,jp,,,,,69,32,200
-Chugoku,3,Japan,jp,,,,,70,32,200
-Chugoku,3,Japan,jp,,,,,71,32,200
-Chugoku,3,Japan,jp,,,,,72,32,200
-Chugoku,3,Japan,jp,,,,,73,32,200
-Chugoku,3,Japan,jp,,,,,74,32,200
-Chugoku,3,Japan,jp,,,,,75,32,200
-East Asia,3,China,cn,,,,,,32,200
-East Asia,3,Hong Kong,cn,CN-HK,,,,,32,200
-East Asia,3,Mongolia,mn,,,,,,32,200
-East Asia,3,North Korea,kp,,,,,,32,200
-East Asia,3,South Korea,kr,,,,,,32,200
-East Asia,3,Taiwan,tw,,,,,,32,200
-Eastern Europe,3,Armenia,am,,,,,,32,200
-Eastern Europe,3,Azerbaijan,az,,,,,,32,200
-Eastern Europe,3,Belarus,by,,,,,,32,200
-Eastern Europe,3,Estonia,ee,,,,,,32,200
-Eastern Europe,3,Georgia,ge,,,,,,32,200
-Eastern Europe,3,Kazakhstan,kz,,,,,,32,200
-Eastern Europe,3,Kyrgyzstan,kg,,,,,,32,200
-Eastern Europe,3,Latvia,lv,,,,,,32,200
-Eastern Europe,3,Lithuania,lt,,,,,,32,200
-Eastern Europe,3,Russia,ru,,,,,,32,200
-Eastern Europe,3,Tajikistan,tj,,,,,,32,200
-Eastern Europe,3,Turkmenistan,tm,,,,,,32,200
-Eastern Europe,3,Uzbekistan,uz,,,,,,32,200
-Everything Else,3,,,,,,,,32,200
-Greece,3,Greece,gr,,,,,,32,200
-Hawaii,3,United States,us,US-HI,,,,,32,200
-Hokkaido,3,Japan,jp,,,,,00,32,200
-Hokkaido,3,Japan,jp,,,,,04,32,200
-Hokkaido,3,Japan,jp,,,,,05,32,200
-Hokkaido,3,Japan,jp,,,,,06,32,200
-Hokkaido,3,Japan,jp,,,,,07,32,200
-Hokkaido,3,Japan,jp,,,,,08,32,200
-Hokkaido,3,Japan,jp,,,,,09,32,200
-Hokuriku,3,Japan,jp,,,,,91,32,200
-Hokuriku,3,Japan,jp,,,,,92,32,200
-Hokuriku,3,Japan,jp,,,,,93,32,200
-Hokuriku,3,Japan,jp,,,,,94,32,200
-Hokuriku,3,Japan,jp,,,,,95,32,200
-Ireland,3,Ireland,ie,,,,,,32,200
-Isle of Man,3,Isle of Man,im,,,,,,32,200
-Middle East,3,Bahrain,bh,,,,,,32,200
-Middle East,3,Israel,il,,,,,,32,200
-Middle East,3,Kuwait,kw,,,,,,32,200
-Middle East,3,Lebanon,lb,,,,,,32,200
-Middle East,3,Qatar,qa,,,,,,32,200
-Middle East,3,Saudi Arabia,sa,,,,,,32,200
-Middle East,3,Turkey,tr,,,,,,32,200
-Middle East,3,United Arab Emirates,ae,,,,,,32,200
-New Zealand,3,New Zealand,nz,,,,,,32,200
-Northern EU,3,Denmark,dk,,,,,,32,200
-Northern EU,3,Finland,fi,,,,,,32,200
-Northern EU,3,Iceland,is,,,,,,32,200
-Northern EU,3,Norway,no,,,,,,32,200
-Northern EU,3,Sweden,se,,,,,,32,200
-Northern Ireland,3,Northern Ireland,gb,GB-NIR,,,,,32,200
-Northern Ontario,3,Canada,ca,CA-ON,,,Eastern Ontario,,32,200
-Northern Ontario,3,Canada,ca,CA-ON,,,Northeastern Ontario,,32,200
-Northern Ontario,3,Canada,ca,CA-ON,,,Northwestern Ontario,,32,200
-Northern Ontario,3,Canada,ca,CA-ON,,,Southwestern Ontario,,32,200
-Oceania,3,New Caledonia,fr,FR-NC,,,,,32,200
-Okinawa,3,Japan,jp,,,,,90,32,200
-Overseas France,3,Clipperton,fr,FR-CP,,,,,32,200
-Overseas France,3,French Polynesia,fr,FR-PF,,,,,32,200
-Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,,,32,200
-Overseas France,3,Mayotte,fr,FR-976,,,,,32,200
-Overseas France,3,Reunion,fr,FR-974,,,,,32,200
-Overseas France,3,Wallis and Futuna,fr,FR-WF,,,,,32,200
-Portugal,3,Portugal,pt,,,,,,32,200
-Shikoku,3,Japan,jp,,,,,76,32,200
-Shikoku,3,Japan,jp,,,,,77,32,200
-Shikoku,3,Japan,jp,,,,,78,32,200
-Shikoku,3,Japan,jp,,,,,79,32,200
-Southeast Asia,3,Brunei,bn,,,,,,32,200
-Southeast Asia,3,Cambodia,kh,,,,,,32,200
-Southeast Asia,3,Indonesia,id,,,,,,32,200
-Southeast Asia,3,Laos,la,,,,,,32,200
-Southeast Asia,3,Malaysia,my,,,,,,32,200
-Southeast Asia,3,Myanmar,mm,,,,,,32,200
-Southeast Asia,3,Philippines,ph,,,,,,32,200
-Southeast Asia,3,Singapore,sg,,,,,,32,200
-Southeast Asia,3,Thailand,th,,,,,,32,200
-Southeast Asia,3,Timor-Leste,tl,,,,,,32,200
-Southeast Asia,3,Viet Nam,vn,,,,,,32,200
-Southern Cone,3,Argentina,ar,,,,,,32,200
-Southern Cone,3,Chile,cl,,,,,,32,200
-Southern Cone,3,Falkland Islands,fk,,,,,,32,200
-Southern Cone,3,Paraguay,py,,,,,,32,200
-Southern Cone,3,Uruguay,uy,,,,,,32,200
-Tohoku,3,Japan,jp,,,,,96,32,200
-Tohoku,3,Japan,jp,,,,,97,32,200
-Tohoku,3,Japan,jp,,,,,98,32,200
-Tohoku,3,Japan,jp,,,,,99,32,200
-Tohoku,3,Japan,jp,,,,,01,32,200
-Tohoku,3,Japan,jp,,,,,02,32,200
-Tohoku,3,Japan,jp,,,,,03,32,200
+Note,Multiplier,Entity,country_code,ISO3166-2,county,city,state_district,jp-postal-code,Start Date,End Date
+Baja California,1,Mexico,mx,MX-BCN,,,,,,2023-07-24
+Baja California,1,Mexico,mx,MX-BCS,,,,,,2023-07-24
+Florida,1,United States,us,US-FL,,,,,,2023-07-24
+Great Britain,1,Great Britain,gb,,,,,,,2023-07-24
+Great Lakes Midwest,1,United States,us,US-KY,,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Atchison County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Brown County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Doniphan County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Douglas County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Franklin County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Jackson County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Jefferson County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Johnson County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Leavenworth County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Marshall County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Miami County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Nemaha County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Republic County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Shawnee County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Washington County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-KS,Wyandotte County,,,,,2023-07-24
+Heartland Midwest,1,United States,us,US-MO,,,,,,2023-07-24
+Quebec,1,Canada,ca,CA-QC,,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Bronx County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Kings County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Nassau County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,New York County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Queens County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Richmond County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Rockland County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Suffolk County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Westchester County,,,,,2023-07-24
+Alberta,2,Canada,ca,CA-AB,,,,,,2023-07-24
+Atlantic Canada,2,Canada,ca,CA-NB,,,,,,2023-07-24
+Atlantic Canada,2,Canada,ca,CA-NL,,,,,,2023-07-24
+Atlantic Canada,2,Canada,ca,CA-NS,,,,,,2023-07-24
+Atlantic Canada,2,Canada,ca,CA-PE,,,,,,2023-07-24
+Carolinas,2,United States,us,US-NC,,,,,,2023-07-24
+Carolinas,2,United States,us,US-SC,,,,,,2023-07-24
+East Mexico,2,Mexico,mx,MX-HID,,,,,,2023-07-24
+East Mexico,2,Mexico,mx,MX-PUE,,,,,,2023-07-24
+East Mexico,2,Mexico,mx,MX-TLA,,,,,,2023-07-24
+East Mexico,2,Mexico,mx,MX-VER,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-AL,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Escambia County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Okaloosa County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Santa Rosa County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Walton County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Allen County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Ballard County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Barren County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Butler County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Caldwell County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Calloway County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Carlisle County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Christian County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Crittenden County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Edmonson County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Fulton County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Graves County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Green County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Hart County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Hickman County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Livingston County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Logan County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Lyon County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Marshall County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,McCracken County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Metcalfe County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Monroe County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Simpson County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Todd County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-LA,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-MS,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-TN,,,,,,2023-07-24
+Manitoba,2,Canada,ca,CA-MB,,,,,,2023-07-24
+Mid-South,2,United States,us,US-AR,,,,,,2023-07-24
+Mid-South,2,United States,us,US-KS,,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Barry County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Barton County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Bates County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Bollinger County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Butler County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Caldwell County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Cape Girardeau County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Carter County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Cedar County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Christian County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Dade County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Dallas County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Dent County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Douglas County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Dunklin County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Greene County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Howell County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Iron County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Jasper County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Laclede County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Lawrence County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Madison County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,McDonald County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Mississippi County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,New Madrid County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Newton County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Oregon County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Ozark County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Pemiscot County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Phelps County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Polk County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Pulaski County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Reynolds County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Ripley County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Saint Clair County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Scott County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Shannon County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Stoddard County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Stone County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Taney County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Texas County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Vernon County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Wayne County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Webster County,,,,,2023-07-24
+Mid-South,2,United States,us,US-MO,Wright County,,,,,2023-07-24
+Mid-South,2,United States,us,US-OK,,,,,,2023-07-24
+North Central MX,2,Mexico,mx,MX-AGU,,,,,,2023-07-24
+North Central MX,2,Mexico,mx,MX-GUA,,,,,,2023-07-24
+North Central MX,2,Mexico,mx,MX-QUE,,,,,,2023-07-24
+North Central MX,2,Mexico,mx,MX-SLP,,,,,,2023-07-24
+North Central MX,2,Mexico,mx,MX-ZAC,,,,,,2023-07-24
+Saskatchewan,2,Canada,ca,CA-SK,,,,,,2023-07-24
+South Mexico,2,Mexico,mx,MX-CHP,,,,,,2023-07-24
+South Mexico,2,Mexico,mx,MX-GRO,,,,,,2023-07-24
+South Mexico,2,Mexico,mx,MX-MOR,,,,,,2023-07-24
+South Mexico,2,Mexico,mx,MX-OAX,,,,,,2023-07-24
+Alaska,3,United States,us,US-AK,,,,,,2023-07-24
+Chugoku,3,Japan,jp,,,,,68,,2023-07-24
+Chugoku,3,Japan,jp,,,,,69,,2023-07-24
+Chugoku,3,Japan,jp,,,,,70,,2023-07-24
+Chugoku,3,Japan,jp,,,,,71,,2023-07-24
+Chugoku,3,Japan,jp,,,,,72,,2023-07-24
+Chugoku,3,Japan,jp,,,,,73,,2023-07-24
+Chugoku,3,Japan,jp,,,,,74,,2023-07-24
+Chugoku,3,Japan,jp,,,,,75,,2023-07-24
+Dominican Republic,3,Dominican Republic,do,,,,,,,2023-07-24
+Hawaii,3,United States,us,US-HI,,,,,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,00,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,04,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,05,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,06,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,07,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,08,,2023-07-24
+Hokkaido,3,Japan,jp,,,,,09,,2023-07-24
+Puerto Rico,3,Puerto Rico,us,US-PR,,,,,,2023-07-24
+British Columbia,1,Canada,ca,CA-BC,,,,,,
+Canada Blanket,1,Canada,ca,,,,,,,
+Central Mexico,1,Mexico,mx,MX-CMX,,,,,,
+Central Mexico,1,Mexico,mx,MX-MEX,,,,,,
+Florida,1,United States,us,US-FL,,,,,2023-07-24,
+France,1,France,fr,,,,,,,
+Georgia,1,United States,us,US-GA,,,,,2023-07-24,
+Georgia,1,United States,us,US-SC,Aiken County,,,,2023-07-24,
+Georgia,1,United States,us,US-SC,Edgefield County,,,,2023-07-24,
+Georgia,1,United States,us,US-SC,McCormick County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Cedar County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Clinton County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Des Moines County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Dubuque County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Jackson County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Jones County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Lee County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Louisa County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Muscatine County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IA,Scott County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IL,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IN,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-MD,Allegany County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-MD,Garrett County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-MI,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-MN,Houston County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-OH,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Allegheny County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Armstrong County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Beaver County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Bedford County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Blair County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Butler County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Cambria County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Clarion County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Clearfield County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Crawford County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Elk County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Erie County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Fayette County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Forest County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Greene County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Indiana County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Jefferson County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Lawrence County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,McKean County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Mercer County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Somerset County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Venango County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Warren County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Washington County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-PA,Westmoreland County,,,,2023-07-24,
+Great Lakes,1,United States,us,US-VA,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-WI,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-WV,,,,,2023-07-24,
+Japan Blanket,1,Japan,jp,,,,,,,
+Kansai,1,Japan,jp,,,,,51,,
+Kansai,1,Japan,jp,,,,,52,,
+Kansai,1,Japan,jp,,,,,53,,
+Kansai,1,Japan,jp,,,,,54,,
+Kansai,1,Japan,jp,,,,,55,,
+Kansai,1,Japan,jp,,,,,56,,
+Kansai,1,Japan,jp,,,,,57,,
+Kansai,1,Japan,jp,,,,,58,,
+Kansai,1,Japan,jp,,,,,59,,
+Kansai,1,Japan,jp,,,,,60,,
+Kansai,1,Japan,jp,,,,,61,,
+Kansai,1,Japan,jp,,,,,62,,
+Kansai,1,Japan,jp,,,,,63,,
+Kansai,1,Japan,jp,,,,,64,,
+Kansai,1,Japan,jp,,,,,65,,
+Kansai,1,Japan,jp,,,,,66,,
+Kansai,1,Japan,jp,,,,,67,,
+Kanto,1,Japan,jp,,,,,10,,
+Kanto,1,Japan,jp,,,,,11,,
+Kanto,1,Japan,jp,,,,,12,,
+Kanto,1,Japan,jp,,,,,13,,
+Kanto,1,Japan,jp,,,,,14,,
+Kanto,1,Japan,jp,,,,,15,,
+Kanto,1,Japan,jp,,,,,16,,
+Kanto,1,Japan,jp,,,,,17,,
+Kanto,1,Japan,jp,,,,,18,,
+Kanto,1,Japan,jp,,,,,19,,
+Kanto,1,Japan,jp,,,,,20,,
+Kanto,1,Japan,jp,,,,,21,,
+Kanto,1,Japan,jp,,,,,22,,
+Kanto,1,Japan,jp,,,,,23,,
+Kanto,1,Japan,jp,,,,,24,,
+Kanto,1,Japan,jp,,,,,25,,
+Kanto,1,Japan,jp,,,,,26,,
+Kanto,1,Japan,jp,,,,,27,,
+Kanto,1,Japan,jp,,,,,28,,
+Kanto,1,Japan,jp,,,,,29,,
+Kanto,1,Japan,jp,,,,,30,,
+Kanto,1,Japan,jp,,,,,31,,
+Kanto,1,Japan,jp,,,,,32,,
+Kanto,1,Japan,jp,,,,,33,,
+Kanto,1,Japan,jp,,,,,34,,
+Kanto,1,Japan,jp,,,,,35,,
+Kanto,1,Japan,jp,,,,,36,,
+Kanto,1,Japan,jp,,,,,37,,
+Kyushu,1,Japan,jp,,,,,80,,
+Kyushu,1,Japan,jp,,,,,81,,
+Kyushu,1,Japan,jp,,,,,82,,
+Kyushu,1,Japan,jp,,,,,83,,
+Kyushu,1,Japan,jp,,,,,84,,
+Kyushu,1,Japan,jp,,,,,85,,
+Kyushu,1,Japan,jp,,,,,86,,
+Kyushu,1,Japan,jp,,,,,87,,
+Kyushu,1,Japan,jp,,,,,88,,
+Kyushu,1,Japan,jp,,,,,89,,
+MD/VA,1,United States,us,US-DE,Sussex County,,,,2023-07-24,
+MD/VA,1,United States,us,US-MD,,,,,2023-07-24,
+MD/VA,1,United States,us,US-VA,,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Berkeley County,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Hampshire County,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Hardy County,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Jefferson County,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Morgan County,,,,2023-07-24,
+MD/VA,1,United States,us,US-WV,Pendleton County,,,,2023-07-24,
+Mexico Blanket,1,Mexico,mx,,,,,,,
+NorCal,1,United States,us,US-CA,,,,,2023-07-24,
+Ontario,1,Canada,ca,CA-ON,,,Central Ontario,,,
+Ontario,1,Canada,ca,CA-ON,,,Golden Horseshoe,,,
+Ontario,1,Canada,ca,CA-ON,,,,,,
+Pacific Northwest,1,United States,us,US-ID,Benewah County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Bonner County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Boundary County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Clearwater County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Idaho County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Kootenai County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Latah County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Lewis County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Nez Perce County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-ID,Shoshone County,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-OR,,,,,2023-07-24,
+Pacific Northwest,1,United States,us,US-WA,,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Imperial County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Kern County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Los Angeles County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Orange County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Riverside County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,San Bernardino County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,San Diego County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,San Luis Obispo County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Santa Barbara County,,,,2023-07-24,
+SoCal,1,United States,us,US-CA,Ventura County,,,,2023-07-24,
+Southwest,1,United States,us,US-AZ,,,,,2023-07-24,
+Southwest,1,United States,us,US-CO,,,,,2023-07-24,
+Southwest,1,United States,us,US-NM,,,,,2023-07-24,
+Southwest,1,United States,us,US-NV,,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Brewster County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Culberson County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,El Paso County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Hudspeth County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Jeff Davis County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Loving County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Pecos County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Presidio County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Reeves County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Terrell County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Ward County,,,,2023-07-24,
+Southwest,1,United States,us,US-TX,Winkler County,,,,2023-07-24,
+Southwest,1,United States,us,US-UT,,,,,2023-07-24,
+Texas,1,United States,us,US-LA,,,,,2023-07-24,
+Texas,1,United States,us,US-TX,,,,,2023-07-24,
+Tristate,1,United States,us,US-DE,,,,,2023-07-24,
+Tristate,1,United States,us,US-NJ,,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Bronx County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Dutchess County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Kings County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Nassau County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Orange County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Putnam County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Queens County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Rockland County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Suffolk County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Sullivan County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Ulster County,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Westchester County,,,,2023-07-24,
+Tristate,1,United States,us,US-PA,,,,,2023-07-24,
+United States Blanket,1,United States,us,,,,,,,
+Atlantic Canada,2,Saint Pierre and Miquelon,fr,FR-PM,,,,,,2023-07-24
+Atlantic Canada,3,Saint Pierre and Miquelon,fr,FR-PM,,,,,2023-07-24,
+Australia,2,Australia,au,,,,,,,
+Austria,2,Austria,at,,,,,,,
+Baja California,2,Mexico,mx,MX-BCN,,,,,2023-07-24,
+Baja California,2,Mexico,mx,MX-BCS,,,,,2023-07-24,
+Belgium,2,Belgium,be,,,,,,,
+Carolinas,2,United States,us,US-NC,,,,,2023-07-24,
+Carolinas,2,United States,us,US-SC,,,,,2023-07-24,
+Chubu,2,Japan,jp,,,,,38,,
+Chubu,2,Japan,jp,,,,,39,,
+Chubu,2,Japan,jp,,,,,40,,
+Chubu,2,Japan,jp,,,,,41,,
+Chubu,2,Japan,jp,,,,,42,,
+Chubu,2,Japan,jp,,,,,43,,
+Chubu,2,Japan,jp,,,,,44,,
+Chubu,2,Japan,jp,,,,,45,,
+Chubu,2,Japan,jp,,,,,46,,
+Chubu,2,Japan,jp,,,,,47,,
+Chubu,2,Japan,jp,,,,,48,,
+Chubu,2,Japan,jp,,,,,49,,
+Chubu,2,Japan,jp,,,,,50,,
+Chugoku,2,Japan,jp,,,,,68,2023-07-24,
+Chugoku,2,Japan,jp,,,,,69,2023-07-24,
+Chugoku,2,Japan,jp,,,,,70,2023-07-24,
+Chugoku,2,Japan,jp,,,,,71,2023-07-24,
+Chugoku,2,Japan,jp,,,,,72,2023-07-24,
+Chugoku,2,Japan,jp,,,,,73,2023-07-24,
+Chugoku,2,Japan,jp,,,,,74,2023-07-24,
+Chugoku,2,Japan,jp,,,,,75,2023-07-24,
+Dominican Republic,2,Dominican Republic,do,,,,,,2023-07-24,
+Germany,2,Germany,de,,,,,,,
+Great Britain,2,Great Britain,gb,,,,,,2023-07-24,
+Heartland,2,United States,us,US-IA,,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Alexander County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Bond County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Calhoun County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Clinton County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Franklin County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Jackson County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Jefferson County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Jersey County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Johnson County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Madison County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Monroe County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Perry County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Pulaski County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Randolph County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,St. Clair County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Union County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Washington County,,,,2023-07-24,
+Heartland,2,United States,us,US-IL,Williamson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Anderson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Atchison County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Brown County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Chase County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Clay County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Coffey County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Dickinson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Doniphan County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Douglas County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Franklin County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Geary County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Jackson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Jefferson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Johnson County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Leavenworth County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Linn County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Lyon County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Marshall County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Miami County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Morris County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Nemaha County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Osage County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Pottawatomie County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Riley County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Shawnee County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Wabaunsee County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Washington County,,,,2023-07-24,
+Heartland,2,United States,us,US-KS,Wyandotte County,,,,2023-07-24,
+Heartland,2,United States,us,US-MN,,,,,2023-07-24,
+Heartland,2,United States,us,US-MO,,,,,2023-07-24,
+Heartland,2,United States,us,US-ND,,,,,2023-07-24,
+Heartland,2,United States,us,US-NE,,,,,2023-07-24,
+Heartland,2,United States,us,US-SD,,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,Bayfield County,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,Burnett County,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,Douglas County,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,Pierce County,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,Polk County,,,,2023-07-24,
+Heartland,2,United States,us,US-WI,St. Croix County,,,,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,00,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,04,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,05,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,06,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,07,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,08,2023-07-24,
+Hokkaido,2,Japan,jp,,,,,09,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-AL,,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Bay County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Calhoun County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Escambia County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Gulf County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Holmes County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Jackson County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Okaloosa County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Santa Rosa County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Walton County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-FL,Washington County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Catoosa County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Chattooga County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Dade County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Murray County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Walker County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-GA,Whitfield County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Allen County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Ballard County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Barren County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Butler County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Caldwell County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Calloway County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Carlisle County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Christian County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Crittenden County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Edmonson County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Fulton County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Graves County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Green County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Hart County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Hickman County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Livingston County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Logan County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Lyon County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Marshall County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,McCracken County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Metcalfe County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Monroe County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Simpson County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Todd County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-MS,,,,,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-TN,,,,,2023-07-24,
+Italy,2,Italy,it,,,,,,,
+Luxembourg,2,Luxembourg,lu,,,,,,,
+Netherlands,2,Netherlands,nl,,,,,,,
+New England,2,United States,us,US-CT,,,,,2023-07-24,
+New England,2,United States,us,US-MA,,,,,2023-07-24,
+New England,2,United States,us,US-ME,,,,,2023-07-24,
+New England,2,United States,us,US-NH,,,,,2023-07-24,
+New England,2,United States,us,US-RI,,,,,2023-07-24,
+New England,2,United States,us,US-VT,,,,,2023-07-24,
+New South Wales,2,Australia,au,AU-NSW,,,,,2023-07-24,
+Northeast MX,2,Mexico,mx,MX-COA,,,,,,
+Northeast MX,2,Mexico,mx,MX-NLE,,,,,,
+Northeast MX,2,Mexico,mx,MX-TAM,,,,,,
+Northwest MX,2,Mexico,mx,MX-CHH,,,,,,
+Northwest MX,2,Mexico,mx,MX-DUR,,,,,,
+Northwest MX,2,Mexico,mx,MX-SIN,,,,,,
+Northwest MX,2,Mexico,mx,MX-SON,,,,,,
+Puerto Rico,2,Puerto Rico,us,US-PR,,,,,2023-07-24,
+Quebec,2,Canada,ca,CA-QC,,,,,2023-07-24,
+South Australia,2,Australia,au,AU-SA,,,,,2023-07-24,
+Spain,2,Spain,es,,,,,,,
+Switzerland,2,Switzerland,ch,,,,,,,
+Upstate NY,2,United States,us,US-NY,,,,,,
+Victoria,2,Australia,au,AU-VIC,,,,,2023-07-24,
+West Mexico,2,Mexico,mx,MX-COL,,,,,,
+West Mexico,2,Mexico,mx,MX-JAL,,,,,,
+West Mexico,2,Mexico,mx,MX-MIC,,,,,,
+West Mexico,2,Mexico,mx,MX-NAY,,,,,,
+Yucatan Peninsula,2,Mexico,mx,MX-CAM,,,,,,
+Yucatan Peninsula,2,Mexico,mx,MX-ROO,,,,,,
+Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,,,,
+Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,,,,
+A.C.T.,3,Australia,au,AU-ACT,,,,,2023-07-24,
+Alaska,3,United States,us,US-AK,,,,,2023-07-24,
+Alberta,3,Canada,ca,CA-AB,,,,,2023-07-24,
+American Territories,3,American Samoa,us,US-AS,,,,,,
+American Territories,3,Northern Mariana Islands,us,US-MP,,,,,,
+American Territories,3,US Minor Outlying Islands,us,US-UM,,,,,,
+Argentina,3,Argentina,ar,,,,,,,
+Atlantic Canada,3,Canada,ca,CA-NB,,,,,2023-07-24,
+Atlantic Canada,3,Canada,ca,CA-NL,,,,,2023-07-24,
+Atlantic Canada,3,Canada,ca,CA-NS,,,,,2023-07-24,
+Atlantic Canada,3,Canada,ca,CA-PE,,,,,2023-07-24,
+Bahamas,3,Bahamas,bs,,,,,,,
+Bahrain,3,Bahrain,bh,,,,,,,
+Barbados,3,Barbados,bb,,,,,,,
+Belize,3,Belize,bz,,,,,,,
+Bolivarian North,3,Falkland Islands,fk,,,,,,,
+Bolivarian North,3,Guyana,gy,,,,,,,
+Bolivarian North,3,Peru,pe,,,,,,,
+Bolivarian North,3,Suriname,sr,,,,,,,
+Bolivia,3,Bolivia,bo,,,,,,,
+Brazil,3,Brazil,br,,,,,,,
+Brunei,3,Brunei,bn,,,,,,,
+Cambodia,3,Cambodia,kh,,,,,,,
+Caribbean,3,Aruba,nl,NL-AW,,,,,,
+Caribbean,3,Dominica,dm,,,,,,,
+Caribbean,3,Guadeloupe,fr,FR-971,,,,,,
+Caribbean,3,Haiti,ht,,,,,,,
+Caribbean,3,Jamaica,jm,,,,,,,
+Caribbean,3,Martinique,fr,FR-972,,,,,,
+Caribbean,3,Saint Barthelemy,fr,FR-BL,,,,,,
+Caribbean,3,Saint Lucia,lc,,,,,,,
+Caribbean,3,Saint Martin,fr,FR-MF,,,,,,
+Caribbean,3,Virgin Islands,us,US-VI,,,,,,
+Central America,3,Panama,pa,,,,,,,
+Chile,3,Chile,cl,,,,,,,
+China,3,China,cn,,,,,,,
+Colombia,3,Colombia,co,,,,,,,
+Costa Rica,3,Costa Rica,cr,,,,,,,
+Cuba,3,Cuba,cu,,,,,,,
+Denmark,3,Denmark,dk,,,,,,,
+East Asia,3,Mongolia,mn,,,,,,,
+East Asia,3,South Korea,kr,,,,,,,
+East Asia,3,Taiwan,tw,,,,,,,
+East Mexico,3,Mexico,mx,MX-HID,,,,,2023-07-24,
+East Mexico,3,Mexico,mx,MX-PUE,,,,,2023-07-24,
+East Mexico,3,Mexico,mx,MX-TLA,,,,,2023-07-24,
+East Mexico,3,Mexico,mx,MX-VER,,,,,2023-07-24,
+Eastern Europe,3,Armenia,am,,,,,,,
+Eastern Europe,3,Azerbaijan,az,,,,,,,
+Eastern Europe,3,Belarus,by,,,,,,,
+Eastern Europe,3,Estonia,ee,,,,,,,
+Eastern Europe,3,Georgia,ge,,,,,,,
+Eastern Europe,3,Kazakhstan,kz,,,,,,,
+Eastern Europe,3,Kyrgyzstan,kg,,,,,,,
+Eastern Europe,3,Latvia,lv,,,,,,,
+Eastern Europe,3,Lithuania,lt,,,,,,,
+Eastern Europe,3,Tajikistan,tj,,,,,,,
+Eastern Europe,3,Turkmenistan,tm,,,,,,,
+Eastern Europe,3,Uzbekistan,uz,,,,,,,
+Ecuador,3,Ecuador,ec,,,,,,,
+El Salvador,3,El Salvador,sv,,,,,,,
+Everything Else,3,,,,,,,,,
+Finland,3,Finland,fi,,,,,,,
+French Guiana,3,French Guiana,fr,FR-973,,,,,,
+Greece,3,Greece,gr,,,,,,,
+Guam,3,Guam,us,US-GU,,,,,,
+Guatemala,3,Guatemala,gt,,,,,,,
+Hawaii,3,United States,us,US-HI,,,,,2023-07-24,
+Hokuriku,3,Japan,jp,,,,,91,,
+Hokuriku,3,Japan,jp,,,,,92,,
+Hokuriku,3,Japan,jp,,,,,93,,
+Hokuriku,3,Japan,jp,,,,,94,,
+Hokuriku,3,Japan,jp,,,,,95,,
+Honduras,3,Honduras,hn,,,,,,,
+Hong Kong,3,Hong Kong,cn,CN-HK,,,,,,
+Iceland,3,Iceland,is,,,,,,,
+Indonesia,3,Indonesia,id,,,,,,,
+Ireland,3,Ireland,ie,,,,,,,
+Isle of Man,3,Isle of Man,im,,,,,,,
+Kuwait,3,Kuwait,kw,,,,,,,
+Laos,3,Laos,la,,,,,,,
+Lebanon,3,Lebanon,lb,,,,,,,
+Malaysia,3,Malaysia,my,,,,,,,
+Manitoba,3,Canada,ca,CA-MB,,,,,2023-07-24,
+Mid-South,3,United States,us,US-AR,,,,,2023-07-24,
+Mid-South,3,United States,us,US-KS,,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Barry County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Barton County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Benton County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Bollinger County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Butler County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Camden County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Cape_Girardeau County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Carter County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Cedar County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Christian County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Crawford County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Dade County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Dallas County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Dent County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Douglas County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Dunklin County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Greene County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Henry County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Hickory County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Howell County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Iron County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Jasper County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Laclede County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Lawrence County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Madison County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Maries County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,McDonald County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Miller County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Mississippi County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Morgan County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,New_Madrid County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Newton County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Oregon County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Ozark County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Pemiscot County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Perry County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Phelps County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Polk County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Pulaski County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Reynolds County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Ripley County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,SainteGenevieve County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Scott County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Shannon County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,St. Clair County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,St. Francois County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Stoddard County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Stone County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Taney County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Texas County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Vernon County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Washington County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Wayne County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Webster County,,,,2023-07-24,
+Mid-South,3,United States,us,US-MO,Wright County,,,,2023-07-24,
+Mid-South,3,United States,us,US-OK,,,,,2023-07-24,
+Mid-South,3,United States,us,US-TX,Archer County,,,,2023-07-24,
+Mid-South,3,United States,us,US-TX,Baylor County,,,,2023-07-24,
+Mid-South,3,United States,us,US-TX,Clay County,,,,2023-07-24,
+Mid-South,3,United States,us,US-TX,Wichita County,,,,2023-07-24,
+Mid-South,3,United States,us,US-TX,Wilbarger County,,,,2023-07-24,
+Middle East,3,Israel,il,,,,,,,
+Middle East,3,Qatar,qa,,,,,,,
+Middle East,3,Saudi Arabia,sa,,,,,,,
+Middle East,3,Turkey,tr,,,,,,,
+Middle East,3,United Arab Emirates,ae,,,,,,,
+Myanmar,3,Myanmar,mm,,,,,,,
+New Zealand,3,New Zealand,nz,,,,,,,
+Nicaragua,3,Nicaragua,ni,,,,,,,
+North Central MX,3,Mexico,mx,MX-AGU,,,,,2023-07-24,
+North Central MX,3,Mexico,mx,MX-GUA,,,,,2023-07-24,
+North Central MX,3,Mexico,mx,MX-QUE,,,,,2023-07-24,
+North Central MX,3,Mexico,mx,MX-SLP,,,,,2023-07-24,
+North Central MX,3,Mexico,mx,MX-ZAC,,,,,2023-07-24,
+North Korea,3,North Korea,kp,,,,,,,
+Northern Canada,3,Canada,ca,CA-NT,,,,,,
+Northern Canada,3,Canada,ca,CA-NU,,,,,,
+Northern Canada,3,Canada,ca,CA-YT,,,,,,
+Northern Ireland,3,Northern Ireland,gb,GB-NIR,,,,,,
+Northern Ontario,3,Canada,ca,CA-ON,,,Eastern Ontario,,,
+Northern Ontario,3,Canada,ca,CA-ON,,,Northeastern Ontario,,,
+Northern Ontario,3,Canada,ca,CA-ON,,,Northwestern Ontario,,,
+Northern Ontario,3,Canada,ca,CA-ON,,,Southwestern Ontario,,,
+Northern Territories,3,Australia,au,AU-NT,,,,,2023-07-24,
+Norway,3,Norway,no,,,,,,,
+Oceania,3,New Caledonia,fr,FR-NC,,,,,,
+Okinawa,3,Japan,jp,,,,,90,,
+Overseas France,3,Clipperton,fr,FR-CP,,,,,,
+Overseas France,3,French Polynesia,fr,FR-PF,,,,,,
+Overseas France,3,French Southern and Antarctic Lands,fr,FR-TF,,,,,,
+Overseas France,3,Mayotte,fr,FR-976,,,,,,
+Overseas France,3,Wallis and Futuna,fr,FR-WF,,,,,,
+Portugal,3,Portugal,pt,,,,,,,
+Queensland,3,Australia,au,AU-QLD,,,,,2023-07-24,
+Reunion,3,Reunion,fr,FR-974,,,,,,
+Rocky Mountains,3,United States,us,US-ID,,,,,2023-07-24,
+Rocky Mountains,3,United States,us,US-MT,,,,,2023-07-24,
+Rocky Mountains,3,United States,us,US-OR,Malheur County,,,,2023-07-24,
+Rocky Mountains,3,United States,us,US-WY,,,,,2023-07-24,
+Russia,3,Russia,ru,,,,,,,
+Saskatchewan,3,Canada,ca,CA-SK,,,,,2023-07-24,
+Shikoku,3,Japan,jp,,,,,76,,
+Shikoku,3,Japan,jp,,,,,77,,
+Shikoku,3,Japan,jp,,,,,78,,
+Shikoku,3,Japan,jp,,,,,79,,
+South Mexico,3,Mexico,mx,MX-CHP,,,,,2023-07-24,
+South Mexico,3,Mexico,mx,MX-GRO,,,,,2023-07-24,
+South Mexico,3,Mexico,mx,MX-MOR,,,,,2023-07-24,
+South Mexico,3,Mexico,mx,MX-OAX,,,,,2023-07-24,
+Southeast Asia,3,Philippines,ph,,,,,,,
+Southeast Asia,3,Singapore,sg,,,,,,,
+Southeast Asia,3,Thailand,th,,,,,,,
+Southeast Asia,3,Timor-Leste,tl,,,,,,,
+Southern Cone,3,Paraguay,py,,,,,,,
+Sweden,3,Sweden,se,,,,,,,
+Tasmania,3,Australia,au,AU-TAS,,,,,2023-07-24,
+Tohoku,3,Japan,jp,,,,,96,,
+Tohoku,3,Japan,jp,,,,,97,,
+Tohoku,3,Japan,jp,,,,,98,,
+Tohoku,3,Japan,jp,,,,,99,,
+Tohoku,3,Japan,jp,,,,,01,,
+Tohoku,3,Japan,jp,,,,,02,,
+Tohoku,3,Japan,jp,,,,,03,,
+Trinidad & Tobago,3,Trinidad & Tobago,tt,,,,,,,
+Upstate NY,3,United States,us,US-NY,,,,,2023-07-24,
+Uruguay,3,Uruguay,uy,,,,,,,
+Venezuela,3,Venezuela,ve,,,,,,,
+Viet Nam,3,Viet Nam,vn,,,,,,,
+Western Australia,3,Australia,au,AU-WA,,,,,2023-07-24,

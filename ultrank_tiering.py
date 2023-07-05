@@ -19,6 +19,18 @@ import datetime
 
 NUM_PLAYERS_FLOOR = 2
 
+SCORE_FLOOR = {
+    1: 250,
+    2: 200,
+    3: 200
+}
+
+ENTRANT_FLOOR = {
+    1: 64,
+    2: 48,
+    3: 32
+}
+
 
 class InvalidEventUrlException(Exception):
     pass
@@ -239,7 +251,7 @@ class TournamentTieringResult:
 class RegionValue:
     """Stores region multipliers."""
 
-    def __init__(self, country_code='', iso2='', county='', city='', state_district='', jp_postal='', multiplier=1, entrant_floor=64, score_floor=250, note=''):
+    def __init__(self, country_code='', iso2='', county='', city='', state_district='', jp_postal='', multiplier=1, note='', start_time=None, end_time=None):
         self.country_code = country_code
         self.iso2 = iso2
         self.county = county
@@ -247,15 +259,22 @@ class RegionValue:
         self.state_district = state_district
         self.jp_postal = jp_postal
         self.multiplier = multiplier
-        self.entrant_floor = entrant_floor
-        self.score_floor = score_floor
+        self.entrant_floor = ENTRANT_FLOOR[multiplier]
+        self.score_floor = SCORE_FLOOR[multiplier]
         self.note = note
+        self.start_time = start_time
+        self.end_time = end_time
 
-    def match(self, address):
+    def match(self, address, time=None):
         """Compares an address derived from Nominatim module to the stored 
         region.
         Higher number = larger match.
         """
+        if time != None:
+            if self.start_time != None and time < self.start_time:
+                return 0
+            if self.end_time != None and time >= self.end_time:
+                return 0
 
         if self.country_code == '':
             return 1
@@ -297,14 +316,14 @@ class RegionValue:
 
     def get_equality_measures(self):
         return (self.country_code,
-            self.iso2,
-            self.county,
-            self.city,
-            self.state_district,
-            self.jp_postal,
-            self.multiplier,
-            self.entrant_floor,
-            self.score_floor)
+                self.iso2,
+                self.county,
+                self.city,
+                self.state_district,
+                self.jp_postal,
+                self.multiplier,
+                self.entrant_floor,
+                self.score_floor)
 
     def __hash__(self):
         return hash(self.get_equality_measures())
@@ -454,7 +473,7 @@ class Tournament:
         best_region = None
 
         for region in region_mults:
-            match = region.match(self.address)
+            match = region.match(self.address, time=self.start_time)
             if match > best_match:
                 best_region = region
                 best_match = match
@@ -893,10 +912,12 @@ def read_regions():
         reader = csv.DictReader(regions_file)
 
         for row in reader:
+            start_date = datetime.date.fromisoformat(row['Start Date']) if row['Start Date'] != '' else None
+            end_date = datetime.date.fromisoformat(row['End Date']) if row['End Date'] != '' else None
+
             region_value = RegionValue(country_code=row['country_code'], iso2=row['ISO3166-2'], county=row['county'],
-                                       city = row['city'], state_district = row['state_district'], jp_postal=row['jp-postal-code'],
-                                       multiplier=int(row['Multiplier']), entrant_floor=int(row['Entrant Floor']),
-                                       score_floor=int(row['Score Floor']), note=row['Note'])
+                                       city=row['city'], state_district=row['state_district'], jp_postal=row['jp-postal-code'],
+                                       multiplier=int(row['Multiplier']), note=row['Note'], start_time=start_date, end_time=end_date)
             regions.add(region_value)
 
     return regions
