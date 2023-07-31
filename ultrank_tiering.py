@@ -84,17 +84,16 @@ class CountedValue:
 class PlayerValue:
     """Stores scores for players."""
 
-    def __init__(self, id_, tag, points=0, note='', invitational=0, start_time=None, end_time=None):
+    def __init__(self, id_, tag, points=0, note='', start_time=None, end_time=None):
         self.tag = tag
         self.id_ = id_
         self.points = points
         self.note = note
-        self.invitational_val = invitational
         self.start_time = start_time
         self.end_time = end_time
 
     def __str__(self):
-        return '{} (id {}) - {} (+{}) points [{}]'.format(self.tag, self.id_, self.points, self.invitational_val, self.note)
+        return '{} (id {}) - {} points [{}]'.format(self.tag, self.id_, self.points,  self.note)
 
     def is_within_timeframe(self, time):
         if self.start_time != None and time < self.start_time:
@@ -108,30 +107,41 @@ class PlayerValue:
 class PlayerValueGroup:
     """Stores multiple scores for players."""
 
-    def __init__(self, id_, tag, invitational_val=0, other_tags=[]):
+    def __init__(self, id_, tag, other_tags=[]):
         self.tag = tag
         self.id_ = id_
-        self.invitational_val = invitational_val
         self.values = []
+        self.invitational_values = []
         self.other_tags = [tag_.lower() for tag_ in other_tags]
-
-    def set_invitational_val(self, value):
-        self.invitational_val = value
-
-        for val in self.values:
-            val.invitational_val = value
 
     def add_value(self, points, note='', start_time=None, end_time=None):
         self.values.append(PlayerValue(
-            self.id_, self.tag, points, note, self.invitational_val, start_time, end_time))
+            self.id_, self.tag, points, note, start_time, end_time))
 
         self.values.sort(reverse=True, key=lambda val: val.points)
 
-    def retrieve_value(self, tournament):
+    def add_invitational_value(self, points, note='', start_time=None, end_time=None):
+        self.invitational_values.append(PlayerValue(
+            self.id_, self.tag, points, note, start_time, end_time))
+
+        self.invitational_values.sort(reverse=True, key=lambda val: val.points)
+
+    def retrieve_value(self, tournament, invitational=False):
+        value_to_return = None
+
         for value in self.values:
             if value.is_within_timeframe(tournament.start_time):
-                return value
-        return None
+                value_to_return = value
+                break 
+
+        if invitational:
+            for value in self.invitational_values:
+                if value.is_within_timeframe(tournament.start_time):
+                    if value_to_return is None:
+                        value_to_return = PlayerValue('', '', 0, '')
+                    return PlayerValue(value.id_, value.tag, note='{} + Invit. Val. (Rank {})'.format(value_to_return.note, value.note), points=value.points + value_to_return.points)
+
+        return value_to_return
 
     def match_tag(self, tag):
         return tag.lower() == self.tag.lower() or tag.lower() in self.other_tags
@@ -437,6 +447,10 @@ class Tournament:
             print(resp)
             raise e
 
+        if self.lat < -80:
+            self.address = {'country_code': 'aq'}
+            return
+
         # Try 10 times
         for i in range(5):
             try:
@@ -491,11 +505,10 @@ class Tournament:
                 continue
             if participant.id_ in scored_players:
                 player_value = scored_players[participant.id_].retrieve_value(
-                    self)
+                    self, invitational=self.is_invitational)
 
                 if player_value != None:
-                    score = player_value.points + \
-                        (player_value.invitational_val if self.is_invitational else 0)
+                    score = player_value.points
 
                     total_score += score
 
@@ -504,11 +517,10 @@ class Tournament:
             elif participant.tag.lower() in scored_tags:
                 for player_value_group in scored_players.values():
                     if player_value_group.match_tag(participant.tag):
-                        player_value = player_value_group.retrieve_value(self)
+                        player_value = player_value_group.retrieve_value(self, invitational=self.is_invitational)
 
                         if player_value != None:
-                            score = player_value.points + \
-                                (player_value.invitational_val if self.is_invitational else 0)
+                            score = player_value.points
                             potential_matches.append(PotentialMatchWithDqs(
                                 participant.tag, participant.id_, score, player_value.note, player_value.tag))
 
@@ -518,22 +530,20 @@ class Tournament:
         for participant, num_dqs in self.dq_list.values():
             if participant.id_ in scored_players:
                 player_value = scored_players[participant.id_].retrieve_value(
-                    self)
+                    self, invitational=self.is_invitational)
 
                 if player_value != None:
-                    score = player_value.points + \
-                        (player_value.invitational_val if self.is_invitational else 0)
+                    score = player_value.points
 
                     participants_with_dqs.append(DisqualificationValue(
                         CountedValue(player_value, score, participant.tag), num_dqs))
             elif participant.tag.lower() in scored_tags:
                 for player_value_group in scored_players.values():
                     if player_value_group.match_tag(participant.tag):
-                        player_value = player_value_group.retrieve_value(self)
+                        player_value = player_value_group.retrieve_value(self, invitational=self.is_invitational)
 
                         if player_value != None:
-                            score = player_value.points + \
-                                (player_value.invitational_val if self.is_invitational else 0)
+                            score = player_value.points
                             potential_matches.append(PotentialMatchWithDqs(
                                 participant.tag, participant.id_, score, player_value.note, player_value.tag, num_dqs))
 
@@ -897,10 +907,18 @@ def read_players():
             else:
                 id_ = int(id_)
 
-            if id_ in players:
-                player_value = players[id_]
-                player_value.set_invitational_val(
-                    int(row['Additional Points']))
+            start_date = datetime.date.fromisoformat(
+                row['Start Date']) if row['Start Date'] != '' else None
+            end_date = datetime.date.fromisoformat(
+                row['End Date']) if row['End Date'] != '' else None
+
+            if id_ not in players:
+                player_value_group = PlayerValueGroup(
+                    id_, tag, other_tags=alt_tags.get(row['Player'], []))
+                players[id_] = player_value_group
+
+            players[id_].add_invitational_value(
+                    int(row['Additional Points']), note=row['Rank'], start_time=start_date, end_time=end_date)
 
     return players, tags
 

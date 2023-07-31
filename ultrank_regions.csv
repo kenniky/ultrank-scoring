@@ -22,6 +22,7 @@ Heartland Midwest,1,United States,us,US-KS,Washington County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-KS,Wyandotte County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-MO,,,,,,2023-07-24
 Quebec,1,Canada,ca,CA-QC,,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,,City of New York,,,,2023-07-24
 Tristate,1,United States,us,US-NY,Bronx County,,,,,2023-07-24
 Tristate,1,United States,us,US-NY,Kings County,,,,,2023-07-24
 Tristate,1,United States,us,US-NY,Nassau County,,,,,2023-07-24
@@ -322,6 +323,7 @@ Texas,1,United States,us,US-LA,,,,,2023-07-24,
 Texas,1,United States,us,US-TX,,,,,2023-07-24,
 Tristate,1,United States,us,US-DE,,,,,2023-07-24,
 Tristate,1,United States,us,US-NJ,,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,,City of New York,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Bronx County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Dutchess County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Kings County,,,,2023-07-24,
@@ -676,10 +678,10 @@ Northern Canada,3,Canada,ca,CA-NT,,,,,,
 Northern Canada,3,Canada,ca,CA-NU,,,,,,
 Northern Canada,3,Canada,ca,CA-YT,,,,,,
 Northern Ireland,3,Northern Ireland,gb,GB-NIR,,,,,,
-Northern Ontario,3,Canada,ca,CA-ON,,,Eastern Ontario,,,
+Ontario,1,Canada,ca,CA-ON,,,Eastern Ontario,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northeastern Ontario,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northwestern Ontario,,,
-Northern Ontario,3,Canada,ca,CA-ON,,,Southwestern Ontario,,,
+Ontario,1,Canada,ca,CA-ON,,,Southwestern Ontario,,,
 Northern Territories,3,Australia,au,AU-NT,,,,,2023-07-24,
 Norway,3,Norway,no,,,,,,,
 Oceania,3,New Caledonia,fr,FR-NC,,,,,,
@@ -726,3 +728,4 @@ Uruguay,3,Uruguay,uy,,,,,,,
 Venezuela,3,Venezuela,ve,,,,,,,
 Viet Nam,3,Viet Nam,vn,,,,,,,
 Western Australia,3,Australia,au,AU-WA,,,,,2023-07-24,
+"ㅇRecreated Tournament, recalculate score",2,Antarctica,aq,,,,,,,
