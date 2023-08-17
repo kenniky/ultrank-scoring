@@ -461,6 +461,8 @@ class Tournament:
                 print(f'Nominatim error {i}')
                 pass
 
+        # print(self.address)
+
     def retrieve_start_time(self):
         query, variables = time_query(self.event_slug)
         resp = send_request(query, variables)
@@ -903,7 +905,7 @@ def read_players():
         for row in reader:
             id_ = row['Num']
             if id_ == '':
-                id_ = row['Player']
+                id_ = row['Name']
             else:
                 id_ = int(id_)
 
@@ -914,7 +916,7 @@ def read_players():
 
             if id_ not in players:
                 player_value_group = PlayerValueGroup(
-                    id_, tag, other_tags=alt_tags.get(row['Player'], []))
+                    id_, tag, other_tags=alt_tags.get(row['Name'], []))
                 players[id_] = player_value_group
 
             players[id_].add_invitational_value(
