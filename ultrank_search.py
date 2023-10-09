@@ -12,6 +12,9 @@ from ultrank_bulk import bulk_score, write_results
 # categorize a tournament as a related iteration.
 MINIMUM_JARO_SIMILARITY = 0.8
 
+# certain event names to skip string similarity check for
+skip_weekly_check = ['Smash Pro League', 'マエスマTOP', 'Champion Series', 'qualifier', 'lcq']
+
 
 class Tournament:
     def __init__(self, name, slug, start_at):
@@ -201,6 +204,10 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                     added_event = False
 
                     potential_weekly = "not checked"
+                    
+                    for skip in skip_weekly_check:
+                        if skip.lower() in tournament['name'].lower():
+                            potential_weekly = "skip"
 
                     for event in events:
 

@@ -1,4 +1,5 @@
-from ultrank_tiering import Tournament, startgg_slug_regex, TournamentTieringResult
+from ultrank_tiering import Tournament, TournamentTieringResult
+from startgg_toolkit import startgg_slug_regex
 import csv
 import os 
 import re
