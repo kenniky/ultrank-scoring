@@ -80,10 +80,11 @@ class CountedValue:
 class PlayerValue:
     """Stores scores for players."""
 
-    def __init__(self, id_, tag, points=0, note='', start_time=None, end_time=None):
+    def __init__(self, id_, tag, points=0, category='', note='', start_time=None, end_time=None):
         self.tag = tag
         self.id_ = id_
         self.points = points
+        self.category = category
         self.note = note
         self.start_time = start_time
         self.end_time = end_time
@@ -110,15 +111,15 @@ class PlayerValueGroup:
         self.invitational_values = []
         self.other_tags = [tag_.lower() for tag_ in other_tags]
 
-    def add_value(self, points, note='', start_time=None, end_time=None):
+    def add_value(self, points, category='', note='', start_time=None, end_time=None):
         self.values.append(PlayerValue(
-            self.id_, self.tag, points, note, start_time, end_time))
+            self.id_, self.tag, points, category, note, start_time, end_time))
 
         self.values.sort(reverse=True, key=lambda val: val.points)
 
     def add_invitational_value(self, points, note='', start_time=None, end_time=None):
         self.invitational_values.append(PlayerValue(
-            self.id_, self.tag, points, note, start_time, end_time))
+            self.id_, self.tag, points, 'Invitational Value', note, start_time, end_time))
 
         self.invitational_values.sort(reverse=True, key=lambda val: val.points)
 
@@ -134,8 +135,8 @@ class PlayerValueGroup:
             for value in self.invitational_values:
                 if value.is_within_timeframe(tournament.start_time):
                     if value_to_return is None:
-                        value_to_return = PlayerValue('', '', 0, '')
-                    return PlayerValue(value.id_, value.tag, note='{} + Invit. Val. (Rank {})'.format(value_to_return.note, value.note), points=value.points + value_to_return.points)
+                        value_to_return = PlayerValue('', '', 0)
+                    return PlayerValue(value.id_, value.tag, category=value_to_return.category, note='{} + Invit. Val. (Rank {})'.format(value_to_return.note, value.note), points=value.points + value_to_return.points)
 
         return value_to_return
 
@@ -543,7 +544,7 @@ class Tournament:
                                 participant.tag, participant.id_, score, player_value.note, player_value.tag, num_dqs))
 
         # Sort for readability
-        valued_participants.sort(reverse=True, key=lambda p: p.points)
+        valued_participants.sort(key=lambda p: (-1 * p.points, p.player_value.category, p.player_value.note))
         participants_with_dqs.sort(
             reverse=True, key=lambda p: (p.dqs, p.value.points))
         potential_matches.sort(key=lambda m: (m.dqs, m.tag))
@@ -888,7 +889,7 @@ def read_players():
                     id_, tag, other_tags=alt_tags.get(row['Player'], []))
                 players[id_] = player_value_group
 
-            players[id_].add_value(points, row['Note'], start_date, end_date)
+            players[id_].add_value(points, row['Category'], row['Note'], start_date, end_date)
 
             tags.add(tag.lower())
 
