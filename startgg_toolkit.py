@@ -13,7 +13,11 @@ ggkeyfile.close()
 ggheader = {"Authorization": "Bearer " + ggkey}
 
 startgg_slug_regex = re.compile(
-    r'tournament\/[a-z0-9\-_]+\/event\/[a-z0-9\-_]+')
+    r'tournament\/[a-z0-9\-_]+\/events?\/[a-z0-9\-_]+')
+
+
+class InvalidEventUrlException(Exception):
+    pass
 
 def send_request(query, variables, quiet=False):
     # Sends a request to the startgg server.
@@ -70,6 +74,6 @@ def isolate_slug(url):
     match = startgg_slug_regex.search(url)
 
     if not match:
-        raise Exception 
+        raise InvalidEventUrlException 
 
-    return match.group(0)
+    return match.group(0).replace('/events/', '/event/')

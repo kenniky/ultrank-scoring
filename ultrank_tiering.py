@@ -9,7 +9,7 @@ Requirements:
   ultrank_invitational.csv
 """
 
-from startgg_toolkit import send_request, startgg_slug_regex
+from startgg_toolkit import send_request, isolate_slug
 from geopy.geocoders import Nominatim
 import csv
 import re
@@ -30,10 +30,6 @@ ENTRANT_FLOOR = {
     2: 48,
     3: 32
 }
-
-
-class InvalidEventUrlException(Exception):
-    pass
 
 
 class PotentialMatchWithDqs:
@@ -385,12 +381,7 @@ class Tournament:
     def __init__(self, event_slug, is_invitational=False, location=True):
         """Populates tournament metadata with tournament slug/invitational status."""
 
-        match = startgg_slug_regex.search(event_slug)
-
-        if not match:
-            raise InvalidEventUrlException
-
-        self.event_slug = match.group(0)
+        self.event_slug = isolate_slug(event_slug)
         self.is_invitational = is_invitational
         self.tier = None
 
@@ -490,6 +481,8 @@ class Tournament:
 
         for region in region_mults:
             match = region.match(self.address, time=self.start_time)
+            # if match != 0:
+            #     print('{} {}'.format(match, str(region)))
             if match > best_match:
                 best_region = region
                 best_match = match
