@@ -209,8 +209,9 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                         if skip.lower() in tournament['name'].lower():
                             potential_weekly = "skip"
 
-                    for event in events:
+                    ladder_potential = None
 
+                    for event in events:
                         if tournament['name'].lower().find('weekly') != -1 or event['name'].lower().find('weekly') != -1:
                             writer.writerow({'Tournament': tournament['name'],
                                              'Event': event['name'],
@@ -233,6 +234,10 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Slug': event['slug'],
                                              'Used': 'False',
                                              'Skip Reason': 'Probable Arcadian (contains string "arcadian")'})
+                            continue
+
+                        if event['name'].lower().find('ladder') != -1:
+                            ladder_potential = event
                             continue
 
                         if event['name'].lower().find('redemption') != -1:
@@ -348,6 +353,22 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
 
                         slugs.append(event['slug'])
                         added_event = True
+
+                    if ladder_potential:
+                        if added_event:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': ladder_potential['name'],
+                                             'Slug': ladder_potential['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "ladder")'})
+                        else:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': ladder_potential['name'],
+                                             'Slug': ladder_potential['slug'],
+                                             'Used': 'True'})
+
+                            slugs.append(ladder_potential['slug'])
+                            added_event = True
                 except Exception as e:
                     print(e)
                     print(tournament['slug'])
