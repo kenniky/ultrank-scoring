@@ -372,6 +372,9 @@ class Entrant:
             return False
         return self.id_ == other.id_ and self.tag == other.tag
 
+    def __str__(self):
+        return f'{self.tag} [{self.id_}]'
+
     def __hash__(self):
         return hash((self.id_, self.tag))
 
@@ -796,6 +799,9 @@ def get_dqs(event_slug, phase_ids=None):
 
     for set_data in get_sets_in_phases(event_slug, phase_ids):
         if set_data['winnerId'] == None:
+            continue
+
+        if len(set_data['slots']) < 2:
             continue
 
         loser = 1 if set_data['winnerId'] == set_data['slots'][0]['entrant']['id'] else 0
