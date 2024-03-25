@@ -70,9 +70,12 @@ class CountedValue:
         self.id_ = player_value.id_
 
     def __str__(self):
-        full_tag = self.alt_tag + \
-            (' (aka {})'.format(self.player_value.tag)
-             if self.alt_tag != self.player_value.tag else '')
+        if self.player_value.tag == self.player_value.hex_:
+            full_tag = self.player_value.tag
+        elif self.alt_tag == self.player_value.tag:
+            full_tag = self.alt_tag
+        else:
+            full_tag = f'{self.alt_tag} (aka {self.player_value.tag})'
 
         return '{} - {} points [{}]'.format(full_tag, self.points, self.player_value.note)
 
@@ -80,9 +83,10 @@ class CountedValue:
 class PlayerValue:
     """Stores scores for players."""
 
-    def __init__(self, id_, tag, points=0, category='', note='', start_time=None, end_time=None):
+    def __init__(self, id_, hex_, tag, points=0, category='', note='', start_time=None, end_time=None):
         self.tag = tag
         self.id_ = id_
+        self.hex_ = hex_
         self.points = points
         self.category = category
         self.note = note
@@ -104,22 +108,23 @@ class PlayerValue:
 class PlayerValueGroup:
     """Stores multiple scores for players."""
 
-    def __init__(self, id_, tag, other_tags=[]):
+    def __init__(self, id_, hex_, tag, other_tags=[]):
         self.tag = tag
         self.id_ = id_
+        self.hex_ = hex_
         self.values = []
         self.invitational_values = []
         self.other_tags = [tag_.lower() for tag_ in other_tags]
 
     def add_value(self, points, category='', note='', start_time=None, end_time=None):
         self.values.append(PlayerValue(
-            self.id_, self.tag, points, category, note, start_time, end_time))
+            self.id_, self.hex_, self.tag, points, category, note, start_time, end_time))
 
         self.values.sort(reverse=True, key=lambda val: val.points)
 
     def add_invitational_value(self, points, note='', start_time=None, end_time=None):
         self.invitational_values.append(PlayerValue(
-            self.id_, self.tag, points, 'Invitational Value', note, start_time, end_time))
+            self.id_, self.hex_, self.tag, points, 'Invitational Value', note, start_time, end_time))
 
         self.invitational_values.sort(reverse=True, key=lambda val: val.points)
 
@@ -135,8 +140,8 @@ class PlayerValueGroup:
             for value in self.invitational_values:
                 if value.is_within_timeframe(tournament.start_time):
                     if value_to_return is None:
-                        value_to_return = PlayerValue('', '', 0)
-                    return PlayerValue(value.id_, value.tag, category=value_to_return.category, note='{} + Invit. Val. (Rank {})'.format(value_to_return.note, value.note), points=value.points + value_to_return.points)
+                        value_to_return = PlayerValue('', '', '', 0)
+                    return PlayerValue(value.id_, value.hex_, value.tag, category=value_to_return.category, note='{} + Invit. Val. (Rank {})'.format(value_to_return.note, value.note), points=value.points + value_to_return.points)
 
         return value_to_return
 
@@ -879,6 +884,8 @@ def read_players():
             else:
                 id_ = int(id_)
 
+            slug = row['Start.gg Hex ID']
+
             tag = row['Player'].strip()
             if tag == '':
                 continue
@@ -892,7 +899,7 @@ def read_players():
 
             if id_ not in players:
                 player_value_group = PlayerValueGroup(
-                    id_, tag, other_tags=alt_tags.get(row['Player'], []))
+                    id_, slug, tag, other_tags=alt_tags.get(row['Player'], []))
                 players[id_] = player_value_group
 
             players[id_].add_value(points, row['Category'], row['Note'], start_date, end_date)
@@ -909,6 +916,8 @@ def read_players():
             else:
                 id_ = int(id_)
 
+            slug = row['Hex']
+
             start_date = datetime.date.fromisoformat(
                 row['Start Date']) if row['Start Date'] != '' else None
             end_date = datetime.date.fromisoformat(
@@ -916,7 +925,7 @@ def read_players():
 
             if id_ not in players:
                 player_value_group = PlayerValueGroup(
-                    id_, tag, other_tags=alt_tags.get(row['Name'], []))
+                    id_, slug, tag, other_tags=alt_tags.get(row['Name'], []))
                 players[id_] = player_value_group
 
             players[id_].add_invitational_value(

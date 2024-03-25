@@ -2577,7 +2577,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 17th,スノー,d7014dc2,2789940,50,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 17th,たいけい,755e1bd3,2146899,50,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,Gachipi,07a754d8,2702463,50,2023-12-18,2024-12-31,
-0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,Kyou,40f8c511,1534455,50,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,きょう,40f8c511,1534455,50,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,Rizeasu,fd635518,533753,50,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,Shirayuki,deb476b0,1494087,50,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240108 UmeburaSP#10 (P) - 25th,Yン,39ce7d25,1226466,50,2023-12-18,2024-12-31,
@@ -2803,7 +2803,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.3 - National Rankings,Mexico [23] #22,Whisky,3c817ca4,38067,30,2023-12-18,,https://twitter.com/CosmicHives/status/1741216161570697241
 0.3 - National Rankings,Mexico [23] #23,Wonf,b13a6ec1,137248,30,2023-12-18,,https://twitter.com/CosmicHives/status/1741216161570697241
 0.3 - National Rankings,Mexico [23] #24,Bonilla,7308ffdf,1323003,30,2023-12-18,,https://twitter.com/CosmicHives/status/1741216161570697241
-0.3 - National Rankings,Mexico [23] #25,Law,93286df2,631725,30,2023-12-18,,https://twitter.com/CosmicHives/status/1741216161570697241
+0.3 - National Rankings,Mexico [23] #25,MKLaw,93286df2,631725,30,2023-12-18,,https://twitter.com/CosmicHives/status/1741216161570697241
 1.1 - USA Region Seat,Florida [23.1 UR] #1,Riku,6c77f286,1042374,50,2023-07-25,2023-12-18,
 1.1 - USA Region Seat,Florida [23.1 UR] #2,Goblin,e2b415de,57020,50,2023-07-25,2023-12-18,
 1.1 - USA Region Seat,Florida [23.1 UR] #3,Anathema,3351cf4f,71203,50,2023-07-25,2023-12-18,
@@ -3230,7 +3230,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.3 - Mexico Region Seat,CDMX [22] #1,Javi,ca50cbcd,205133,50,,2023-06-20,
 1.3 - Mexico Region Seat,CDMX [22] #2,Cloudy,045bcc77,71251,50,,2023-06-20,
 1.3 - Mexico Region Seat,CDMX [22] #3,Nair^,ac3d5867,156346,50,,2023-06-20,
-1.3 - Mexico Region Seat,CDMX [22] #4,Law,93286df2,631725,50,,2023-06-20,
+1.3 - Mexico Region Seat,CDMX [22] #4,MKLaw,93286df2,631725,50,,2023-06-20,
 1.3 - Mexico Region Seat,CDMX [22] #5,Bestia,8f4025da,70889,50,,2023-06-20,
 1.3 - Mexico Region Seat,CDMX [23.1] #1,Guilheww,3fb25f10,937555,50,2023-06-20,2023-09-25,https://twitter.com/SuperStatBros/status/1671225271154769929
 1.3 - Mexico Region Seat,CDMX [23.1] #2,Cloudy,045bcc77,71251,50,2023-06-20,2023-09-25,https://twitter.com/SuperStatBros/status/1671225271154769929
@@ -3737,11 +3737,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 2.1 - Europe,Spain [T6] #3,Pepo,67df2de4,137380,30,2024-02-04,,https://twitter.com/SmashBrosSpain/status/1754221533923360958
 2.1 - Europe,Spain [T6] #4,Utop-ian,622245e2,1152009,20,2024-02-04,,https://twitter.com/SmashBrosSpain/status/1754221533923360958
 2.1 - Europe,Spain [T6] #5,Perla,665e467a,153371,10,2024-02-04,,https://twitter.com/SmashBrosSpain/status/1754221533923360958
-2.1 - Europe,Sweden #1,THE SCHMIXTAPE,bbbc0c60,251734,50,,,https://twitter.com/TerozHS/status/1614728173458956290
-2.1 - Europe,Sweden #2,big chungus,2c15da17,1811092,40,,,https://twitter.com/TerozHS/status/1614728173458956290
-2.1 - Europe,Sweden #3,Rage,ad7307f4,279857,30,,,https://twitter.com/TerozHS/status/1614728173458956290
-2.1 - Europe,Sweden #4,ThymeBalloon,26bb07d4,48681,20,,,https://twitter.com/TerozHS/status/1614728173458956290
-2.1 - Europe,Sweden #5,Pipwolf,dda1c39f,1500895,10,,,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [22] #1,THE SCHMIXTAPE,bbbc0c60,251734,50,,2024-03-21,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [22] #2,big chungus,2c15da17,1811092,40,,2024-03-21,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [22] #3,Rage,ad7307f4,279857,30,,2024-03-21,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [22] #4,ThymeBalloon,26bb07d4,48681,20,,2024-03-21,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [22] #5,Pipwolf,dda1c39f,1500895,10,,2024-03-21,https://twitter.com/TerozHS/status/1614728173458956290
+2.1 - Europe,Sweden [23] #1,big chungus,2c15da17,1811092,50,2024-03-21,,https://twitter.com/DavidDutto/status/1770943833271886041
+2.1 - Europe,Sweden [23] #2,THE SCHMIXTAPE,bbbc0c60,251734,40,2024-03-21,,https://twitter.com/DavidDutto/status/1770943833271886041
+2.1 - Europe,Sweden [23] #3,KP,6823d0da,452680,30,2024-03-21,,https://twitter.com/DavidDutto/status/1770943833271886041
+2.1 - Europe,Sweden [23] #4,Faifra,411d12a6,1474167,20,2024-03-21,,https://twitter.com/DavidDutto/status/1770943833271886041
+2.1 - Europe,Sweden [23] #5,ThymeBalloon,26bb07d4,48681,10,2024-03-21,,https://twitter.com/DavidDutto/status/1770943833271886041
 2.1 - Europe,Switzerland [22 S1] #1,Destany,d9a22251,212478,50,,2023-02-01,
 2.1 - Europe,Switzerland [22 S1] #2,Jaka,f8b1191f,995605,40,,2023-02-01,
 2.1 - Europe,Switzerland [22 S1] #3,Karpador64,52f3ad4a,623824,30,,2023-02-01,
@@ -3862,11 +3867,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 3.1 - Japan,Tohoku [22 ΩR] #3,haruka.,4edc693c,1489301,30,,2023-02-25,
 3.1 - Japan,Tohoku [22 ΩR] #4,わにぱち,7927c50d,2578032,20,,2023-02-25,
 3.1 - Japan,Tohoku [22 ΩR] #5,おおもり,e3284849,1193418,10,,2023-02-25,
-3.1 - Japan,Tohoku [v4] #1,よこしゃーぷ,9d6f3d08,3128645,50,2023-02-25,,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
-3.1 - Japan,Tohoku [v4] #2,りてしあ,284b08b4,2544532,40,2023-02-25,,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
-3.1 - Japan,Tohoku [v4] #3,英都/London,cca44316,2569024,30,2023-02-25,,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
-3.1 - Japan,Tohoku [v4] #4,アザラッシュ,93fd337e,1478758,20,2023-02-25,,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
-3.1 - Japan,Tohoku [v4] #5,あんこ,2203c6aa,3191858,10,2023-02-25,,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v4] #1,よこしゃーぷ,9d6f3d08,3128645,50,2023-02-25,2024-03-22,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v4] #2,りてしあ,284b08b4,2544532,40,2023-02-25,2024-03-22,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v4] #3,英都/London,cca44316,2569024,30,2023-02-25,2024-03-22,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v4] #4,アザラッシュ,93fd337e,1478758,20,2023-02-25,2024-03-22,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v4] #5,あんこ,2203c6aa,3191858,10,2023-02-25,2024-03-22,https://twitter.com/YUUGEKISSBU/status/1629405846773059585
+3.1 - Japan,Tohoku [v5] #1,りてしあ,284b08b4,2544532,50,2024-03-22,,https://twitter.com/YUUGEKISSBU/status/1771114801932255301
+3.1 - Japan,Tohoku [v5] #2,アキオ,93dd036e,2934793,40,2024-03-22,,https://twitter.com/YUUGEKISSBU/status/1771114801932255301
+3.1 - Japan,Tohoku [v5] #3,よこしゃーぷ,9d6f3d08,3128645,30,2024-03-22,,https://twitter.com/YUUGEKISSBU/status/1771114801932255301
+3.1 - Japan,Tohoku [v5] #4,ばたおさん,4022137f,1487797,20,2024-03-22,,https://twitter.com/YUUGEKISSBU/status/1771114801932255301
+3.1 - Japan,Tohoku [v5] #5,そめ,6259b43d,244510,10,2024-03-22,,https://twitter.com/YUUGEKISSBU/status/1771114801932255301
 4 - Oceania Region Seat,Victoria [22 Q4] #1,Sriks,ca522668,46307,50,,2023-03-04,https://twitter.com/THEGWIF/status/1600682181822918656
 4 - Oceania Region Seat,Victoria [22 Q4] #2,Jdizzle,bd2ad28b,61140,50,,2023-03-04,https://twitter.com/THEGWIF/status/1600682181822918656
 4 - Oceania Region Seat,Victoria [22 Q4] #3,SebPro101,7f267f98,220863,50,,2023-03-04,https://twitter.com/THEGWIF/status/1600682181822918656
