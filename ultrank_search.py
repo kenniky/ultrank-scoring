@@ -13,8 +13,8 @@ from ultrank_bulk import bulk_score, write_results
 MINIMUM_JARO_SIMILARITY = 0.8
 
 # certain event names to skip string similarity check for
-skip_weekly_check = ['Smash Pro League', 'マエスマTOP', 'Champion Series', 'qualifier', 'lcq']
-
+skip_weekly_check = ['Xentric Gaming: Let''s Brawl', CLUTCH23. Ultimate Mayhem', 'マエスマ\'', 'マエスマTOP', 'Champion Series', 'qualifier', 'lcq', 'Ultimate Gaiden', 'Xenosaga', 'Macrospacing Vancouver', 'Ultimate Challenger Series', '月']
+organizer_blacklist = ['6d94b652']
 
 class Tournament:
     def __init__(self, name, slug, start_at):
@@ -22,6 +22,7 @@ class Tournament:
         self.slug = slug
         self.start_at = start_at
         self.time_since = start_at
+        self.similarity = 0
 
 
 def tournaments_query(start_time, end_time, page=1, per_page=75):
@@ -95,6 +96,7 @@ def admin_query(tournament_slug, page=1, per_page=75):
           owner {
             id
           }
+          hasOfflineEvents
         }
       }
     }
@@ -105,6 +107,20 @@ def admin_query(tournament_slug, page=1, per_page=75):
         "pageNum": {},
         "perPage": {}
     }}'''.format(tournament_slug, page, per_page)
+
+    return query, variables
+
+def tournament_owner_query(tournament_slug):
+    query = '''query tournamentOwnerQuery($tournamentSlug: String!) {
+  tournament(slug: $tournamentSlug) {
+    owner {
+      discriminator
+    }
+  }
+}'''
+    variables = '''{{
+        "tournamentSlug": "{}"
+    }}'''.format(tournament_slug)
 
     return query, variables
 
@@ -126,6 +142,7 @@ def get_admined_tournaments(tournament_slug, day_range=15):
     while True:
         query, variables = admin_query(tournament_slug, page)
         resp = send_request(query, variables, quiet=True)
+        # print(resp)
 
         # Set tournament-specific variables if not set
         if tournament_name == None:
@@ -143,11 +160,12 @@ def get_admined_tournaments(tournament_slug, day_range=15):
 
         # Gather tournaments
         tournaments.extend([Tournament(tournament['name'], tournament['slug'], tournament['startAt']) for tournament in resp['data']['tournament']['owner']['tournaments']['nodes'] if (
-            tournament['owner']['id'] == tournament_owner_id and tournament['slug'] != tournament_slug and tournament['startAt'] >= range_start and tournament['startAt'] <= tournament_start)])
+            tournament['owner']['id'] == tournament_owner_id and tournament['slug'] != tournament_slug and tournament['startAt'] >= range_start and tournament['startAt'] <= tournament_start
+            and tournament['hasOfflineEvents'])])
 
         # Check if all tournaments are before the requested tournament.
         # Since the API returns tournaments in reverse chronological order, this means that we don't need to check the rest.
-        if len([tournament for tournament in resp['data']['tournament']['owner']['tournaments']['nodes'] if (tournament['owner']['id'] == resp['data']['tournament']['owner']['id'] and tournament['startAt'] <= tournament_start)]) == 0:
+        if len([tournament for tournament in resp['data']['tournament']['owner']['tournaments']['nodes'] if (tournament['owner']['id'] == resp['data']['tournament']['owner']['id'] and tournament['startAt'] < tournament_start)]) == 0:
             break
 
         if page >= resp['data']['tournament']['owner']['tournaments']['pageInfo']['totalPages']:
@@ -161,17 +179,24 @@ def get_admined_tournaments(tournament_slug, day_range=15):
 
 
 def check_potential_weekly(tournament_slug):
-
     other_admined_tournaments = get_admined_tournaments(tournament_slug)
 
     base_tournament = other_admined_tournaments[0]
 
     for tournament in other_admined_tournaments[1:]:
-        if jaro_winkler(base_tournament.name, tournament.name, score_cutoff=MINIMUM_JARO_SIMILARITY) != 0:
+        sim = jaro_winkler(base_tournament.name, tournament.name, score_cutoff=MINIMUM_JARO_SIMILARITY)
+        if sim != 0:
             tournament.time_since = base_tournament.start_at - tournament.start_at
+            tournament.similarity = sim
             return tournament
 
     return None
+
+def check_blacklist(tournament_slug):
+    query, variables = tournament_owner_query(tournament_slug)
+    resp = send_request(query, variables)
+
+    return resp['data']['tournament']['owner']['discriminator'] in organizer_blacklist
 
 
 def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
@@ -185,8 +210,9 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
         writer = csv.DictWriter(
             events_file, ['Tournament', 'Event', 'Slug', 'Used', 'Skip Reason'])
         writer.writeheader()
-
+        # iter_ = 0
         while True:
+            # iter_ += 1
             query, variables = tournaments_query(
                 start_time, end_time, page=page)
             resp = send_request(query, variables, quiet=True)
@@ -212,6 +238,16 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                     ladder_potential = None
 
                     for event in events:
+                        # if iter_ == 7:
+                        #     print(event['slug'])
+                        if check_blacklist(tournament['slug']):
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Tournament Creator Blacklisted'})
+                            continue
+
                         if tournament['name'].lower().find('weekly') != -1 or event['name'].lower().find('weekly') != -1:
                             writer.writerow({'Tournament': tournament['name'],
                                              'Event': event['name'],
@@ -330,6 +366,16 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                             added_event = True
                             continue
 
+                        if tournament['name'].lower().find('seasonal') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'True'})
+
+                            slugs.append(event['slug'])
+                            added_event = True
+                            continue
+
                         if potential_weekly == "not checked":
                             potential_weekly = check_potential_weekly(tournament['slug'])
 
@@ -341,7 +387,7 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Event': event['name'],
                                              'Slug': event['slug'],
                                              'Used': 'False',
-                                             'Skip Reason': 'Probable Weekly (found tournament {} [{}] which precedes by {} days)'.format(potential_weekly.name, potential_weekly.slug, days_since)})
+                                             'Skip Reason': 'Probable Weekly [{:.5f}] (found tournament {} [{}] which precedes by {} days)'.format(potential_weekly.similarity, potential_weekly.name, potential_weekly.slug, days_since)})
                             added_event = True
 
                             continue

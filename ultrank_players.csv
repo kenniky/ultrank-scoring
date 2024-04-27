@@ -1974,7 +1974,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) -  9th,Maister,9fb774ae,135042,50,2023-07-25,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) -  9th,Tea,ab90c078,695882,50,2023-07-25,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) -  9th,Tweek,0d650c15,15768,50,2023-07-25,2024-07-15,
-0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) - 13th,Machu,d6abfb2d,156498,50,2023-07-25,2024-07-15,
+0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) - 13th,d6abfb2d,d6abfb2d,156498,50,2023-07-25,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) - 13th,MKBigBoss,60bedceb,546734,50,2023-07-25,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) - 13th,ShinyMark,1cbc6e18,184005,50,2023-07-25,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 230730 Smash Factor X (S+) - 13th,Skyjay,f5b6768a,961165,50,2023-07-25,2024-07-15,
@@ -3086,10 +3086,14 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,MD/VA [DMV 23 Q3] #2,smub,c8e1133a,1187180,30,2023-10-18,2024-01-17,https://twitter.com/MDVA_SMASH/status/1714676261988040823
 1.1.1 - USA,MD/VA [DMV 23 Q3] #3,Dexter,f0c31f04,24856,20,2023-10-18,2024-01-17,https://twitter.com/MDVA_SMASH/status/1714676261988040823
 1.1.1 - USA,MD/VA [DMV 23 Q3] #4,Pink Fresh,7133e74e,15915,10,2023-10-18,2024-01-17,https://twitter.com/MDVA_SMASH/status/1714676261988040823
-1.1.1 - USA,MD/VA [DMV 23 Q4] #1,Oolong,6aa40c20,483953,50,2024-01-17,,https://twitter.com/MDVA_SMASH/status/1747671771447201817
-1.1.1 - USA,MD/VA [DMV 23 Q4] #2,smub,c8e1133a,1187180,30,2024-01-17,,https://twitter.com/MDVA_SMASH/status/1747671771447201817
-1.1.1 - USA,MD/VA [DMV 23 Q4] #3,Dexter,f0c31f04,24856,20,2024-01-17,,https://twitter.com/MDVA_SMASH/status/1747671771447201817
-1.1.1 - USA,MD/VA [DMV 23 Q4] #4,SlushieV2,a28e77f6,817932,10,2024-01-17,,https://twitter.com/MDVA_SMASH/status/1747671771447201817
+1.1.1 - USA,MD/VA [DMV 23 Q4] #1,Oolong,6aa40c20,483953,50,2024-01-17,2024-04-24,https://twitter.com/MDVA_SMASH/status/1747671771447201817
+1.1.1 - USA,MD/VA [DMV 23 Q4] #2,smub,c8e1133a,1187180,30,2024-01-17,2024-04-24,https://twitter.com/MDVA_SMASH/status/1747671771447201817
+1.1.1 - USA,MD/VA [DMV 23 Q4] #3,Dexter,f0c31f04,24856,20,2024-01-17,2024-04-24,https://twitter.com/MDVA_SMASH/status/1747671771447201817
+1.1.1 - USA,MD/VA [DMV 23 Q4] #4,SlushieV2,a28e77f6,817932,10,2024-01-17,2024-04-24,https://twitter.com/MDVA_SMASH/status/1747671771447201817
+1.1.1 - USA,MD/VA [DMV 24 Q1] #1,Oolong,6aa40c20,483953,50,2024-04-24,,https://twitter.com/mdva_smash/status/1783192718614646846
+1.1.1 - USA,MD/VA [DMV 24 Q1] #2,smub,c8e1133a,1187180,30,2024-04-24,,https://twitter.com/mdva_smash/status/1783192718614646846
+1.1.1 - USA,MD/VA [DMV 24 Q1] #3,Dexter,f0c31f04,24856,20,2024-04-24,,https://twitter.com/mdva_smash/status/1783192718614646846
+1.1.1 - USA,MD/VA [DMV 24 Q1] #4,SLASHY,92b09a42,478594,10,2024-04-24,,https://twitter.com/mdva_smash/status/1783192718614646846
 1.1.1 - USA,MD/VA [SoVA 23 Q2] #1,Clique,65467e6d,1074811,50,2023-07-25,2023-11-17,
 1.1.1 - USA,MD/VA [SoVA 23 Q3] #1,Clique,65467e6d,1074811,50,2023-11-17,2023-12-30,https://twitter.com/SovaSmash/status/1725617455689584822
 1.1.1 - USA,MD/VA [SoVA 23 Q4] #1,Clique,65467e6d,1074811,50,2023-12-30,2024-04-08,https://twitter.com/SovaSmash/status/1741169378182205554
@@ -3129,11 +3133,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,NorCal [23 Q3] #3,Nessboy12,546c5f93,574278,30,2023-10-25,2024-01-31,https://twitter.com/Alsoda_uwu/status/1717375722774475034
 1.1.1 - USA,NorCal [23 Q3] #4,shrutik,e81679bd,1758326,20,2023-10-25,2024-01-31,https://twitter.com/Alsoda_uwu/status/1717375722774475034
 1.1.1 - USA,NorCal [23 Q3] #5,Nabster,73121a89,4774,10,2023-10-25,2024-01-31,https://twitter.com/Alsoda_uwu/status/1717375722774475034
-1.1.1 - USA,NorCal [23 Q4] #1,Lui$,00b68019,173403,50,2024-01-31,,https://twitter.com/Alsoda_uwu/status/1752955087310422032
-1.1.1 - USA,NorCal [23 Q4] #2,Lammers44,86d46a76,2201580,40,2024-01-31,,https://twitter.com/Alsoda_uwu/status/1752955087310422032
-1.1.1 - USA,NorCal [23 Q4] #3,Nessboy12,546c5f93,574278,30,2024-01-31,,https://twitter.com/Alsoda_uwu/status/1752955087310422032
-1.1.1 - USA,NorCal [23 Q4] #4,Widara,4de8a0a7,2896945,20,2024-01-31,,https://twitter.com/Alsoda_uwu/status/1752955087310422032
-1.1.1 - USA,NorCal [23 Q4] #5,Saltlord,313077c0,871392,10,2024-01-31,,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [23 Q4] #1,Lui$,00b68019,173403,50,2024-01-31,2024-04-25,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [23 Q4] #2,Lammers44,86d46a76,2201580,40,2024-01-31,2024-04-25,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [23 Q4] #3,Nessboy12,546c5f93,574278,30,2024-01-31,2024-04-25,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [23 Q4] #4,Widara,4de8a0a7,2896945,20,2024-01-31,2024-04-25,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [23 Q4] #5,Saltlord,313077c0,871392,10,2024-01-31,2024-04-25,https://twitter.com/Alsoda_uwu/status/1752955087310422032
+1.1.1 - USA,NorCal [24 Q1] #1,Lui$,00b68019,173403,50,2024-04-25,,https://twitter.com/shrutikmk/status/1783395200599281914
+1.1.1 - USA,NorCal [24 Q1] #2,Dtier,ce7027cc,1496295,40,2024-04-25,,https://twitter.com/shrutikmk/status/1783395200599281914
+1.1.1 - USA,NorCal [24 Q1] #3,Nessboy12,546c5f93,574278,30,2024-04-25,,https://twitter.com/shrutikmk/status/1783395200599281914
+1.1.1 - USA,NorCal [24 Q1] #4,Titan,bb08c68a,1838989,20,2024-04-25,,https://twitter.com/shrutikmk/status/1783395200599281914
+1.1.1 - USA,NorCal [24 Q1] #5,Lammers44,86d46a76,2201580,10,2024-04-25,,https://twitter.com/shrutikmk/status/1783395200599281914
 1.1.1 - USA,Rocky Mountains (Idaho) [S09] #1,Pow,e939af94,38651,50,2023-07-25,2024-03-02,https://twitter.com/GemStateSmash/status/1678272259335806976
 1.1.1 - USA,Rocky Mountains (Idaho) [S09] #2,Waga,283dcaf7,2098017,40,2023-07-25,2024-03-02,https://twitter.com/GemStateSmash/status/1678272259335806976
 1.1.1 - USA,Rocky Mountains (Idaho) [S09] #3,Mada,c07f0676,65489,30,2023-07-25,2024-03-02,https://twitter.com/GemStateSmash/status/1678272259335806976
@@ -3187,7 +3196,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.2 - Canada Region Seat,British Columbia [v7] #1,Ouch!?,5dba9df5,300502,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
 1.2 - Canada Region Seat,British Columbia [v7] #2,Big D,67dab81e,21504,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
 1.2 - Canada Region Seat,British Columbia [v7] #3,Lemmon,5d39ffe6,250692,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
-1.2 - Canada Region Seat,British Columbia [v7] #4,Machu,d6abfb2d,156498,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
+1.2 - Canada Region Seat,British Columbia [v7] #4,d6abfb2d,d6abfb2d,156498,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
 1.2 - Canada Region Seat,British Columbia [v7] #5,Tickle,61396e46,53715,50,2024-01-07,,https://twitter.com/BCSmashUltimate/status/1743975178537963683
 1.2 - Canada Region Seat,Ontario [22.4] #1,Riddles,03d3a671,160464,50,,2023-05-11,
 1.2 - Canada Region Seat,Ontario [22.4] #2,Burst,6726bbe2,56473,50,,2023-05-11,
@@ -4069,11 +4078,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 4.1 - Oceania,New South Wales [23.3] #3,Ryan,66c7e2aa,257947,30,2023-10-10,2023-12-10,https://twitter.com/sydneysmash/status/1711612522292473905
 4.1 - Oceania,New South Wales [23.3] #4,Risette,98f6afb6,1571267,20,2023-10-10,2023-12-10,https://twitter.com/sydneysmash/status/1711612522292473905
 4.1 - Oceania,New South Wales [23.3] #5,Johto,5345c868,1057552,10,2023-10-10,2023-12-10,https://twitter.com/sydneysmash/status/1711612522292473905
-4.1 - Oceania,New South Wales [23.4] #1,Dmo,5e92138b,1011123,50,2023-12-10,,https://twitter.com/sydneysmash/status/1734047767654494581
-4.1 - Oceania,New South Wales [23.4] #2,Shmu,805e37ad,400954,40,2023-12-10,,https://twitter.com/sydneysmash/status/1734047767654494581
-4.1 - Oceania,New South Wales [23.4] #3,Coleman,2b21ccb8,1657112,30,2023-12-10,,https://twitter.com/sydneysmash/status/1734047767654494581
-4.1 - Oceania,New South Wales [23.4] #4,~Phoebe~,bf7df5be,529192,20,2023-12-10,,https://twitter.com/sydneysmash/status/1734047767654494581
-4.1 - Oceania,New South Wales [23.4] #5,Ryan,66c7e2aa,257947,10,2023-12-10,,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [23.4] #1,Dmo,5e92138b,1011123,50,2023-12-10,2024-04-24,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [23.4] #2,Shmu,805e37ad,400954,40,2023-12-10,2024-04-24,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [23.4] #3,Coleman,2b21ccb8,1657112,30,2023-12-10,2024-04-24,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [23.4] #4,~Phoebe~,bf7df5be,529192,20,2023-12-10,2024-04-24,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [23.4] #5,Ryan,66c7e2aa,257947,10,2023-12-10,2024-04-24,https://twitter.com/sydneysmash/status/1734047767654494581
+4.1 - Oceania,New South Wales [24.1] #1,Shmu,805e37ad,400954,50,2024-04-24,,https://twitter.com/sydneysmash/status/1783035860340125722
+4.1 - Oceania,New South Wales [24.1] #2,Dmo,5e92138b,1011123,40,2024-04-24,,https://twitter.com/sydneysmash/status/1783035860340125722
+4.1 - Oceania,New South Wales [24.1] #3,Isak,c9f9820c,735385,30,2024-04-24,,https://twitter.com/sydneysmash/status/1783035860340125722
+4.1 - Oceania,New South Wales [24.1] #4,Ryan,66c7e2aa,257947,20,2024-04-24,,https://twitter.com/sydneysmash/status/1783035860340125722
+4.1 - Oceania,New South Wales [24.1] #5,Dugongs,d8f67377,1302931,10,2024-04-24,,https://twitter.com/sydneysmash/status/1783035860340125722
 4.1 - Oceania,New Zealand [23.1 - Wellington] #1,IcyK,195e7c0f,1120254,50,,2023-07-25,
 4.1 - Oceania,New Zealand [23.1 - Wellington] #2,AlastairBL,cb8678b4,617549,40,,2023-07-25,
 4.1 - Oceania,New Zealand [23.1 - Wellington] #3,Big Red,0db00c1c,227891,30,,2023-07-25,
