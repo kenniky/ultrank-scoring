@@ -34,7 +34,7 @@ ENTRANT_FLOOR = {
 
 class PotentialMatchWithDqs:
     def __init__(self, tag, id_, points, note, actual_tag='', dqs=0):
-        self.tag = tag
+        self.tag = tag.strip()
         self.id_ = id_
         self.points = points
         self.note = note
@@ -65,7 +65,7 @@ class CountedValue:
     def __init__(self, player_value, total_points, alt_tag):
         self.player_value = player_value
         self.points = total_points
-        self.alt_tag = alt_tag
+        self.alt_tag = alt_tag.strip()
         self.tag = player_value.tag
         self.id_ = player_value.id_
 

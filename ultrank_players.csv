@@ -489,7 +489,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.1 - Hidden Bosses,Hidden Boss 1 [23.2],Wolfen,52449e0a,46455,50,2023-12-18,2024-07-15,
 0.1 - Hidden Bosses,Hidden Boss 1 [23.2],ウスケザ,32a60f9e,1857479,50,2023-12-18,2024-07-15,
 0.1 - Hidden Bosses,Hidden Boss 1 [23.2],カルメろ,9e3d38c6,3519343,50,2023-12-18,2024-07-15,
-0.1 - Hidden Bosses,Hidden Boss 1 [23.2],しん,482ca15a,3145096,50,2023-12-18,2024-07-15,
+0.1 - Hidden Bosses,Hidden Boss 1 [23.2],しん/Sin,482ca15a,3145096,50,2023-12-18,2024-07-15,
 0.2 - Placement-Based Points,HB2 - 220522 Exodus 3 x GECo (Cat 2) - 1st,Lancelot,a18e37a5,158499,30,2022-07-01,2023-07-25,
 0.2 - Placement-Based Points,HB2 - 220701 Seibugeki 11 (Cat 3+) - 1st,ProtoBanham,849ebfbf,1041641,100,2022-07-01,2023-07-25,
 0.2 - Placement-Based Points,HB2 - 220701 Seibugeki 11 (Cat 3+) - 2nd,Sigma,c85ce835,569216,50,2022-07-01,2023-07-25,
@@ -2991,6 +2991,22 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 240519 The Versus Festival (B) - 2nd,Starboy,172ed697,1578678,30,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240519 The Versus Festival (B) - 3rd,Seco,415fbe5b,1804189,30,2023-12-18,2024-12-31,
 0.2 - Placement-Based Points,HB2 - 240519 The Versus Festival (B) - 4th,MBG,08b593b6,1813160,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240525 Comicpalooza Fight Club 2024 (B) - 1st,MuteAce,284d5644,44865,50,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240525 Comicpalooza Fight Club 2024 (B) - 2nd,Lui$,00b68019,173403,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240525 Comicpalooza Fight Club 2024 (B) - 3rd,Lukewarm,1d711750,266516,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240525 Comicpalooza Fight Club 2024 (B) - 4th,Ploopy,f4a9d513,2986120,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240525 EL DOJO MASTERS #6 (C) - 1st,Sparg0,b5230de8,158026,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 COMBO BREAKER 2024 (C) - 1st,Onin,55206a63,1063610,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 Ikesuma #3 (C) - 1st,ゴリオカ,8f5104a3,2218785,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 1st,Wrath,9e90ab19,70538,100,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 2nd,Jahzz0,a7d34adf,946548,50,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 3rd,Wildz,3baf4fc3,2356872,50,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 4th,Kola,86e42aaa,18802,50,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 5th,ChunkyKong,419ccc4e,1215486,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 5th,Riku,6c77f286,1042374,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 7th,BeastModePaul,2a73bb08,1868170,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 MomoCon 2024 (B+) - 7th,omega,823fda2c,24638,30,2023-12-18,2024-12-31,
+0.2 - Placement-Based Points,HB2 - 240526 NACIONAL - Mayo 2024 (C) - 1st,Romeo Santos,752d3ab1,2205508,30,2023-12-18,2024-12-31,
 0.3 - National Rankings,Europe [23.1] #01,Glutonny,7611d833,6122,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #02,Bloom4Eva,17afe34e,1198828,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #03,Sisqui,e97f144e,539193,120,2023-12-18,2024-01-26,
@@ -3659,11 +3675,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.3.1 - Mexico,Queretaro [23.2] #3,D’Taku,c65912fd,1033898,30,2023-11-02,2024-02-09,https://twitter.com/LCAQueretaro/status/1720253091423924592
 1.3.1 - Mexico,Queretaro [23.2] #4,CHOSEN,59018bd8,271644,20,2023-11-02,2024-02-09,https://twitter.com/LCAQueretaro/status/1720253091423924592
 1.3.1 - Mexico,Queretaro [23.2] #5,Chazz ,786dbb65,271339,10,2023-11-02,2024-02-09,https://twitter.com/LCAQueretaro/status/1720253091423924592
-1.3.1 - Mexico,Queretaro [24.1] #1,Pineda,45fca9fb,155461,50,2024-02-09,,https://twitter.com/LCAQueretaro/status/1756103970538291351
-1.3.1 - Mexico,Queretaro [24.1] #2,Leaf ,c2d31266,65804,40,2024-02-09,,https://twitter.com/LCAQueretaro/status/1756103970538291351
-1.3.1 - Mexico,Queretaro [24.1] #3,Chazz ,786dbb65,271339,30,2024-02-09,,https://twitter.com/LCAQueretaro/status/1756103970538291351
-1.3.1 - Mexico,Queretaro [24.1] #4,CHOSEN,59018bd8,271644,20,2024-02-09,,https://twitter.com/LCAQueretaro/status/1756103970538291351
-1.3.1 - Mexico,Queretaro [24.1] #5,D’Taku,c65912fd,1033898,10,2024-02-09,,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.1] #1,Pineda,45fca9fb,155461,50,2024-02-09,2024-05-30,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.1] #2,Leaf ,c2d31266,65804,40,2024-02-09,2024-05-30,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.1] #3,Chazz ,786dbb65,271339,30,2024-02-09,2024-05-30,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.1] #4,CHOSEN,59018bd8,271644,20,2024-02-09,2024-05-30,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.1] #5,D’Taku,c65912fd,1033898,10,2024-02-09,2024-05-30,https://twitter.com/LCAQueretaro/status/1756103970538291351
+1.3.1 - Mexico,Queretaro [24.2] #1,Leaf ,c2d31266,65804,50,2024-05-30,,https://x.com/LCAQueretaro/status/1796402615070400949
+1.3.1 - Mexico,Queretaro [24.2] #2,Pineda,45fca9fb,155461,40,2024-05-30,,https://x.com/LCAQueretaro/status/1796402615070400949
+1.3.1 - Mexico,Queretaro [24.2] #3,Chazz ,786dbb65,271339,30,2024-05-30,,https://x.com/LCAQueretaro/status/1796402615070400949
+1.3.1 - Mexico,Queretaro [24.2] #4,CHOSEN,59018bd8,271644,20,2024-05-30,,https://x.com/LCAQueretaro/status/1796402615070400949
+1.3.1 - Mexico,Queretaro [24.2] #5,DanyPB,742920ad,1697114,10,2024-05-30,,https://x.com/LCAQueretaro/status/1796402615070400949
 1.3.1 - Mexico,Saltillo [22 T2] #1,Nery,6a1c518c,252940,50,,2023-01-17,
 1.3.1 - Mexico,Saltillo [22 T2] #2,Ang,6889283e,135714,40,,2023-01-17,
 1.3.1 - Mexico,Saltillo [22 T2] #3,Genialo,827b198c,172066,30,,2023-01-17,
@@ -3974,11 +3995,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 2.1 - Europe,Israel [23.1] #3,Yan,925dc130,2019175,30,2023-06-29,2023-11-02,https://twitter.com/SmashbrosIsrael/status/1674427500808601600
 2.1 - Europe,Israel [23.1] #4,W4wambo,75ef56ad,1184657,20,2023-06-29,2023-11-02,https://twitter.com/SmashbrosIsrael/status/1674427500808601600
 2.1 - Europe,Israel [23.1] #5,adom,6f2e4f57,41366,10,2023-06-29,2023-11-02,https://twitter.com/SmashbrosIsrael/status/1674427500808601600
-2.1 - Europe,Israel [23.2] #1,XCido,c944a5d0,1511726,50,2023-11-02,,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
-2.1 - Europe,Israel [23.2] #2,Yan,925dc130,2019175,40,2023-11-02,,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
-2.1 - Europe,Israel [23.2] #3,Picotera,5879284d,1078709,30,2023-11-02,,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
-2.1 - Europe,Israel [23.2] #4,adom,6f2e4f57,41366,20,2023-11-02,,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
-2.1 - Europe,Israel [23.2] #5,Yuri,623c3a92,1174125,10,2023-11-02,,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [23.2] #1,XCido,c944a5d0,1511726,50,2023-11-02,2024-05-31,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [23.2] #2,Yan,925dc130,2019175,40,2023-11-02,2024-05-31,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [23.2] #3,Picotera,5879284d,1078709,30,2023-11-02,2024-05-31,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [23.2] #4,adom,6f2e4f57,41366,20,2023-11-02,2024-05-31,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [23.2] #5,Yuri,623c3a92,1174125,10,2023-11-02,2024-05-31,https://twitter.com/SmashbrosIsrael/status/1720152926247600375
+2.1 - Europe,Israel [24.1] #1,Yuri,623c3a92,1174125,50,2024-05-31,,https://x.com/SmashbrosIsrael/status/1796448400906633452
+2.1 - Europe,Israel [24.1] #2,XCido,c944a5d0,1511726,40,2024-05-31,,https://x.com/SmashbrosIsrael/status/1796448400906633452
+2.1 - Europe,Israel [24.1] #3,Yan,925dc130,2019175,30,2024-05-31,,https://x.com/SmashbrosIsrael/status/1796448400906633452
+2.1 - Europe,Israel [24.1] #4,adom,6f2e4f57,41366,20,2024-05-31,,https://x.com/SmashbrosIsrael/status/1796448400906633452
+2.1 - Europe,Israel [24.1] #5,Almog,ab1400d5,1902405,10,2024-05-31,,https://x.com/SmashbrosIsrael/status/1796448400906633452
 2.1 - Europe,Italy [22.1] #1,firstbones,b6bcb70d,234334,50,,2023-02-16,
 2.1 - Europe,Italy [22.1] #2,Ryng,bd64c733,669574,40,,2023-02-16,
 2.1 - Europe,Italy [22.1] #3,GANDIX,0230a52b,323534,30,,2023-02-16,
@@ -4909,11 +4935,11 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 8.2.1 - Southeast Asia,Indonesia [20] #3,TapuMelee,ccbe8983,1624703,30,,2023-07-03,
 8.2.1 - Southeast Asia,Indonesia [20] #4,VON,892ddfd3,1645955,20,,2023-07-03,
 8.2.1 - Southeast Asia,Indonesia [20] #5,Sir Samo,817b989d,1659951,10,,2023-07-03,
-8.2.1 - Southeast Asia,Indonesia [23.1] #1,raelu,cf738366,1650563,50,2023-07-03,,https://www.instagram.com/p/CuOavBdS9P7/?igshid=MzRlODBiNWFlZA==
-8.2.1 - Southeast Asia,Indonesia [23.1] #2,Azore,fe6183db,1067199,40,2023-07-03,,https://www.instagram.com/p/CuOavBdS9P7/?igshid=MzRlODBiNWFlZA==
-8.2.1 - Southeast Asia,Indonesia [23.1] #3,Zenonyte,1a6d30db,1681123,30,2023-07-03,,https://www.instagram.com/p/CuOavBdS9P7/?igshid=MzRlODBiNWFlZA==
-8.2.1 - Southeast Asia,Indonesia [23.1] #4,Shen~,85a0ab84,1905537,20,2023-07-03,,https://www.instagram.com/p/CuOavBdS9P7/?igshid=MzRlODBiNWFlZA==
-8.2.1 - Southeast Asia,Indonesia [23.1] #5,Drifter,6a51c3b2,2231996,10,2023-07-03,,https://www.instagram.com/p/CuOavBdS9P7/?igshid=MzRlODBiNWFlZA==
+8.2.1 - Southeast Asia,Indonesia [23.1] #1,raelu,cf738366,1650563,50,2023-07-03,,https://x.com/SmashBros_ID/status/1675764344238534657
+8.2.1 - Southeast Asia,Indonesia [23.1] #2,Azore,fe6183db,1067199,40,2023-07-03,,https://x.com/SmashBros_ID/status/1675764344238534657
+8.2.1 - Southeast Asia,Indonesia [23.1] #3,Zenonyte,1a6d30db,1681123,30,2023-07-03,,https://x.com/SmashBros_ID/status/1675764344238534657
+8.2.1 - Southeast Asia,Indonesia [23.1] #4,Shen~,85a0ab84,1905537,20,2023-07-03,,https://x.com/SmashBros_ID/status/1675764344238534657
+8.2.1 - Southeast Asia,Indonesia [23.1] #5,Drifter,6a51c3b2,2231996,10,2023-07-03,,https://x.com/SmashBros_ID/status/1675764344238534657
 8.2.1 - Southeast Asia,Malaysia [20] #1,Cam ping,994f5a90,1322859,50,,2024-03-15,https://twitter.com/MyOffstage/status/1238637855846461441
 8.2.1 - Southeast Asia,Malaysia [20] #2,moom,,,40,,2024-03-15,https://twitter.com/MyOffstage/status/1238637855846461441
 8.2.1 - Southeast Asia,Malaysia [20] #3,Sikey,,,30,,2024-03-15,https://twitter.com/MyOffstage/status/1238637855846461441
