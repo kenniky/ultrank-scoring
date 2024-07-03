@@ -70,8 +70,8 @@ class CountedValue:
         self.id_ = player_value.id_
 
     def __str__(self):
-        if self.player_value.tag == self.player_value.hex_:
-            full_tag = self.player_value.tag
+        if self.tag == self.player_value.hex_:
+            full_tag = self.tag
         elif self.alt_tag == self.player_value.tag:
             full_tag = self.alt_tag
         else:
@@ -84,9 +84,9 @@ class PlayerValue:
     """Stores scores for players."""
 
     def __init__(self, id_, hex_, tag, points=0, category='', note='', start_time=None, end_time=None):
-        self.tag = tag
         self.id_ = id_
         self.hex_ = hex_
+        self.tag = tag
         self.points = points
         self.category = category
         self.note = note
