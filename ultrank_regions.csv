@@ -5,50 +5,70 @@ British Columbia,1,Canada,ca,CA-BC,,,,,,
 Canada Blanket,1,Canada,ca,,,,,,,
 Central Mexico,1,Mexico,mx,MX-CMX,,,,,,
 Central Mexico,1,Mexico,mx,MX-MEX,,,,,,
+Chubu,1,Japan,jp,,,,,38,2024-07-16,
+Chubu,1,Japan,jp,,,,,39,2024-07-16,
+Chubu,1,Japan,jp,,,,,40,2024-07-16,
+Chubu,1,Japan,jp,,,,,41,2024-07-16,
+Chubu,1,Japan,jp,,,,,42,2024-07-16,
+Chubu,1,Japan,jp,,,,,43,2024-07-16,
+Chubu,1,Japan,jp,,,,,44,2024-07-16,
+Chubu,1,Japan,jp,,,,,45,2024-07-16,
+Chubu,1,Japan,jp,,,,,46,2024-07-16,
+Chubu,1,Japan,jp,,,,,47,2024-07-16,
+Chubu,1,Japan,jp,,,,,48,2024-07-16,
+Chubu,1,Japan,jp,,,,,49,2024-07-16,
+Chubu,1,Japan,jp,,,,,50,2024-07-16,
 Florida,1,United States,us,US-FL,,,,,,2023-07-24
 Florida,1,United States,us,US-FL,,,,,2023-07-24,
 France,1,France,fr,,,,,,,
-Georgia,1,United States,us,US-GA,,,,,2023-07-24,
-Georgia,1,United States,us,US-SC,Aiken County,,,,2023-07-24,
-Georgia,1,United States,us,US-SC,Edgefield County,,,,2023-07-24,
-Georgia,1,United States,us,US-SC,McCormick County,,,,2023-07-24,
+Georgia,1,United States,us,US-GA,,,,,2023-07-24,2024-07-16
+Georgia,1,United States,us,US-SC,Aiken County,,,,2023-07-24,2024-07-16
+Georgia,1,United States,us,US-SC,Edgefield County,,,,2023-07-24,2024-07-16
+Georgia,1,United States,us,US-SC,McCormick County,,,,2023-07-24,2024-07-16
+Great Basin,1,United States,us,US-NV,,,,,2024-07-16,
+Great Basin,1,United States,us,US-UT,,,,,2024-07-16,
 Great Britain,1,Great Britain,gb,,,,,,,2023-07-24
-Great Lakes,1,United States,us,US-IL,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-IN,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-KY,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-MD,Allegany County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-MD,Garrett County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-MI,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-MN,Houston County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-OH,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Allegheny County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Armstrong County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Beaver County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Bedford County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Blair County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Butler County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Cambria County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Clarion County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Clearfield County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Crawford County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Elk County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Erie County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Fayette County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Forest County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Greene County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Indiana County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Jefferson County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Lawrence County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,McKean County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Mercer County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Somerset County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Venango County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Warren County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Washington County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-PA,Westmoreland County,,,,2023-07-24,
-Great Lakes,1,United States,us,US-WI,,,,,2023-07-24,
-Great Lakes,1,United States,us,US-WV,,,,,2023-07-24,
+Great Lakes,1,United States,us,US-IL,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-IN,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-KY,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-MD,Allegany County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-MD,Garrett County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-MI,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-MN,Houston County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-OH,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Allegheny County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Armstrong County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Beaver County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Bedford County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Blair County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Butler County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Cambria County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Clarion County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Clearfield County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Crawford County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Elk County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Erie County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Fayette County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Forest County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Greene County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Indiana County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Jefferson County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Lawrence County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,McKean County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Mercer County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Somerset County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Venango County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Warren County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Washington County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-PA,Westmoreland County,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-WI,,,,,2023-07-24,2024-07-16
+Great Lakes,1,United States,us,US-WV,,,,,2023-07-24,2024-07-16
 Great Lakes Midwest,1,United States,us,US-KY,,,,,,2023-07-24
+Great Lakes West,1,United States,us,US-IL,,,,,2024-07-16,
+Great Lakes West,1,United States,us,US-IN,,,,,2024-07-16,
+Great Lakes West,1,United States,us,US-MI,,,,,2024-07-16,
+Great Lakes West,1,United States,us,US-MN,Houston County,,,,2024-07-16,
+Great Lakes West,1,United States,us,US-WI,,,,,2024-07-16,
 Heartland Midwest,1,United States,us,US-KS,Atchison County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-KS,Brown County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-KS,Doniphan County,,,,,2023-07-24
@@ -162,23 +182,23 @@ SoCal,1,United States,us,US-CA,San Diego County,,,,2023-07-24,
 SoCal,1,United States,us,US-CA,San Luis Obispo County,,,,2023-07-24,
 SoCal,1,United States,us,US-CA,Santa Barbara County,,,,2023-07-24,
 SoCal,1,United States,us,US-CA,Ventura County,,,,2023-07-24,
-Southwest,1,United States,us,US-AZ,,,,,2023-07-24,
-Southwest,1,United States,us,US-CO,,,,,2023-07-24,
-Southwest,1,United States,us,US-NM,,,,,2023-07-24,
-Southwest,1,United States,us,US-NV,,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Brewster County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Culberson County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,El Paso County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Hudspeth County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Jeff Davis County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Loving County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Pecos County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Presidio County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Reeves County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Terrell County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Ward County,,,,2023-07-24,
-Southwest,1,United States,us,US-TX,Winkler County,,,,2023-07-24,
-Southwest,1,United States,us,US-UT,,,,,2023-07-24,
+Southwest,1,United States,us,US-AZ,,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-CO,,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-NM,,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-NV,,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Brewster County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Culberson County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,El Paso County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Hudspeth County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Jeff Davis County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Loving County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Pecos County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Presidio County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Reeves County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Terrell County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Ward County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-TX,Winkler County,,,,2023-07-24,2024-07-16
+Southwest,1,United States,us,US-UT,,,,,2023-07-24,2024-07-16
 Texas,1,United States,us,US-LA,,,,,2023-07-24,2023-12-18
 Texas,1,United States,us,US-TX,,,,,2023-07-24,
 Tristate,1,United States,us,US-DE,,,,,2023-07-24,
@@ -218,24 +238,24 @@ Australia,2,Australia,au,,,,,,,
 Austria,2,Austria,at,,,,,,,
 Baja California,2,Mexico,mx,MX-BCN,,,,,2023-07-24,
 Baja California,2,Mexico,mx,MX-BCS,,,,,2023-07-24,
-Belgium,2,Belgium,be,,,,,,,
+Belgium,2,Belgium,be,,,,,,,2024-07-16
 Carolinas,2,United States,us,US-NC,,,,,,2023-07-24
 Carolinas,2,United States,us,US-NC,,,,,2023-07-24,
 Carolinas,2,United States,us,US-SC,,,,,,2023-07-24
 Carolinas,2,United States,us,US-SC,,,,,2023-07-24,
-Chubu,2,Japan,jp,,,,,38,,
-Chubu,2,Japan,jp,,,,,39,,
-Chubu,2,Japan,jp,,,,,40,,
-Chubu,2,Japan,jp,,,,,41,,
-Chubu,2,Japan,jp,,,,,42,,
-Chubu,2,Japan,jp,,,,,43,,
-Chubu,2,Japan,jp,,,,,44,,
-Chubu,2,Japan,jp,,,,,45,,
-Chubu,2,Japan,jp,,,,,46,,
-Chubu,2,Japan,jp,,,,,47,,
-Chubu,2,Japan,jp,,,,,48,,
-Chubu,2,Japan,jp,,,,,49,,
-Chubu,2,Japan,jp,,,,,50,,
+Chubu,2,Japan,jp,,,,,38,,2024-07-16
+Chubu,2,Japan,jp,,,,,39,,2024-07-16
+Chubu,2,Japan,jp,,,,,40,,2024-07-16
+Chubu,2,Japan,jp,,,,,41,,2024-07-16
+Chubu,2,Japan,jp,,,,,42,,2024-07-16
+Chubu,2,Japan,jp,,,,,43,,2024-07-16
+Chubu,2,Japan,jp,,,,,44,,2024-07-16
+Chubu,2,Japan,jp,,,,,45,,2024-07-16
+Chubu,2,Japan,jp,,,,,46,,2024-07-16
+Chubu,2,Japan,jp,,,,,47,,2024-07-16
+Chubu,2,Japan,jp,,,,,48,,2024-07-16
+Chubu,2,Japan,jp,,,,,49,,2024-07-16
+Chubu,2,Japan,jp,,,,,50,,2024-07-16
 Chugoku,2,Japan,jp,,,,,68,2023-07-24,
 Chugoku,2,Japan,jp,,,,,69,2023-07-24,
 Chugoku,2,Japan,jp,,,,,70,2023-07-24,
@@ -249,66 +269,149 @@ East Mexico,2,Mexico,mx,MX-HID,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-PUE,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-TLA,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-VER,,,,,,2023-07-24
+Georgia,2,United States,us,US-GA,,,,,2024-07-16,
+Georgia,2,United States,us,US-SC,Aiken County,,,,2024-07-16,
+Georgia,2,United States,us,US-SC,Edgefield County,,,,2024-07-16,
+Georgia,2,United States,us,US-SC,McCormick County,,,,2024-07-16,
 Germany,2,Germany,de,,,,,,,
 Great Britain,2,Great Britain,gb,,,,,,2023-07-24,
-Heartland,2,United States,us,US-IA,,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Alexander County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Bond County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Calhoun County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Clinton County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Franklin County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Jackson County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Jefferson County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Jersey County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Johnson County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Madison County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Monroe County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Perry County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Pulaski County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Randolph County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,St. Clair County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Union County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Washington County,,,,2023-07-24,
-Heartland,2,United States,us,US-IL,Williamson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Anderson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Atchison County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Brown County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Chase County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Clay County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Coffey County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Dickinson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Doniphan County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Douglas County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Franklin County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Geary County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Jackson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Jefferson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Johnson County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Leavenworth County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Linn County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Lyon County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Marshall County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Miami County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Morris County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Nemaha County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Osage County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Pottawatomie County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Riley County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Shawnee County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Wabaunsee County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Washington County,,,,2023-07-24,
-Heartland,2,United States,us,US-KS,Wyandotte County,,,,2023-07-24,
-Heartland,2,United States,us,US-MN,,,,,2023-07-24,
-Heartland,2,United States,us,US-MO,,,,,2023-07-24,
-Heartland,2,United States,us,US-ND,,,,,2023-07-24,
-Heartland,2,United States,us,US-NE,,,,,2023-07-24,
-Heartland,2,United States,us,US-SD,,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,Bayfield County,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,Burnett County,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,Douglas County,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,Pierce County,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,Polk County,,,,2023-07-24,
-Heartland,2,United States,us,US-WI,St. Croix County,,,,2023-07-24,
+Great Lakes East,2,United States,us,US-KY,,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-MD,Allegany County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-MD,Garrett County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-OH,,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Allegheny County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Armstrong County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Beaver County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Bedford County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Blair County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Butler County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Cambria County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Clarion County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Clearfield County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Crawford County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Elk County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Erie County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Fayette County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Forest County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Greene County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Indiana County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Jefferson County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Lawrence County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,McKean County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Mercer County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Somerset County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Venango County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Warren County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Washington County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Westmoreland County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-WV,,,,,2024-07-16,
+Heartland,2,United States,us,US-IA,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Alexander County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Bond County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Calhoun County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Clinton County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Franklin County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Jackson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Jefferson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Jersey County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Johnson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Madison County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Monroe County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Perry County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Pulaski County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Randolph County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,St. Clair County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Union County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Washington County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-IL,Williamson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Anderson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Atchison County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Brown County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Chase County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Clay County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Coffey County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Dickinson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Doniphan County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Douglas County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Franklin County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Geary County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Jackson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Jefferson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Johnson County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Leavenworth County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Linn County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Lyon County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Marshall County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Miami County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Morris County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Nemaha County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Osage County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Pottawatomie County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Riley County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Shawnee County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Wabaunsee County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Washington County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-KS,Wyandotte County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-MN,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-MO,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-ND,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-NE,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-SD,,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,Bayfield County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,Burnett County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,Douglas County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,Pierce County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,Polk County,,,,2023-07-24,2024-07-16
+Heartland,2,United States,us,US-WI,St. Croix County,,,,2023-07-24,2024-07-16
+Heartland South,2,United States,us,US-IA,,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Alexander County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Bond County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Calhoun County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Clinton County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Franklin County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Jackson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Jefferson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Jersey County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Johnson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Madison County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Monroe County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Perry County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Pulaski County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Randolph County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,St. Clair County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Union County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Washington County,,,,2024-07-16,
+Heartland South,2,United States,us,US-IL,Williamson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Anderson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Atchison County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Brown County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Chase County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Clay County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Coffey County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Dickinson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Doniphan County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Douglas County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Franklin County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Geary County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Jackson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Jefferson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Johnson County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Leavenworth County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Linn County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Lyon County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Marshall County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Miami County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Morris County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Nemaha County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Osage County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Pottawatomie County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Riley County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Shawnee County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Wabaunsee County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Washington County,,,,2024-07-16,
+Heartland South,2,United States,us,US-KS,Wyandotte County,,,,2024-07-16,
+Heartland South,2,United States,us,US-MO,,,,,2024-07-16,
+Heartland South,2,United States,us,US-NE,,,,,2024-07-16,
 Hokkaido,2,Japan,jp,,,,,00,2023-07-24,
 Hokkaido,2,Japan,jp,,,,,04,2023-07-24,
 Hokkaido,2,Japan,jp,,,,,05,2023-07-24,
@@ -395,7 +498,7 @@ Inland/Gulf Southeast,2,United States,us,US-MS,,,,,,2023-07-24
 Inland/Gulf Southeast,2,United States,us,US-MS,,,,,2023-07-24,
 Inland/Gulf Southeast,2,United States,us,US-TN,,,,,,2023-07-24
 Inland/Gulf Southeast,2,United States,us,US-TN,,,,,2023-07-24,
-Italy,2,Italy,it,,,,,,,
+Italy,2,Italy,it,,,,,,,2024-07-16
 Luxembourg,2,Luxembourg,lu,,,,,,,2023-07-24
 Manitoba,2,Canada,ca,CA-MB,,,,,,2023-07-24
 Mid-South,2,United States,us,US-AR,,,,,,2023-07-24
@@ -447,6 +550,7 @@ Mid-South,2,United States,us,US-MO,Webster County,,,,,2023-07-24
 Mid-South,2,United States,us,US-MO,Wright County,,,,,2023-07-24
 Mid-South,2,United States,us,US-OK,,,,,,2023-07-24
 Netherlands,2,Netherlands,nl,,,,,,,2023-07-24
+Netherlands,2,Netherlands,nl,,,,,,2024-07-16,
 New England,2,United States,us,US-CT,,,,,2023-07-24,
 New England,2,United States,us,US-MA,,,,,2023-07-24,
 New England,2,United States,us,US-ME,,,,,2023-07-24,
@@ -482,10 +586,10 @@ West Mexico,2,Mexico,mx,MX-COL,,,,,,
 West Mexico,2,Mexico,mx,MX-JAL,,,,,,
 West Mexico,2,Mexico,mx,MX-MIC,,,,,,
 West Mexico,2,Mexico,mx,MX-NAY,,,,,,
-Yucatan Peninsula,2,Mexico,mx,MX-CAM,,,,,,
-Yucatan Peninsula,2,Mexico,mx,MX-ROO,,,,,,
-Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,,,,
-Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,,,,
+Yucatan Peninsula,2,Mexico,mx,MX-CAM,,,,,,2024-07-16
+Yucatan Peninsula,2,Mexico,mx,MX-ROO,,,,,,2024-07-16
+Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,,,,2024-07-16
+Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,,,,2024-07-16
 "ㅇRecreated Tournament, recalculate score",2,Antarctica,aq,,,,,,,
 A.C.T.,3,Australia,au,AU-ACT,,,,,2023-07-24,
 Alaska,3,United States,us,US-AK,,,,,,2023-07-24
@@ -495,6 +599,7 @@ American Territories,3,American Samoa,us,US-AS,,,,,,
 American Territories,3,Northern Mariana Islands,us,US-MP,,,,,,
 American Territories,3,US Minor Outlying Islands,us,US-UM,,,,,,
 Argentina,3,Argentina,ar,,,,,,,
+Arizona,3,United States,us,US-AZ,,,,,2024-07-16,
 Atlantic Canada,3,Canada,ca,CA-NB,,,,,2023-07-24,
 Atlantic Canada,3,Canada,ca,CA-NL,,,,,2023-07-24,
 Atlantic Canada,3,Canada,ca,CA-NS,,,,,2023-07-24,
@@ -503,6 +608,7 @@ Atlantic Canada,3,Saint Pierre and Miquelon,fr,FR-PM,,,,,2023-07-24,
 Bahamas,3,Bahamas,bs,,,,,,,
 Bahrain,3,Bahrain,bh,,,,,,,
 Barbados,3,Barbados,bb,,,,,,,
+Belgium,3,Belgium,be,,,,,,2024-07-16,
 Belize,3,Belize,bz,,,,,,,
 Bolivarian North,3,Falkland Islands,fk,,,,,,,
 Bolivarian North,3,Guyana,gy,,,,,,,
@@ -522,6 +628,10 @@ Caribbean,3,Saint Lucia,lc,,,,,,,
 Caribbean,3,Saint Martin,fr,FR-MF,,,,,,
 Caribbean,3,Virgin Islands,us,US-VI,,,,,,
 Central America,3,Panama,pa,,,,,,,
+Central-West Brazil,3,Brazil,br,BR-DF,,,,,,
+Central-West Brazil,3,Brazil,br,BR-GO,,,,,,
+Central-West Brazil,3,Brazil,br,BR-MS,,,,,,
+Central-West Brazil,3,Brazil,br,BR-MT,,,,,,
 Chile,3,Chile,cl,,,,,,,
 China,3,China,cn,,,,,,,
 Chugoku,3,Japan,jp,,,,,68,,2023-07-24
@@ -566,6 +676,15 @@ Guam,3,Guam,us,US-GU,,,,,,
 Guatemala,3,Guatemala,gt,,,,,,,
 Hawaii,3,United States,us,US-HI,,,,,,2023-07-24
 Hawaii,3,United States,us,US-HI,,,,,2023-07-24,
+Heartland North,3,United States,us,US-MN,,,,,2024-07-16,
+Heartland North,3,United States,us,US-ND,,,,,2024-07-16,
+Heartland North,3,United States,us,US-SD,,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,Bayfield County,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,Burnett County,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,Douglas County,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,Pierce County,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,Polk County,,,,2024-07-16,
+Heartland North,3,United States,us,US-WI,St. Croix County,,,,2024-07-16,
 Hokkaido,3,Japan,jp,,,,,00,,2023-07-24
 Hokkaido,3,Japan,jp,,,,,04,,2023-07-24
 Hokkaido,3,Japan,jp,,,,,05,,2023-07-24
@@ -581,9 +700,11 @@ Hokuriku,3,Japan,jp,,,,,95,,
 Honduras,3,Honduras,hn,,,,,,,
 Hong Kong,3,Hong Kong,cn,CN-HK,,,,,,
 Iceland,3,Iceland,is,,,,,,,
+India,3,India,in,,,,,,,
 Indonesia,3,Indonesia,id,,,,,,,
 Ireland,3,Ireland,ie,,,,,,,
 Isle of Man,3,Isle of Man,im,,,,,,,
+Italy,3,Italy,it,,,,,,2024-07-16,
 Kuwait,3,Kuwait,kw,,,,,,,
 Laos,3,Laos,la,,,,,,,
 Lebanon,3,Lebanon,lb,,,,,,,
@@ -660,15 +781,31 @@ Middle East,3,Saudi Arabia,sa,,,,,,,
 Middle East,3,Turkey,tr,,,,,,,
 Middle East,3,United Arab Emirates,ae,,,,,,,
 Myanmar,3,Myanmar,mm,,,,,,,
-Netherlands,3,Netherlands,nl,,,,,,2023-07-24,
+Netherlands,3,Netherlands,nl,,,,,,2023-07-24,2024-07-16
 New Zealand,3,New Zealand,nz,,,,,,,
 Nicaragua,3,Nicaragua,ni,,,,,,,
+North Brazil,3,Brazil,br,BR-AC,,,,,,
+North Brazil,3,Brazil,br,BR-AM,,,,,,
+North Brazil,3,Brazil,br,BR-AP,,,,,,
+North Brazil,3,Brazil,br,BR-PA,,,,,,
+North Brazil,3,Brazil,br,BR-RO,,,,,,
+North Brazil,3,Brazil,br,BR-RR,,,,,,
+North Brazil,3,Brazil,br,BR-TO,,,,,,
 North Central MX,3,Mexico,mx,MX-AGU,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-GUA,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-QUE,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-SLP,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-ZAC,,,,,2023-07-24,
 North Korea,3,North Korea,kp,,,,,,,
+Northeast Brazil,3,Brazil,br,BR-AL,,,,,,
+Northeast Brazil,3,Brazil,br,BR-BA,,,,,,
+Northeast Brazil,3,Brazil,br,BR-CE,,,,,,
+Northeast Brazil,3,Brazil,br,BR-MA,,,,,,
+Northeast Brazil,3,Brazil,br,BR-PB,,,,,,
+Northeast Brazil,3,Brazil,br,BR-PE,,,,,,
+Northeast Brazil,3,Brazil,br,BR-PI,,,,,,
+Northeast Brazil,3,Brazil,br,BR-RN,,,,,,
+Northeast Brazil,3,Brazil,br,BR-SE,,,,,,
 Northern Canada,3,Canada,ca,CA-NT,,,,,,
 Northern Canada,3,Canada,ca,CA-NU,,,,,,
 Northern Canada,3,Canada,ca,CA-YT,,,,,,
@@ -699,6 +836,9 @@ Shikoku,3,Japan,jp,,,,,76,,
 Shikoku,3,Japan,jp,,,,,77,,
 Shikoku,3,Japan,jp,,,,,78,,
 Shikoku,3,Japan,jp,,,,,79,,
+South Brazil,3,Brazil,br,BR-PR,,,,,,
+South Brazil,3,Brazil,br,BR-RS,,,,,,
+South Brazil,3,Brazil,br,BR-SC,,,,,,
 South Mexico,3,Mexico,mx,MX-CHP,,,,,2023-07-24,
 South Mexico,3,Mexico,mx,MX-GRO,,,,,2023-07-24,
 South Mexico,3,Mexico,mx,MX-MOR,,,,,2023-07-24,
@@ -707,7 +847,29 @@ Southeast Asia,3,Philippines,ph,,,,,,,
 Southeast Asia,3,Singapore,sg,,,,,,,
 Southeast Asia,3,Thailand,th,,,,,,,
 Southeast Asia,3,Timor-Leste,tl,,,,,,,
+Southeast Brazil,3,Brazil,br,BR-ES,,,,,,
+Southeast Brazil,3,Brazil,br,BR-MG,,,,,,
+Southeast Brazil,3,Brazil,br,BR-RJ,,,,,,
+Southeast Brazil,3,Brazil,br,BR-SP,,,,,,
 Southern Cone,3,Paraguay,py,,,,,,,
+Southwest,3,United States,us,US-CO,,,,,2024-07-16,
+Southwest,3,United States,us,US-NM,,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Brewster County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Culberson County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,El Paso County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Hudspeth County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Jeff Davis County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Loving County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Pecos County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Presidio County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Reeves County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Terrell County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Ward County,,,,2024-07-16,
+Southwest,3,United States,us,US-TX,Winkler County,,,,2024-07-16,
+Southwest,3,United States,us,US-WY,Albany County,,,,2024-07-16,
+Southwest,3,United States,us,US-WY,Goshen County,,,,2024-07-16,
+Southwest,3,United States,us,US-WY,Laramie County,,,,2024-07-16,
+Southwest,3,United States,us,US-WY,Platte County,,,,2024-07-16,
 Sweden,3,Sweden,se,,,,,,,
 Switzerland,3,Switzerland,ch,,,,,,2023-07-24,
 Tasmania,3,Australia,au,AU-TAS,,,,,2023-07-24,
@@ -724,3 +886,7 @@ Uruguay,3,Uruguay,uy,,,,,,,
 Venezuela,3,Venezuela,ve,,,,,,,
 Viet Nam,3,Viet Nam,vn,,,,,,,
 Western Australia,3,Australia,au,AU-WA,,,,,2023-07-24,
+Yucatan Peninsula,3,Mexico,mx,MX-CAM,,,,,2024-07-16,
+Yucatan Peninsula,3,Mexico,mx,MX-ROO,,,,,2024-07-16,
+Yucatan Peninsula,3,Mexico,mx,MX-TAB,,,,,2024-07-16,
+Yucatan Peninsula,3,Mexico,mx,MX-YUC,,,,,2024-07-16,
