@@ -7,12 +7,12 @@ import sys
 
 true_values = ['true', 't', '1']
 
-def bulk_score(slugs):
+def bulk_score(slugs, directory='tts_values'):
     """Scores multiple slugs, and returns the resultant result."""
 
     # Create results directory
-    if not os.path.isdir('tts_values'):
-        os.mkdir('tts_values')
+    if not os.path.isdir(directory):
+        os.mkdir(directory)
 
     # Get values
     results = []
@@ -29,6 +29,11 @@ def bulk_score(slugs):
                 result = t.calculate_tier()
 
                 results.append(result)
+
+                print('writing for slug {}'.format(result.slug))
+
+                with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w') as write_file:
+                    result.write_result(write_file)
 
             except Exception as e:
                 print(e)
@@ -73,13 +78,6 @@ def write_results(results, directory='tts_values'):
                                  'Score': '',
                                  'Max Potential Score': '',
                                  'Num Entrants': ''})
-
-    for result in results:
-        if isinstance(result, TournamentTieringResult):
-            print('writing for slug {}'.format(result.slug))
-
-            with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w') as write_file:
-                result.write_result(write_file)
 
     print('done writing')
 
