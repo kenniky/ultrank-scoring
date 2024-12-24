@@ -31,6 +31,8 @@ ENTRANT_FLOOR = {
     3: 32
 }
 
+NEW_MULT_SYSTEM_DATE = datetime.date.fromisoformat('2024-12-16')
+
 
 class PotentialMatchWithDqs:
     def __init__(self, tag, id_, points, note, actual_tag='', dqs=0):
@@ -150,12 +152,13 @@ class PlayerValueGroup:
 
 
 class TournamentTieringResult:
-    def __init__(self, slug, score, entrants, region, values, dqs, potential, is_invitational=False, phases=[], dq_count=-1):
+    def __init__(self, slug, score, entrants, region, values, dqs, potential, date, is_invitational=False, phases=[], dq_count=-1):
         self.slug = slug
         self.score = score
         self.values = values
         self.dqs = dqs
         self.potential = potential
+        self.date = date
         self.entrants = entrants
         self.region = region
         self.is_invitational = is_invitational
@@ -166,6 +169,9 @@ class TournamentTieringResult:
         name = get_name(slug)
         self.tournament = name['tournament']
         self.event = name['event']
+
+    def using_new_tiering_system(self):
+        return self.date > NEW_MULT_SYSTEM_DATE
 
     def write_result(self, filelike=None):
         original_stdout = sys.stdout
@@ -190,8 +196,24 @@ class TournamentTieringResult:
         participants_string = '{} - {} DQs = {}'.format(
             self.entrants + self.dq_count, self.dq_count, self.entrants) if self.dq_count != -1 else str(self.entrants)
 
-        print('Entrants: {} x {} [{}] = {}'.format(
-            participants_string, self.region.multiplier, self.region.note, self.entrants * self.region.multiplier))
+        if self.date > NEW_MULT_SYSTEM_DATE:
+            print_str = 'Entrants: '
+            print_str += participants_string
+            entrants_score = self.entrants
+            if self.region.multiplier >= 2:
+                print_str += ' + {} (x2)'.format(str(min(256, self.entrants)))
+                entrants_score += min(256, self.entrants)
+            if self.region.multiplier >= 3:
+                print_str += ' + {} (x3)'.format(str(min(128, self.entrants)))
+                entrants_score += min(128, self.entrants)
+            if self.region.multiplier == 1:
+                print_str += ' (x1)'
+            print_str += f' = {entrants_score} [x{self.region.multiplier}, {self.region.note}]'
+            print(print_str)
+
+        else:
+            print('Entrants: {} x {} [{}] = {}'.format(
+                participants_string, self.region.multiplier, self.region.note, self.entrants * self.region.multiplier))
 
         print()
         print('Top Player Points: ')
@@ -496,7 +518,15 @@ class Tournament:
                 best_region = region
                 best_match = match
 
-        total_score += self.total_entrants * best_region.multiplier
+        if self.start_time > NEW_MULT_SYSTEM_DATE:
+            total_score += self.total_entrants
+
+            if best_region.multiplier >= 2:
+                total_score += min(256, self.total_entrants)
+            if best_region.multiplier >= 3:
+                total_score += min(128, self.total_entrants)
+        else:
+            total_score += self.total_entrants * best_region.multiplier
 
         # Player values
         valued_participants = []
@@ -558,7 +588,7 @@ class Tournament:
         potential_matches.sort(key=lambda m: (m.dqs, m.tag))
 
         self.tier = TournamentTieringResult(self.event_slug, total_score, self.total_entrants, best_region, valued_participants,
-                                            participants_with_dqs, potential_matches, is_invitational=self.is_invitational,
+                                            participants_with_dqs, potential_matches, self.start_time, is_invitational=self.is_invitational,
                                             phases=[phase['name'] for phase in self.phases], dq_count=self.total_dqs)
 
         return self.tier
@@ -808,37 +838,43 @@ def get_dqs(event_slug, phase_ids=None):
 
         if len(set_data['slots']) < 2:
             continue
-
-        loser = 1 if set_data['winnerId'] == set_data['slots'][0]['entrant']['id'] else 0
-
-        player_data_0 = Entrant(set_data['slots'][0]['entrant']['participants'][0]['player']
-                                ['id'], set_data['slots'][0]['entrant']['participants'][0]['player']['gamerTag'])
-        player_data_1 = Entrant(set_data['slots'][1]['entrant']['participants'][0]['player']
-                                ['id'], set_data['slots'][1]['entrant']['participants'][0]['player']['gamerTag'])
-        player_data_loser = player_data_0 if loser == 0 else player_data_1
-
-        if set_data['slots'][0]['standing'] == None and set_data['slots'][1]['standing'] == None:
-            player_id = set_data['slots'][loser]['entrant']['participants'][0]['player']['id']
-
-            if player_id in dq_list.keys():
-                dq_list[player_id][1] += 1
-            else:
-                dq_list[player_id] = [player_data_loser, 1]
+        if set_data['slots'][0]['entrant'] is None or set_data['slots'][1]['entrant'] is None:
             continue
 
-        game_count = set_data['slots'][loser]['standing']['stats']['score']['value']
+        try:
+            loser = 1 if set_data['winnerId'] == set_data['slots'][0]['entrant']['id'] else 0
 
-        if game_count == -1:
-            player_id = set_data['slots'][loser]['entrant']['participants'][0]['player']['id']
+            player_data_0 = Entrant(set_data['slots'][0]['entrant']['participants'][0]['player']
+                                    ['id'], set_data['slots'][0]['entrant']['participants'][0]['player']['gamerTag'])
+            player_data_1 = Entrant(set_data['slots'][1]['entrant']['participants'][0]['player']
+                                    ['id'], set_data['slots'][1]['entrant']['participants'][0]['player']['gamerTag'])
+            player_data_loser = player_data_0 if loser == 0 else player_data_1
 
-            if player_id in dq_list.keys():
-                dq_list[player_id][1] += 1
+            if set_data['slots'][0]['standing'] == None and set_data['slots'][1]['standing'] == None:
+                player_id = set_data['slots'][loser]['entrant']['participants'][0]['player']['id']
+
+                if player_id in dq_list.keys():
+                    dq_list[player_id][1] += 1
+                else:
+                    dq_list[player_id] = [player_data_loser, 1]
+                continue
+
+            game_count = set_data['slots'][loser]['standing']['stats']['score']['value']
+
+            if game_count == -1:
+                player_id = set_data['slots'][loser]['entrant']['participants'][0]['player']['id']
+
+                if player_id in dq_list.keys():
+                    dq_list[player_id][1] += 1
+                else:
+                    dq_list[player_id] = [player_data_loser, 1]
             else:
-                dq_list[player_id] = [player_data_loser, 1]
-        else:
-            # not a dq, record both players as participants
-            participants.add(player_data_0)
-            participants.add(player_data_1)
+                # not a dq, record both players as participants
+                participants.add(player_data_0)
+                participants.add(player_data_1)
+        except Exception as e:
+            print(set_data)
+            print(e)
 
     return dq_list, participants
 
