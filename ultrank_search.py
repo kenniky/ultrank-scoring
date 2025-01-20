@@ -4,6 +4,7 @@ from startgg_toolkit import send_request
 import dateparser
 import csv
 import os
+import traceback
 from Levenshtein import jaro_winkler
 from datetime import datetime, timedelta
 from ultrank_bulk import bulk_score, write_results
@@ -13,8 +14,13 @@ from ultrank_bulk import bulk_score, write_results
 MINIMUM_JARO_SIMILARITY = 0.8
 
 # certain event names to skip string similarity check for
-skip_weekly_check = ['Xentric Gaming: Let''s Brawl', CLUTCH23. Ultimate Mayhem', 'マエスマ\'', 'マエスマTOP', 'Champion Series', 'qualifier', 'lcq', 'Ultimate Gaiden', 'Xenosaga', 'Macrospacing Vancouver', 'Ultimate Challenger Series', '月']
-organizer_blacklist = ['6d94b652']
+skip_weekly_check = ['Smash Mouth', 'The Big Bang Hadoken edition', 'Gengar League', 'To The Top',
+    'IR Training: Special Edition', 'DAT BlastZone', 'Boss Stage', 'Bonus Stage', 'Smash on Titan',
+    'Xentric Gaming: Let\'s Brawl', 'CLUTCH23. Ultimate Mayhem', 'マエスマ\'', 'マエスマTOP', 'Champion Series',
+    'qualifier', 'lcq', 'Ultimate Gaiden', 'Xenosaga', 'Macrospacing Vancouver', 'Ultimate Challenger Series',
+    '月', 'monthly', 'seasonal', 'mensual', 'CLUTCH United Mayhem', '4o4 by Sh33rz: Smash Bowl',
+    'Undiscovered Turbo', 'BeeSmash BIG', 'Smash Pro League']
+organizer_blacklist = ['f014e14d', '6d94b652', 'fef75a6a', 'ebbf7fac', '4472fa92', '886decc2']
 
 class Tournament:
     def __init__(self, name, slug, start_at):
@@ -158,6 +164,9 @@ def get_admined_tournaments(tournament_slug, day_range=15):
             range_start = (tournament_start_datetime -
                            range_start_timedelta).timestamp()
 
+        if resp['data']['tournament']['owner']['tournaments'] is None:
+            break
+
         # Gather tournaments
         tournaments.extend([Tournament(tournament['name'], tournament['slug'], tournament['startAt']) for tournament in resp['data']['tournament']['owner']['tournaments']['nodes'] if (
             tournament['owner']['id'] == tournament_owner_id and tournament['slug'] != tournament_slug and tournament['startAt'] >= range_start and tournament['startAt'] <= tournament_start
@@ -284,6 +293,14 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                                              'Skip Reason': 'Probable Side Event (contains string "redemption")'})
                             continue
 
+                        if event['name'].lower().find('resurrection') != -1:
+                            writer.writerow({'Tournament': tournament['name'],
+                                             'Event': event['name'],
+                                             'Slug': event['slug'],
+                                             'Used': 'False',
+                                             'Skip Reason': 'Probable Side Event (contains string "resurrection")'})
+                            continue
+
                         if event['name'].lower().find('buster') != -1:
                             writer.writerow({'Tournament': tournament['name'],
                                              'Event': event['name'],
@@ -366,16 +383,6 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                             added_event = True
                             continue
 
-                        if tournament['name'].lower().find('seasonal') != -1:
-                            writer.writerow({'Tournament': tournament['name'],
-                                             'Event': event['name'],
-                                             'Slug': event['slug'],
-                                             'Used': 'True'})
-
-                            slugs.append(event['slug'])
-                            added_event = True
-                            continue
-
                         if potential_weekly == "not checked":
                             potential_weekly = check_potential_weekly(tournament['slug'])
 
@@ -418,6 +425,7 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
                 except Exception as e:
                     print(e)
                     print(tournament['slug'])
+                    traceback.print_exc()
 
             if page >= resp['data']['tournaments']['pageInfo']['totalPages']:
                 break
