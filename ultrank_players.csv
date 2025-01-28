@@ -724,7 +724,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0 - Ranking,2024.2 LumiRank #123,Romeo Santos,752d3ab1,2205508,50,2024-12-16,2025-07-01,
 0 - Ranking,2024.2 LumiRank #124,PeW,78d72878,289065,50,2024-12-16,2025-07-01,
 0 - Ranking,2024.2 LumiRank #125,まるく,ee8145dd,3613866,50,2024-12-16,2025-07-01,
-0 - Ranking,2024.2 LumiRank #126,Paras,eff17a60,1492978,50,2024-12-16,2025-07-01,
+0 - Ranking,2024.2 LumiRank #126,Endothia,eff17a60,1492978,50,2024-12-16,2025-07-01,
 0 - Ranking,2024.2 LumiRank #127,IcyMist,1466a72e,147658,50,2024-12-16,2025-07-01,
 0 - Ranking,2024.2 LumiRank #128,ATATA,f4da6f4a,38148,50,2024-12-16,2025-07-01,
 0 - Ranking,2024.2 LumiRank #129,Leon,b6859efe,5604,50,2024-12-16,2025-07-01,
@@ -4128,7 +4128,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 241228 Sumabato SP 54 (A) - 5th,TG(トリグリ),2960afb9,2586117,50,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 241228 Sumabato SP 54 (A) - 7th,Asimo,ffa84c87,1569435,50,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 241228 Sumabato SP 54 (A) - 7th,ゴリオカ,8f5104a3,2218785,50,2024-12-16,2026-01-01,
-0.2 - Placement-Based Points,HB2 - 241228 Xanadu Homecoming - The Last Hurrah (B) - 1st,Paras,eff17a60,1492978,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 241228 Xanadu Homecoming - The Last Hurrah (B) - 1st,Endothia,eff17a60,1492978,50,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 241228 Xanadu Homecoming - The Last Hurrah (B) - 2nd,Chugs,11859c48,1820508,30,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 241228 Xanadu Homecoming - The Last Hurrah (B) - 3rd,Burst ,d618e2ad,266003,30,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 241228 Xanadu Homecoming - The Last Hurrah (B) - 4th,Gen,c56b433f,160103,30,2024-12-16,2026-01-01,
@@ -4219,6 +4219,33 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 250119 The Reaper Invitational (B) - 3rd,Zomba,880cbc79,370802,30,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 250119 The Reaper Invitational (B) - 4th,Syrup,0f333fd3,1216463,30,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 250119 WINNER! -Looking For Squad- (C) - 1st,Gackt,e8f0cdcd,484575,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Frosty Faustings XVII 2025 (B) - 1st,Chase,88c50121,1648298,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Frosty Faustings XVII 2025 (B) - 2nd,Dabuz,b0203282,4702,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Frosty Faustings XVII 2025 (B) - 3rd,loaf,42f99780,245412,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Frosty Faustings XVII 2025 (B) - 4th,ATATA,f4da6f4a,38148,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 La Castanha #4 (C) - 1st,Susu,ca62afb5,2494022,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 OffStage #100 (C) - 1st,Shmu,805e37ad,400954,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Boardwalk Monthly #1 (C) - 1st,Dominator,eba71b53,1052472,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Esports Cave Encore! (C) - 1st,ApolloKage,ca0e602a,1099727,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Roundtable 2 (B) - 1st,Tweek,0d650c15,15768,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Roundtable 2 (B) - 2nd,Syrup,0f333fd3,1216463,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Roundtable 2 (B) - 3rd,Zomba,880cbc79,370802,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 The Roundtable 2 (B) - 4th,Free KayFlock,4b56197c,2519248,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Warlock's Dark Renewal (B) - 1st,Maister,9fb774ae,135042,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Warlock's Dark Renewal (B) - 2nd,Guilheww,3fb25f10,937555,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Warlock's Dark Renewal (B) - 3rd,MkLeo,3f297e74,222927,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250125 Warlock's Dark Renewal (B) - 4th,MKBigBoss,60bedceb,546734,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Dose2Sel 2025 (B) - 1st,Tarik,b78faa57,215623,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Dose2Sel 2025 (B) - 2nd,crêpe salée,c28aec41,1292149,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Dose2Sel 2025 (B) - 3rd,MoDzai,4fdc7279,1241546,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Dose2Sel 2025 (B) - 4th,NaetorU,726d1e3d,999527,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Fly High!! #11 (C) - 1st,ミーヤー/Miya,d8016ec8,1636582,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Stadium - Maruchan Gaming Series (C) - 1st,MkLeo,3f297e74,222927,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 UFF X (C) - 1st,ShinyMark,1cbc6e18,184005,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Worst of the West #01 (B) - 1st,Sparg0,b5230de8,158026,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Worst of the West #01 (B) - 2nd,WaKa,cb6001b4,504366,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Worst of the West #01 (B) - 3rd,Ludo,eedb9647,71127,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250126 Worst of the West #01 (B) - 4th,Nexus,c3a0a3f0,25509,30,2024-12-16,2026-01-01,
 0.3 - National Rankings,Europe [23.1] #01,Glutonny,7611d833,6122,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #02,Bloom4Eva,17afe34e,1198828,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #03,Sisqui,e97f144e,539193,120,2023-12-18,2024-01-26,
@@ -4269,31 +4296,56 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.3 - National Rankings,Europe [23] #23,Peli,b8be32d2,51168,30,2024-01-26,2024-07-26,https://twitter.com/EUPR_ssbu/status/1750927052935475230
 0.3 - National Rankings,Europe [23] #24,Nitox,3f7a31f3,2241260,30,2024-01-26,2024-07-26,https://twitter.com/EUPR_ssbu/status/1750927052935475230
 0.3 - National Rankings,Europe [23] #25,KID,be651aa3,1808977,30,2024-01-26,2024-07-26,https://twitter.com/EUPR_ssbu/status/1750927052935475230
-0.3 - National Rankings,Europe [24.1] #01,crêpe salée,c28aec41,1292149,120,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #02,Glutonny,7611d833,6122,120,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #03,Raflow,1e53f5f2,1352543,120,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #04,Sisqui,e97f144e,539193,120,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #05,Bloom4Eva,17afe34e,1198828,120,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #06,Tarik,b78faa57,215623,90,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #07,Leon,b6859efe,5604,90,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #08,Luugi,57bd7962,1777711,90,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #09,Flow,00d6d0ad,129129,90,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #10,Lancelot,a18e37a5,158499,90,2024-07-26,,https://x.com/EUPR_ssbu/status/1816851281002041441
-0.3 - National Rankings,Europe [24.1] #11,Oryon,ac800e16,977863,70,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #12,KID,be651aa3,1808977,70,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #13,Neeroz,7600e893,173560,70,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #14,MazeBeans,142f574f,889697,70,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #15,MoDzai,4fdc7279,1241546,70,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #16,Susu,ca62afb5,2494022,50,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #17,Mezcaul,15134af4,1406048,50,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #18,NaetorU,726d1e3d,999527,50,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #19,Mr.R,2df8b2c9,14411,50,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #20,RyuKai,dda7aa67,428188,50,2024-07-26,,https://x.com/EUPR_ssbu/status/1816505906194268369
-0.3 - National Rankings,Europe [24.1] #21,drybie,ad8570b4,988249,30,2024-07-26,,https://x.com/EUPR_ssbu/status/1816141613036712141
-0.3 - National Rankings,Europe [24.1] #22,AndresFn,efabe54a,140568,30,2024-07-26,,https://x.com/EUPR_ssbu/status/1816141613036712141
-0.3 - National Rankings,Europe [24.1] #23,Supahsemmie,b3a7a650,148529,30,2024-07-26,,https://x.com/EUPR_ssbu/status/1816141613036712141
-0.3 - National Rankings,Europe [24.1] #24,PeW,78d72878,289065,30,2024-07-26,,https://x.com/EUPR_ssbu/status/1816141613036712141
-0.3 - National Rankings,Europe [24.1] #25,Space,234cbf40,180857,30,2024-07-26,,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24.1] #01,crêpe salée,c28aec41,1292149,120,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #02,Glutonny,7611d833,6122,120,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #03,Raflow,1e53f5f2,1352543,120,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #04,Sisqui,e97f144e,539193,120,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #05,Bloom4Eva,17afe34e,1198828,120,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #06,Tarik,b78faa57,215623,90,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #07,Leon,b6859efe,5604,90,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #08,Luugi,57bd7962,1777711,90,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #09,Flow,00d6d0ad,129129,90,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #10,Lancelot,a18e37a5,158499,90,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816851281002041441
+0.3 - National Rankings,Europe [24.1] #11,Oryon,ac800e16,977863,70,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #12,KID,be651aa3,1808977,70,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #13,Neeroz,7600e893,173560,70,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #14,MazeBeans,142f574f,889697,70,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #15,MoDzai,4fdc7279,1241546,70,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #16,Susu,ca62afb5,2494022,50,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #17,Mezcaul,15134af4,1406048,50,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #18,NaetorU,726d1e3d,999527,50,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #19,Mr.R,2df8b2c9,14411,50,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #20,RyuKai,dda7aa67,428188,50,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816505906194268369
+0.3 - National Rankings,Europe [24.1] #21,drybie,ad8570b4,988249,30,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24.1] #22,AndresFn,efabe54a,140568,30,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24.1] #23,Supahsemmie,b3a7a650,148529,30,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24.1] #24,PeW,78d72878,289065,30,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24.1] #25,Space,234cbf40,180857,30,2024-07-26,2025-01-25,https://x.com/EUPR_ssbu/status/1816141613036712141
+0.3 - National Rankings,Europe [24] #01,Glutonny,7611d833,6122,120,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #02,Raflow,1e53f5f2,1352543,120,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #03,crêpe salée,c28aec41,1292149,120,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #04,Sisqui,e97f144e,539193,120,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #05,Tarik,b78faa57,215623,120,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #06,Luugi,57bd7962,1777711,90,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #07,Bloom4Eva,17afe34e,1198828,90,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #08,Supahsemmie,b3a7a650,148529,90,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #09,Leon,b6859efe,5604,90,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #10,NaetorU,726d1e3d,999527,90,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #11,Susu,ca62afb5,2494022,70,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #12,Oryon,ac800e16,977863,70,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #13,Flow,00d6d0ad,129129,70,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #14,Lancelot,a18e37a5,158499,70,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #15,AndresFn,efabe54a,140568,70,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #16,Mezcaul,15134af4,1406048,50,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #17,Space,234cbf40,180857,50,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #18,Neeroz,7600e893,173560,50,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #19,drybie,ad8570b4,988249,50,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #20,quiK,a488aa5c,6872,50,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #21,KID,be651aa3,1808977,30,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #22,Raarchyor,52b2a832,1179613,30,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #23,MoDzai,4fdc7279,1241546,30,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #24,MazeBeans,142f574f,889697,30,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
+0.3 - National Rankings,Europe [24] #25,SOLO,d0e32ad6,254936,30,2025-01-25,,https://x.com/EUPR_ssbu/status/1883187219810455604
 0.3 - National Rankings,Mexico [23] #01,Sparg0,b5230de8,158026,120,2023-12-18,2024-07-06,https://twitter.com/CosmicHives/status/1741216161570697241
 0.3 - National Rankings,Mexico [23] #02,MkLeo,3f297e74,222927,120,2023-12-18,2024-07-06,https://twitter.com/CosmicHives/status/1741216161570697241
 0.3 - National Rankings,Mexico [23] #03,Maister,9fb774ae,135042,120,2023-12-18,2024-07-06,https://twitter.com/CosmicHives/status/1741216161570697241
@@ -4377,10 +4429,14 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1 - USA Region Seat,Carolinas (NC) [S19] eff. #2 (#3),Senn,ca7ac251,1194511,30,2025-01-10,,https://x.com/Crystal_PG/status/1877845373156278332
 1.1 - USA Region Seat,Carolinas (NC) [S19] eff. #3 (#4),Spandex,908a4822,1467671,30,2025-01-10,,https://x.com/Crystal_PG/status/1877845373156278332
 1.1 - USA Region Seat,Carolinas (NC) [S19] eff. #4 (#5),Regalo,2117c0ff,353073,30,2025-01-10,,https://x.com/Crystal_PG/status/1877845373156278332
-1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #1 (#2),NoTag,7a797d47,351855,30,2024-12-16,,https://x.com/SCSmashBros/status/1854293345712926890
-1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #2 (#3),CJFrozen,ac9d603b,918277,30,2024-12-16,,https://x.com/SCSmashBros/status/1854293345712926890
-1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #3 (#4),Cybil,91fcdc2b,1314384,30,2024-12-16,,https://x.com/SCSmashBros/status/1854293345712926890
-1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #4 (#5),Chunky,5d4b2506,1479891,30,2024-12-16,,https://x.com/SCSmashBros/status/1854293345712926890
+1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #1 (#2),NoTag,7a797d47,351855,30,2024-12-16,2025-01-21,https://x.com/SCSmashBros/status/1854293345712926890
+1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #2 (#3),CJFrozen,ac9d603b,918277,30,2024-12-16,2025-01-21,https://x.com/SCSmashBros/status/1854293345712926890
+1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #3 (#4),Cybil,91fcdc2b,1314384,30,2024-12-16,2025-01-21,https://x.com/SCSmashBros/status/1854293345712926890
+1.1 - USA Region Seat,Carolinas (SC) [24 Q3] eff. #4 (#5),Chunky,5d4b2506,1479891,30,2024-12-16,2025-01-21,https://x.com/SCSmashBros/status/1854293345712926890
+1.1 - USA Region Seat,Carolinas (SC) [24 Q4] eff. #1 (#2),NoTag,7a797d47,351855,30,2025-01-21,,https://x.com/SCSmashBros/status/1881882613767614670
+1.1 - USA Region Seat,Carolinas (SC) [24 Q4] eff. #2 (#3),CJFrozen,ac9d603b,918277,30,2025-01-21,,https://x.com/SCSmashBros/status/1881882613767614670
+1.1 - USA Region Seat,Carolinas (SC) [24 Q4] eff. #3 (#4),Chunky,5d4b2506,1479891,30,2025-01-21,,https://x.com/SCSmashBros/status/1881882613767614670
+1.1 - USA Region Seat,Carolinas (SC) [24 Q4] eff. #4 (#5),kendricklamarfan19,3ef5fd39,2064505,30,2025-01-21,,https://x.com/SCSmashBros/status/1881882613767614670
 1.1 - USA Region Seat,Florida (CFL) [24.1] eff. #1 (#1),Epic_Gabriel,d5ac543e,436376,30,2024-12-16,,https://x.com/Theorlandogg/status/1799104495705788617
 1.1 - USA Region Seat,Florida (CFL) [24.1] eff. #2 (#4),Sean,ba56449f,24971,30,2024-12-16,,https://x.com/Theorlandogg/status/1799104495705788617
 1.1 - USA Region Seat,Florida (CFL) [24.1] eff. #3 (#5),Aaron,3f44b63e,29773,30,2024-12-16,,https://x.com/Theorlandogg/status/1799104495705788617
@@ -4441,8 +4497,10 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1 - USA Region Seat,Georgia [24.2*] eff. #6 (#09),Eleven,d7dea54e,2348605,30,2024-12-16,,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #7 (#10),Sakana,612f9f3f,1045059,30,2024-12-16,,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #8 (#11),Shaine,02195e32,1482843,30,2024-12-16,,https://x.com/GeorgiaSmash/status/1839382402298437649
-1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #1,Wildz,3baf4fc3,2356872,30,2024-12-16,,https://x.com/KyUltPRPanel/status/1853259966867517500
-1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #2,Roger,84ca8be6,253421,30,2024-12-16,,https://x.com/KyUltPRPanel/status/1853259966867517500
+1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #1,Wildz,3baf4fc3,2356872,30,2024-12-16,2025-01-27,https://x.com/KyUltPRPanel/status/1853259966867517500
+1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #2,Roger,84ca8be6,253421,30,2024-12-16,2025-01-27,https://x.com/KyUltPRPanel/status/1853259966867517500
+1.1 - USA Region Seat,Great Lakes East (KY) [24 Q4] #1,worry,c42fc83c,1458183,30,2025-01-27,,https://www.youtube.com/watch?v=d1GyKi7nS44
+1.1 - USA Region Seat,Great Lakes East (KY) [24 Q4] #2,Soul,2cf95c77,2247948,30,2025-01-27,,https://www.youtube.com/watch?v=d1GyKi7nS44
 1.1 - USA Region Seat,Great Lakes East (OH) [24 T2] #1,Geist,046ffd13,250461,30,2024-12-16,2025-01-06,https://x.com/ohio_smash/status/1835364417371824525
 1.1 - USA Region Seat,Great Lakes East (OH) [24 T2] #2,Doorstop,33df22f2,51309,30,2024-12-16,2025-01-06,https://x.com/ohio_smash/status/1835364417371824525
 1.1 - USA Region Seat,Great Lakes East (OH) [24 T2] #3,Dr. Kirb,6fbdab69,2068699,30,2024-12-16,2025-01-06,https://x.com/ohio_smash/status/1835364417371824525
@@ -4703,7 +4761,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,Carolinas [24.1] eff. #1,Anarchy,4d42d7f0,1198128,50,2024-07-16,2024-12-16,
 1.1.1 - USA,Carolinas [24.1] eff. #2,Regalo,2117c0ff,353073,40,2024-07-16,2024-12-16,
 1.1.1 - USA,Carolinas [24.1] eff. #3,NoTag,7a797d47,351855,30,2024-07-16,2024-12-16,
-1.1.1 - USA,Carolinas [24.1] eff. #4,Paras,eff17a60,1492978,20,2024-07-16,2024-12-16,
+1.1.1 - USA,Carolinas [24.1] eff. #4,Endothia,eff17a60,1492978,20,2024-07-16,2024-12-16,
 1.1.1 - USA,Carolinas [24.1] eff. #5,Chugs,11859c48,1820508,10,2024-07-16,2024-12-16,
 1.1.1 - USA,Great Basin (Reno) [24.4] #1,MFA,54a03214,261185,30,2024-12-16,,https://x.com/RenoSmashC/status/1866332389817106698
 1.1.1 - USA,Great Basin (UT) [24 Q3] #1,Scend,574b3c34,28679,30,2024-12-16,2025-01-16,https://x.com/Utah_Smash/status/1844377038662304083
@@ -4757,7 +4815,8 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,Heartland North (MN) [24 T2] #1,loaf,42f99780,245412,30,2024-12-16,,https://x.com/ChimeraChild/status/1839021046944375056
 1.1.1 - USA,Heartland North (MN) [24 T2] #2,Lucky,9f0cae57,307127,30,2024-12-16,,https://x.com/ChimeraChild/status/1839021046944375056
 1.1.1 - USA,Heartland North (MN) [24 T2] #3,Mirai,5a58da46,1457345,30,2024-12-16,,https://x.com/ChimeraChild/status/1839021046944375056
-1.1.1 - USA,Heartland North (ND) [24.2] #1,Cuban Misfire Crisis,be822e57,1423092,30,2024-12-16,,https://x.com/NDSSBU/status/1832102739071135756
+1.1.1 - USA,Heartland North (ND) [24.2] #1,Cuban Misfire Crisis,be822e57,1423092,30,2024-12-16,2025-01-17,https://x.com/NDSSBU/status/1832102739071135756
+1.1.1 - USA,Heartland North (ND) [24.3] #1,Erin,51bcea7b,128055,30,2025-01-17,,https://discord.com/channels/1081269943082954842/1081619596978683914/1329677266078400536
 1.1.1 - USA,Heartland North (SD-E) [24.1] #1,Jbrav,f8bb4790,1069340,30,2024-12-16,,https://x.com/BravoEsportsgg/status/1847038332410147318
 1.1.1 - USA,Heartland North [23.1 UR] #1,Candle,9d88138d,1695284,50,2023-07-25,2023-12-18,
 1.1.1 - USA,Heartland North [23.1 UR] #2,loaf,42f99780,245412,40,2023-07-25,2023-12-18,
@@ -4776,8 +4835,10 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,Heartland North [24.1 LR] #5,Erin,51bcea7b,128055,10,2024-07-16,2024-12-16,
 1.1.1 - USA,Heartland South (IA) [24 Q3] #1,PeZ,a12076e3,1033858,30,2024-12-16,2025-01-01,https://x.com/IowaSSBU/status/1841671120552132754
 1.1.1 - USA,Heartland South (IA) [24 Q4] #1,KilogramHours,42c73ce4,2285441,30,2025-01-01,,https://x.com/IowaSSBU/status/1874574024971608540
-1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #1 (#2),Deathspade,caa4dcbf,1649359,30,2024-12-16,,https://x.com/spotlight_kc/status/1845873245817655463
-1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #2 (#3),Rocke,3d383799,1087831,30,2024-12-16,,https://x.com/spotlight_kc/status/1845873245817655463
+1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #1 (#2),Deathspade,caa4dcbf,1649359,30,2024-12-16,2025-01-20,https://x.com/spotlight_kc/status/1845873245817655463
+1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #1 (#2),Deathspade,caa4dcbf,1649359,30,2025-01-20,,https://x.com/spotlight_kc/status/1881473974988947483
+1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #2 (#3),Rocke,3d383799,1087831,30,2024-12-16,2025-01-20,https://x.com/spotlight_kc/status/1845873245817655463
+1.1.1 - USA,Heartland South (KC) [24 Q3] eff. #2 (#3),ToffeeCG,31e1605c,175012,30,2025-01-20,,https://x.com/spotlight_kc/status/1881473974988947483
 1.1.1 - USA,Heartland South (NE) [24 Q3] #1,Zen,1d911883,349248,30,2024-12-16,2024-12-31,https://x.com/nebraska_smash/status/1843488920677560692
 1.1.1 - USA,Heartland South (NE) [24 Q4] #1,sandy,a24d9228,36491,30,2024-12-31,,https://x.com/nebraska_smash/status/1874232373539475872
 1.1.1 - USA,Heartland South (STL) [24.4] #1,chapstick,0ab3f4b8,2628524,30,2024-12-16,,https://x.com/pogchew/status/1870537084978483657
@@ -4795,8 +4856,10 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,Inland/Gulf Southeast (AL) [24.2] eff. #2 (#3),Sam ,be0c2eee,221712,30,2024-12-16,2024-12-26,https://x.com/ALSmashLeague/status/1834039293796352179
 1.1.1 - USA,Inland/Gulf Southeast (AL) [24.3] #1,Tavares,9393da2f,234829,30,2024-12-26,,https://x.com/ALSmashLeague/status/1872343489499009405
 1.1.1 - USA,Inland/Gulf Southeast (AL) [24.3] #2,Sam ,be0c2eee,221712,30,2024-12-26,,https://x.com/ALSmashLeague/status/1872343489499009405
-1.1.1 - USA,Inland/Gulf Southeast (East TN) [24.3] #1,storm,4a608d6c,2193397,30,2024-12-16,,
-1.1.1 - USA,Inland/Gulf Southeast (Mid TN) [24.2] #2,Dany,e4e8af6f,606386,30,2024-12-16,,
+1.1.1 - USA,Inland/Gulf Southeast (East TN) [24.2] #1,Lem0nade,e60e8aea,637418,30,2024-12-16,2025-01-01,https://discord.com/channels/1054446393139396678/1054959938436337674/1237426196753678377
+1.1.1 - USA,Inland/Gulf Southeast (East TN) [24.3] #1,storm,4a608d6c,2193397,30,2025-01-01,,https://discord.com/channels/1054446393139396678/1054959938436337674/1324060009650458654
+1.1.1 - USA,Inland/Gulf Southeast (Mid TN) [24.2] #2,Dany,e4e8af6f,606386,30,2024-12-16,2025-01-20,https://discord.com/channels/304297651170574338/304303800779407361/1299914372608426054
+1.1.1 - USA,Inland/Gulf Southeast (Mid TN) [24.3] #2,Pajarito,af110796,913299,30,2025-01-20,,https://discord.com/channels/304297651170574338/304303800779407361/1331088225434992640
 1.1.1 - USA,Inland/Gulf Southeast (MS) [24.2] #1,Scrafty,9a838664,159520,30,2024-12-16,,https://x.com/SmashBrosMS/status/1856139389832671582
 1.1.1 - USA,Inland/Gulf Southeast [23.1 UR] #1,YoseFu,cc31089a,349347,50,2023-07-25,2023-12-18,
 1.1.1 - USA,Inland/Gulf Southeast [23.1 UR] #2,Xerzal,39b26497,1760924,40,2023-07-25,2023-12-18,
@@ -4955,7 +5018,8 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1.1 - USA,NorCal [24 Q3*] #4,Dtier,ce7027cc,1496295,30,2024-12-16,,https://x.com/SaltEsports_SSB/status/1862266377828274316
 1.1.1 - USA,NorCal [24 Q3*] #5,shrutik,e81679bd,1758326,30,2024-12-16,,https://x.com/SaltEsports_SSB/status/1862266377828274316
 1.1.1 - USA,Pacific Northwest (EWA) [24] #1,Fizzmint,e174dee9,538990,30,2024-12-16,,https://x.com/CalFrantz2/status/1868150768815296764
-1.1.1 - USA,Pacific Northwest (OR) [24.2] #1,Bombastic,4fa99172,1173578,30,2024-12-16,,https://x.com/ZACH_SPARKLE/status/1864785586172596727
+1.1.1 - USA,Pacific Northwest (OR) [24.2] #1,Bombastic,4fa99172,1173578,30,2024-12-16,2025-01-24,https://x.com/ZACH_SPARKLE/status/1864785586172596727
+1.1.1 - USA,Pacific Northwest (OR) [24.3] #1,Bombastic,4fa99172,1173578,30,2025-01-24,,https://x.com/OregonSSB/status/1883016592705171884
 1.1.1 - USA,Pacific Northwest (WWA) [24.3] eff. #1 (#2),embo_z,ccb48fc0,1094952,30,2024-12-16,2024-12-25,https://x.com/JoJoDaHoBoTL/status/1831452206559850924
 1.1.1 - USA,Pacific Northwest (WWA) [24.3] eff. #2 (#3),JoJoDaHoBo,ab9d60c7,156359,30,2024-12-16,2024-12-25,https://x.com/JoJoDaHoBoTL/status/1831452206559850924
 1.1.1 - USA,Pacific Northwest (WWA) [24.3] eff. #3 (#6),Mio!,acb04a70,1768035,30,2024-12-16,2024-12-25,https://x.com/JoJoDaHoBoTL/status/1831452206559850924
@@ -5272,11 +5336,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.2.1 - Canada,Newfoundland [24.1] #3,Kerbooples,70099365,221154,30,2024-07-05,2024-12-16,https://x.com/SmashBrosNL/status/1809284918066770240
 1.2.1 - Canada,Newfoundland [24.1] #4,Jman Delt*,06ad5b65,3056494,20,2024-07-05,2024-12-16,https://x.com/SmashBrosNL/status/1809284918066770240
 1.2.1 - Canada,Newfoundland [24.1] #5,D$rex,1a2b223d,323886,10,2024-07-05,2024-12-16,https://x.com/SmashBrosNL/status/1809284918066770240
-1.2.1 - Canada,Newfoundland [24.1*] #1,Banjo,cba7012f,1858212,30,2024-12-16,,https://x.com/SmashBrosNL/status/1809284918066770240
-1.2.1 - Canada,Newfoundland [24.1*] #2,Fuzzydyne,7e0d9edc,184817,30,2024-12-16,,https://x.com/SmashBrosNL/status/1809284918066770240
-1.2.1 - Canada,Newfoundland [24.1*] #3,Kerbooples,70099365,221154,30,2024-12-16,,https://x.com/SmashBrosNL/status/1809284918066770240
-1.2.1 - Canada,Newfoundland [24.1*] #4,Jman Delt*,06ad5b65,3056494,30,2024-12-16,,https://x.com/SmashBrosNL/status/1809284918066770240
-1.2.1 - Canada,Newfoundland [24.1*] #5,D$rex,1a2b223d,323886,30,2024-12-16,,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.1*] #1,Banjo,cba7012f,1858212,30,2024-12-16,2025-01-24,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.1*] #2,Fuzzydyne,7e0d9edc,184817,30,2024-12-16,2025-01-24,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.1*] #3,Kerbooples,70099365,221154,30,2024-12-16,2025-01-24,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.1*] #4,Jman Delt*,06ad5b65,3056494,30,2024-12-16,2025-01-24,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.1*] #5,D$rex,1a2b223d,323886,30,2024-12-16,2025-01-24,https://x.com/SmashBrosNL/status/1809284918066770240
+1.2.1 - Canada,Newfoundland [24.2] #1,Banjo,cba7012f,1858212,30,2025-01-24,,https://x.com/SmashBrosNL/status/1882771249132442042
+1.2.1 - Canada,Newfoundland [24.2] #2,Kerbooples,70099365,221154,30,2025-01-24,,https://x.com/SmashBrosNL/status/1882771249132442042
+1.2.1 - Canada,Newfoundland [24.2] #3,Drayne,2b5ae463,608161,30,2025-01-24,,https://x.com/SmashBrosNL/status/1882771249132442042
+1.2.1 - Canada,Newfoundland [24.2] #4,Jman Delt*,06ad5b65,3056494,30,2025-01-24,,https://x.com/SmashBrosNL/status/1882771249132442042
+1.2.1 - Canada,Newfoundland [24.2] #5,Daniel,,,30,2025-01-24,,https://x.com/SmashBrosNL/status/1882771249132442042
 1.2.1 - Canada,Northern Ontario [22 S] #1,Poutine,c8aeff41,1623837,50,,2023-06-07,
 1.2.1 - Canada,Northern Ontario [22 S] #2,Raiko,40a25152,5579,40,,2023-06-07,
 1.2.1 - Canada,Northern Ontario [22 S] #3,Sefaro,879ece15,989882,30,,2023-06-07,
@@ -5343,39 +5412,39 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.2.1 - Canada,Prince Edward Island [22 W*] #4,Twi,f72d5ddc,1831068,30,2024-12-16,,https://twitter.com/PEIFighterZ/status/1643387275693158405
 1.2.1 - Canada,Prince Edward Island [22 W*] #5,K. Kool,8eea784d,1828796,30,2024-12-16,,https://twitter.com/PEIFighterZ/status/1643387275693158405
 1.2.1 - Canada,Saskatchewan [22.1] #1,NadiA,6da27446,551517,50,,2023-03-16,
-1.2.1 - Canada,Saskatchewan [22.1] #2,@pinkbombo91,a7b41c46,26435,40,,2023-03-16,
+1.2.1 - Canada,Saskatchewan [22.1] #2,@pink,a7b41c46,26435,40,,2023-03-16,
 1.2.1 - Canada,Saskatchewan [22.1] #3,2Scary,f77dc641,532708,30,,2023-03-16,
 1.2.1 - Canada,Saskatchewan [22.1] #4,Corvo,c1475e27,703064,20,,2023-03-16,
 1.2.1 - Canada,Saskatchewan [22.1] #5,veto,bdd9aaba,950196,10,,2023-03-16,
 1.2.1 - Canada,Saskatchewan [22.2] #1,2Scary,f77dc641,532708,50,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
 1.2.1 - Canada,Saskatchewan [22.2] #2,NadiA,6da27446,551517,40,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
-1.2.1 - Canada,Saskatchewan [22.2] #3,@pinkbombo91,a7b41c46,26435,30,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
+1.2.1 - Canada,Saskatchewan [22.2] #3,@pink,a7b41c46,26435,30,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
 1.2.1 - Canada,Saskatchewan [22.2] #4,veto,bdd9aaba,950196,20,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
 1.2.1 - Canada,Saskatchewan [22.2] #5,Corvo,c1475e27,703064,10,2023-03-16,2023-09-04,https://twitter.com/pinkbombo91/status/1636402559907774469
 1.2.1 - Canada,Saskatchewan [23.1] #1,2Scary,f77dc641,532708,50,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
 1.2.1 - Canada,Saskatchewan [23.1] #2,PYK,c6b796bf,1281210,40,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
 1.2.1 - Canada,Saskatchewan [23.1] #3,NadiA,6da27446,551517,30,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
-1.2.1 - Canada,Saskatchewan [23.1] #4,@pinkbombo91,a7b41c46,26435,20,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
+1.2.1 - Canada,Saskatchewan [23.1] #4,@pink,a7b41c46,26435,20,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
 1.2.1 - Canada,Saskatchewan [23.1] #5,King Succy,d6006419,2129552,10,2023-09-04,2024-02-01,https://twitter.com/sasksmash/status/1698828888413995432
 1.2.1 - Canada,Saskatchewan [23.2] #1,NadiA,6da27446,551517,50,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
 1.2.1 - Canada,Saskatchewan [23.2] #2,PYK,c6b796bf,1281210,40,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
 1.2.1 - Canada,Saskatchewan [23.2] #3,2Scary,f77dc641,532708,30,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
-1.2.1 - Canada,Saskatchewan [23.2] #4,@pinkbombo91,a7b41c46,26435,20,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
+1.2.1 - Canada,Saskatchewan [23.2] #4,@pink,a7b41c46,26435,20,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
 1.2.1 - Canada,Saskatchewan [23.2] #5,veto,bdd9aaba,950196,10,2024-02-01,2024-09-25,https://twitter.com/sasksmash/status/1753124795695218737
 1.2.1 - Canada,Saskatchewan [24.1] #1,NadiA,6da27446,551517,50,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1] #2,2Scary,f77dc641,532708,40,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1] #3,PYK,c6b796bf,1281210,30,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
-1.2.1 - Canada,Saskatchewan [24.1] #4,@pinkbombo91,a7b41c46,26435,20,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
+1.2.1 - Canada,Saskatchewan [24.1] #4,@pink,a7b41c46,26435,20,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1] #5,veto,bdd9aaba,950196,10,2024-09-25,2024-12-16,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1*] #1,NadiA,6da27446,551517,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1*] #2,2Scary,f77dc641,532708,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1*] #3,PYK,c6b796bf,1281210,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
-1.2.1 - Canada,Saskatchewan [24.1*] #4,@pinkbombo91,a7b41c46,26435,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
+1.2.1 - Canada,Saskatchewan [24.1*] #4,@pink,a7b41c46,26435,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.1*] #5,veto,bdd9aaba,950196,30,2024-12-16,2025-01-02,https://x.com/sasksmash/status/1839061216007958847
 1.2.1 - Canada,Saskatchewan [24.2] #1,NadiA,6da27446,551517,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
 1.2.1 - Canada,Saskatchewan [24.2] #2,2Scary,f77dc641,532708,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
 1.2.1 - Canada,Saskatchewan [24.2] #3,Lucas!!,c7df5a1f,2411855,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
-1.2.1 - Canada,Saskatchewan [24.2] #4,@pinkbombo91,a7b41c46,26435,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
+1.2.1 - Canada,Saskatchewan [24.2] #4,@pink,a7b41c46,26435,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
 1.2.1 - Canada,Saskatchewan [24.2] #5,veto,bdd9aaba,950196,30,2025-01-02,,https://x.com/sasksmash/status/1874974712763457703
 1.3 - Mexico Region Seat,Baja California (Tijuana) [24.2] eff. #1 (#05),AlexDisC,5b0b9cbc,128616,30,2024-12-16,2025-01-12,https://x.com/bajasmashers/status/1838342661973119425
 1.3 - Mexico Region Seat,Baja California (Tijuana) [24.2] eff. #2 (#06),BICI,7cb74288,126381,30,2024-12-16,2025-01-12,https://x.com/bajasmashers/status/1838342661973119425
@@ -6630,7 +6699,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 4 - Oceania Region Seat,New South Wales [24.4*] #4,Dmo,5e92138b,1011123,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
 4 - Oceania Region Seat,New South Wales [24.4*] #5,Dugongs,d8f67377,1302931,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
 4 - Oceania Region Seat,New South Wales [24.4*] #6,Morgone,d9885b4e,2421509,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
-4 - Oceania Region Seat,New South Wales [24.4*] #7,Ryan,66c7e2aa,257947,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
+4 - Oceania Region Seat,New South Wales [24.4*] #7,Isak,c9f9820c,735385,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
 4 - Oceania Region Seat,New South Wales [24.4*] #8,Violet,b10e87b7,1492343,30,2024-12-16,,https://x.com/sydneysmash/status/1867855146656637224
 4 - Oceania Region Seat,Victoria [22 Q4] #1,Sriks,ca522668,46307,50,,2023-03-04,https://twitter.com/THEGWIF/status/1600682181822918656
 4 - Oceania Region Seat,Victoria [22 Q4] #2,Jdizzle,bd2ad28b,61140,50,,2023-03-04,https://twitter.com/THEGWIF/status/1600682181822918656
@@ -6672,14 +6741,22 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 4 - Oceania Region Seat,Victoria [24.3] #3,SebPro101,7f267f98,220863,50,2024-09-05,2024-12-16,https://x.com/SSBMAST/status/1831461739038437845
 4 - Oceania Region Seat,Victoria [24.3] #4,Scobo,901f7f1c,2307972,50,2024-09-05,2024-12-16,https://x.com/SSBMAST/status/1831461739038437845
 4 - Oceania Region Seat,Victoria [24.3] #5,Beet,814a73a7,1179078,50,2024-09-05,2024-12-16,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #1,Zac,3a0eb19c,2513628,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #2,Jdizzle,bd2ad28b,61140,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #3,SebPro101,7f267f98,220863,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #4,Scobo,901f7f1c,2307972,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #5,Beet,814a73a7,1179078,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #6,Pelipper Piccolo,69b64ce0,1142926,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #7,DD,fee121a7,176067,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
-4 - Oceania Region Seat,Victoria [24.3*] #8,rebs,c7768b33,1470337,30,2024-12-16,,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #1,Zac,3a0eb19c,2513628,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #2,Jdizzle,bd2ad28b,61140,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #3,SebPro101,7f267f98,220863,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #4,Scobo,901f7f1c,2307972,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #5,Beet,814a73a7,1179078,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #6,Pelipper Piccolo,69b64ce0,1142926,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #7,DD,fee121a7,176067,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.3*] #8,rebs,c7768b33,1470337,30,2024-12-16,2025-01-22,https://x.com/SSBMAST/status/1831461739038437845
+4 - Oceania Region Seat,Victoria [24.4] #1,Zac,3a0eb19c,2513628,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #2,Jdizzle,bd2ad28b,61140,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #3,Beet,814a73a7,1179078,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #4,SebPro101,7f267f98,220863,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #5,Scobo,901f7f1c,2307972,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #6,DD,fee121a7,176067,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #7,rebs,c7768b33,1470337,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
+4 - Oceania Region Seat,Victoria [24.4] #8,Beefy,468d996c,2583707,30,2025-01-22,,https://x.com/vic_smash/status/1881955869757444366
 4.1 - Oceania,ACT [22.2] #1,Kinaji,14df8bc9,1309647,50,,2023-05-24,
 4.1 - Oceania,ACT [22.2] #2,PaulBaulo,c3cc7e6c,228918,40,,2023-05-24,
 4.1 - Oceania,ACT [22.2] #3,Legacy,9f0e55aa,2021639,30,,2023-05-24,
@@ -7078,9 +7155,9 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 5.2 - Central America Region Seat,Costa Rica [23*] #3,Nomad,71458421,689456,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
 5.2 - Central America Region Seat,Costa Rica [23*] #4,Charlie,44c16d68,540831,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
 5.2 - Central America Region Seat,Costa Rica [23*] #5,Venom ,a93c0d0c,2655773,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
-5.2 - Central America Region Seat,Costa Rica [23*] #6,Montes,,,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
+5.2 - Central America Region Seat,Costa Rica [23*] #6,Montes,753707ee,1181826,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
 5.2 - Central America Region Seat,Costa Rica [23*] #7,Radiant,18ab1bd1,326113,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
-5.2 - Central America Region Seat,Costa Rica [23*] #8,Topo,,,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
+5.2 - Central America Region Seat,Costa Rica [23*] #8,Topo,b9ac3f5d,3627275,30,2024-12-16,,https://twitter.com/Smash_CostaRica/status/1757255617863880967
 5.2 - Central America Region Seat,El Salvador [22.1] #1,Luisfer,de6082ea,53162,50,,2022-12-30,
 5.2 - Central America Region Seat,El Salvador [22.1] #2,Wolfen,52449e0a,46455,50,,2022-12-30,
 5.2 - Central America Region Seat,El Salvador [22.1] #3,Vanitas,bf439a87,71071,50,,2022-12-30,
@@ -7132,24 +7209,42 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 5.2 - Central America Region Seat,El Salvador [24.4] eff. #6 (#08),Flury,c6ea62da,341543,30,2024-12-26,,https://www.youtube.com/watch?v=0N1weVofBqU
 5.2 - Central America Region Seat,El Salvador [24.4] eff. #7 (#09),Mr. F,21c66cbd,965243,30,2024-12-26,,https://www.youtube.com/watch?v=0N1weVofBqU
 5.2 - Central America Region Seat,El Salvador [24.4] eff. #8 (#10),Greencito,3f3d7041,329478,30,2024-12-26,,https://www.youtube.com/watch?v=0N1weVofBqU
-5.2 - Central America Region Seat,Guatemala [23.1] #1,ShinyMark,1cbc6e18,184005,50,2023-07-25,2024-07-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] #2,Crisam,358b1053,276159,50,2023-07-25,2024-07-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] #3,HaunterGV,cbc975e9,1321023,50,2023-07-25,2024-07-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] #4,DragonSlayer,51cde08f,1629939,50,2023-07-25,2024-07-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] #5,Tacobros,6add8de4,507725,50,2023-07-25,2024-07-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] eff. #1 (#2),Crisam,358b1053,276159,50,2024-07-16,2024-12-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] eff. #2 (#4),DragonSlayer,51cde08f,1629939,50,2024-07-16,2024-12-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] eff. #3 (#5),Tacobros,6add8de4,507725,50,2024-07-16,2024-12-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] eff. #4 (#6),Gravity,355e224c,1955975,50,2024-07-16,2024-12-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1] eff. #5 (#7),DaakRD,a4f9ab00,1693445,50,2024-07-16,2024-12-16,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #1 (#02),Crisam,358b1053,276159,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #2 (#04),DragonSlayer,51cde08f,1629939,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #3 (#05),Tacobros,6add8de4,507725,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #4 (#06),Gravity,355e224c,1955975,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #5 (#07),DaakRD,a4f9ab00,1693445,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #6 (#08),N3WTT,d062b30c,2008691,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #7 (#09),Bomber,bf976840,2506395,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
-5.2 - Central America Region Seat,Guatemala [23.1*] eff. #8 (#10),JYJ,ee6d18bb,3194090,30,2024-12-16,,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23.1] #1,ShinyMark,1cbc6e18,184005,50,2023-07-25,2024-03-09,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23.1] #2,Crisam,358b1053,276159,50,2023-07-25,2024-03-09,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23.1] #3,HaunterGV,cbc975e9,1321023,50,2023-07-25,2024-03-09,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23.1] #4,DragonSlayer,51cde08f,1629939,50,2023-07-25,2024-03-09,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23.1] #5,Tacobros,6add8de4,507725,50,2023-07-25,2024-03-09,https://www.instagram.com/p/Ct-smByARxV/
+5.2 - Central America Region Seat,Guatemala [23] #1,ShinyMark,1cbc6e18,184005,50,2024-03-09,2024-07-16,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] #2,HaunterGV,cbc975e9,1321023,50,2024-03-09,2024-07-16,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] #3,DragonSlayer,51cde08f,1629939,50,2024-03-09,2024-07-16,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] #4,Tacobros,6add8de4,507725,50,2024-03-09,2024-07-16,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] #5,Crisam,358b1053,276159,50,2024-03-09,2024-07-16,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] eff. #1 (#3),DragonSlayer,51cde08f,1629939,50,2024-07-16,2024-08-03,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] eff. #2 (#4),Tacobros,6add8de4,507725,50,2024-07-16,2024-08-03,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] eff. #3 (#5),Crisam,358b1053,276159,50,2024-07-16,2024-08-03,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] eff. #4 (#6),DaakRD,a4f9ab00,1693445,50,2024-07-16,2024-08-03,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [23] eff. #5 (#7),Greno,8a4a3137,184081,50,2024-07-16,2024-08-03,https://x.com/AcateRank/status/1766625547101086202
+5.2 - Central America Region Seat,Guatemala [24.1] eff. #1 (#3),Tacobros,6add8de4,507725,50,2024-08-03,2024-12-16,https://x.com/AcateRank/status/1819866317832311164
+5.2 - Central America Region Seat,Guatemala [24.1] eff. #2 (#4),NONAME,36fe4a93,2616734,50,2024-08-03,2024-12-16,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1] eff. #3 (#5),Crisam,358b1053,276159,50,2024-08-03,2024-12-16,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1] eff. #4 (#6),Greno,8a4a3137,184081,50,2024-08-03,2024-12-16,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1] eff. #5 (#7),Guts,a6bfa592,2000336,50,2024-08-03,2024-12-16,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #1 (#03),Tacobros,6add8de4,507725,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819866317832311164
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #2 (#04),NONAME,36fe4a93,2616734,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #3 (#05),Crisam,358b1053,276159,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #4 (#06),Greno,8a4a3137,184081,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #5 (#07),Guts,a6bfa592,2000336,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #6 (#08),DaakRD,a4f9ab00,1693445,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #7 (#09),Bomber,bf976840,2506395,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24.1*] eff. #8 (#10),Eman,a9e1b4d6,3582372,30,2024-12-16,2025-01-19,https://x.com/AcateRank/status/1819966144972767384
+5.2 - Central America Region Seat,Guatemala [24] eff. #1 (#03),Tacobros,6add8de4,507725,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #2 (#04),NONAME,36fe4a93,2616734,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #3 (#05),Crisam,358b1053,276159,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #4 (#06),DragonSlayer,51cde08f,1629939,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #5 (#07),EGO,9bb74b8e,184076,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #6 (#08),DaakRD,a4f9ab00,1693445,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #7 (#09),Guts,a6bfa592,2000336,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
+5.2 - Central America Region Seat,Guatemala [24] eff. #8 (#10),N3WTT,d062b30c,2008691,30,2025-01-19,,https://x.com/AcateRank/status/1881158778642727070
 5.2 - Central America Region Seat,Honduras [24.1 SPS] #1,Darkster,150dc9f2,1425963,50,2024-07-16,2024-12-16,https://www.instagram.com/p/C7PXAnyPGp1/
 5.2 - Central America Region Seat,Honduras [24.1 SPS] #2,Soto,671452ae,213397,50,2024-07-16,2024-12-16,https://www.instagram.com/p/C7PXAnyPGp1/
 5.2 - Central America Region Seat,Honduras [24.1 Tegus] #1,BigFred,a342978b,1516218,50,2024-07-16,2024-12-16,https://www.instagram.com/p/C7abvmysaDG/
@@ -7196,17 +7291,17 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 5.2.1 - Central America,Nicaragua [20] #4,Eleya,9132d81e,1499647,20,,2023-08-21,https://braacket.com/league/SunshinePR1
 5.2.1 - Central America,Nicaragua [20] #5,Azabeth,48291e56,483812,10,,2023-08-21,https://braacket.com/league/SunshinePR1
 5.2.1 - Central America,Nicaragua [23] #1,BHIO,6981461f,1036259,50,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
-5.2.1 - Central America,Nicaragua [23] #2,Wasac424,6467a7cd,1188649,40,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
+5.2.1 - Central America,Nicaragua [23] #2,Wasac,6467a7cd,1188649,40,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
 5.2.1 - Central America,Nicaragua [23] #3,Geovanny,94dae85d,1053613,30,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
 5.2.1 - Central America,Nicaragua [23] #4,Dio_UwU,4927d73e,1188419,20,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
 5.2.1 - Central America,Nicaragua [23] #5,CloudZX,e7f994fc,1188561,10,2023-08-21,2024-04-14,https://braacket.com/league/NicPR/ranking/0FC93873-C0E1-41DA-A05C-473A68089F4E
 5.2.1 - Central America,Nicaragua [24.1] #1,BHIO,6981461f,1036259,50,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
-5.2.1 - Central America,Nicaragua [24.1] #2,Wasac424,6467a7cd,1188649,40,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
+5.2.1 - Central America,Nicaragua [24.1] #2,Wasac,6467a7cd,1188649,40,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1] #3,9wolf,a7551f56,1529245,30,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1] #4,Eli,03f60360,2242671,20,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1] #5,Geovanny,94dae85d,1053613,10,2024-04-14,2024-12-16,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1*] #1,BHIO,6981461f,1036259,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
-5.2.1 - Central America,Nicaragua [24.1*] #2,Wasac424,6467a7cd,1188649,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
+5.2.1 - Central America,Nicaragua [24.1*] #2,Wasac,6467a7cd,1188649,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1*] #3,9wolf,a7551f56,1529245,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1*] #4,Eli,03f60360,2242671,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
 5.2.1 - Central America,Nicaragua [24.1*] #5,Geovanny,94dae85d,1053613,30,2024-12-16,,https://braacket.com/league/NicPR2024/ranking/CD846A5A-D51F-4B05-B8FB-5AB51C8E741D
@@ -7474,16 +7569,26 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 6.3 - Brazil,Brazil [23] #08,RevoS,fb20e5d2,172173,50,2024-02-29,2024-12-16,https://twitter.com/ploiw123_/status/1763277961732788330
 6.3 - Brazil,Brazil [23] #09,Bubbles,b5358dd2,1351082,50,2024-02-29,2024-12-16,https://twitter.com/ploiw123_/status/1763277961732788330
 6.3 - Brazil,Brazil [23] #10,Mafe2233,8af878fd,144180,50,2024-02-29,2024-12-16,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #01,GotM,bbac1f45,1741316,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #02,Lukitu,18fe06a6,390907,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #03,Aleixo,d9632d80,619706,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #04,Ferps,d790bc67,1685931,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #05,Offline,cfeaeec3,2345480,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #06,Player 7,4c05ae18,38393,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #07,Dh Hunter,2273b8aa,1658759,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #08,RevoS,fb20e5d2,172173,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #09,Bubbles,b5358dd2,1351082,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
-6.3 - Brazil,Brazil [23*] #10,Mafe2233,8af878fd,144180,30,2024-12-16,,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #01,GotM,bbac1f45,1741316,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #02,Lukitu,18fe06a6,390907,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #03,Aleixo,d9632d80,619706,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #04,Ferps,d790bc67,1685931,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #05,Offline,cfeaeec3,2345480,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #06,Player 7,4c05ae18,38393,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #07,Dh Hunter,2273b8aa,1658759,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #08,RevoS,fb20e5d2,172173,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #09,Bubbles,b5358dd2,1351082,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [23*] #10,Mafe2233,8af878fd,144180,30,2024-12-16,2025-01-20,https://twitter.com/ploiw123_/status/1763277961732788330
+6.3 - Brazil,Brazil [24] #01,GotM,bbac1f45,1741316,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #02,Offline,cfeaeec3,2345480,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #03,Aleixo,d9632d80,619706,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #04,Lukitu,18fe06a6,390907,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #05,Dh Hunter,2273b8aa,1658759,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #06,RevoS,fb20e5d2,172173,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #07,PROGETO,bf5f0643,1599892,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #08,Meps,898466e0,1795745,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #09,dokebu,ae68e8a3,1375945,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
+6.3 - Brazil,Brazil [24] #10,Mafe2233,8af878fd,144180,30,2025-01-20,,https://x.com/ploiw123_/status/1881423183351603571
 7 - Middle East Region Seat,Saudi Arabia [21] #1,Tooky,50863a0d,328340,50,,2023-01-11,
 7 - Middle East Region Seat,Saudi Arabia [21] #2,Vi,9fd2ea1d,1435556,50,,2023-01-11,
 7 - Middle East Region Seat,Saudi Arabia [21] #3,Zozef,a058b938,778790,50,,2023-01-11,
