@@ -34,7 +34,7 @@ def send_request(query, variables, quiet=False):
         }
         try:
             response = requests.post(
-                SMASH_GG_ENDPOINT, json=json_payload, headers=ggheader)
+                SMASH_GG_ENDPOINT, json=json_payload, headers=ggheader, timeout=60)
 
             if response.status_code == 200:
                 response_json = response.json()
