@@ -18,8 +18,8 @@ Chubu,1,Japan,jp,,,,,47,2024-07-16,
 Chubu,1,Japan,jp,,,,,48,2024-07-16,
 Chubu,1,Japan,jp,,,,,49,2024-07-16,
 Chubu,1,Japan,jp,,,,,50,2024-07-16,
-Florida,1,United States,us,US-FL,,,,,2023-07-24,
 Florida,1,United States,us,US-FL,,,,,,2023-07-24
+Florida,1,United States,us,US-FL,,,,,2023-07-24,
 France,1,France,fr,,,,,,,
 Georgia,1,United States,us,US-GA,,,,,2023-07-24,2024-07-16
 Georgia,1,United States,us,US-SC,Aiken County,,,,2023-07-24,2024-07-16
@@ -201,6 +201,16 @@ Southwest,1,United States,us,US-TX,Winkler County,,,,2023-07-24,2024-07-16
 Southwest,1,United States,us,US-UT,,,,,2023-07-24,2024-07-16
 Texas,1,United States,us,US-LA,,,,,2023-07-24,2023-12-18
 Texas,1,United States,us,US-TX,,,,,2023-07-24,
+Tristate,1,United States,us,US-NY,Bronx County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Kings County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Nassau County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,New York County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Queens County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Richmond County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Rockland County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Suffolk County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,Westchester County,,,,,2023-07-24
+Tristate,1,United States,us,US-NY,,City of New York,,,,2023-07-24
 Tristate,1,United States,us,US-DE,,,,,2023-07-24,
 Tristate,1,United States,us,US-NJ,,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Bronx County,,,,2023-07-24,
@@ -217,16 +227,6 @@ Tristate,1,United States,us,US-NY,Ulster County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Westchester County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,,City of New York,,,2023-07-24,
 Tristate,1,United States,us,US-PA,,,,,2023-07-24,
-Tristate,1,United States,us,US-NY,Bronx County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Kings County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Nassau County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,New York County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Queens County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Richmond County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Rockland County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Suffolk County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,Westchester County,,,,,2023-07-24
-Tristate,1,United States,us,US-NY,,City of New York,,,,2023-07-24
 United States Blanket,1,United States,us,,,,,,,
 "ㅇRecreated Tournament, recalculate score",1,Antarctica,aq,,,,,,2024-12-16,
 Alberta,2,Canada,ca,CA-AB,,,,,,2023-07-24
@@ -236,14 +236,14 @@ Atlantic Canada,2,Canada,ca,CA-NS,,,,,,2023-07-24
 Atlantic Canada,2,Canada,ca,CA-PE,,,,,,2023-07-24
 Atlantic Canada,2,Saint Pierre and Miquelon,fr,FR-PM,,,,,,2023-07-24
 Australia,2,Australia,au,,,,,,,2024-12-16
-Austria,2,Austria,at,,,,,,,
+Austria,2,Austria,at,,,,,,,2024-12-16
 Baja California,2,Mexico,mx,MX-BCN,,,,,2023-07-24,
 Baja California,2,Mexico,mx,MX-BCS,,,,,2023-07-24,
 Belgium,2,Belgium,be,,,,,,,2024-07-16
-Carolinas,2,United States,us,US-NC,,,,,2023-07-24,
-Carolinas,2,United States,us,US-SC,,,,,2023-07-24,
 Carolinas,2,United States,us,US-NC,,,,,,2023-07-24
 Carolinas,2,United States,us,US-SC,,,,,,2023-07-24
+Carolinas,2,United States,us,US-NC,,,,,2023-07-24,
+Carolinas,2,United States,us,US-SC,,,,,2023-07-24,
 Chubu,2,Japan,jp,,,,,38,,2024-07-16
 Chubu,2,Japan,jp,,,,,39,,2024-07-16
 Chubu,2,Japan,jp,,,,,40,,2024-07-16
@@ -282,6 +282,7 @@ Great Lakes East,2,United States,us,US-KY,,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-MD,Allegany County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-MD,Garrett County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-OH,,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Adams County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Allegheny County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Armstrong County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Beaver County,,,,2024-07-16,
@@ -289,38 +290,37 @@ Great Lakes East,2,United States,us,US-PA,Bedford County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Blair County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Butler County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Cambria County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Centre County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Clarion County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Clearfield County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Crawford County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Cumberland County,,,,2024-12-16,
+Great Lakes East,2,United States,us,US-PA,Dauphin County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Elk County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Erie County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Fayette County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Forest County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Franklin County,,,,2024-12-16,
+Great Lakes East,2,United States,us,US-PA,Fulton County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Greene County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Huntingdon County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Indiana County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Jefferson County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Juniata County,,,,2024-12-16,
+Great Lakes East,2,United States,us,US-PA,Lancaster County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Lawrence County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Lebanon County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,McKean County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Mercer County,,,,2024-07-16,
+Great Lakes East,2,United States,us,US-PA,Mifflin County,,,,2024-12-16,
+Great Lakes East,2,United States,us,US-PA,Perry County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,Somerset County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Venango County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Warren County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Washington County,,,,2024-07-16,
 Great Lakes East,2,United States,us,US-PA,Westmoreland County,,,,2024-07-16,
-Great Lakes East,2,United States,us,US-WV,,,,,2024-07-16,
-Great Lakes East,2,United States,us,US-PA,Adams County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Centre County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Cumberland County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Dauphin County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Franklin County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Fulton County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Huntingdon County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Juniata County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Lancaster County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Lebanon County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Mifflin County,,,,2024-12-16,
-Great Lakes East,2,United States,us,US-PA,Perry County,,,,2024-12-16,
 Great Lakes East,2,United States,us,US-PA,York County,,,,2024-12-16,
+Great Lakes East,2,United States,us,US-WV,,,,,2024-07-16,
 Great Lakes West,2,United States,us,US-IL,,,,,2024-12-16,
 Great Lakes West,2,United States,us,US-IN,,,,,2024-12-16,
 Great Lakes West,2,United States,us,US-MI,,,,,2024-12-16,
@@ -440,6 +440,40 @@ Hokkaido,2,Japan,jp,,,,,06,2023-07-24,
 Hokkaido,2,Japan,jp,,,,,07,2023-07-24,
 Hokkaido,2,Japan,jp,,,,,08,2023-07-24,
 Hokkaido,2,Japan,jp,,,,,09,2023-07-24,
+Inland/Gulf Southeast,2,United States,us,US-AL,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Escambia County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Okaloosa County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Santa Rosa County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-FL,Walton County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Allen County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Ballard County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Barren County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Butler County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Caldwell County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Calloway County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Carlisle County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Christian County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Crittenden County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Edmonson County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Fulton County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Graves County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Green County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Hart County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Hickman County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Livingston County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Logan County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Lyon County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Marshall County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,McCracken County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Metcalfe County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Monroe County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Simpson County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Todd County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-LA,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-MS,,,,,,2023-07-24
+Inland/Gulf Southeast,2,United States,us,US-TN,,,,,,2023-07-24
 Inland/Gulf Southeast,2,United States,us,US-AL,,,,,2023-07-24,2024-12-16
 Inland/Gulf Southeast,2,United States,us,US-FL,Bay County,,,,2023-07-24,2024-12-16
 Inland/Gulf Southeast,2,United States,us,US-FL,Calhoun County,,,,2023-07-24,2024-12-16
@@ -485,40 +519,6 @@ Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,2023-07-24,2024-1
 Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,2023-07-24,2024-12-16
 Inland/Gulf Southeast,2,United States,us,US-MS,,,,,2023-07-24,2024-12-16
 Inland/Gulf Southeast,2,United States,us,US-TN,,,,,2023-07-24,2024-12-16
-Inland/Gulf Southeast,2,United States,us,US-AL,,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-FL,Escambia County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-FL,Okaloosa County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-FL,Santa Rosa County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-FL,Walton County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Allen County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Ballard County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Barren County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Butler County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Caldwell County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Calloway County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Carlisle County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Christian County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Crittenden County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Edmonson County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Fulton County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Graves County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Green County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Hart County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Hickman County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Livingston County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Logan County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Lyon County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Marshall County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,McCracken County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Metcalfe County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Monroe County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Simpson County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Todd County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Trigg County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-KY,Warren County,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-LA,,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-MS,,,,,,2023-07-24
-Inland/Gulf Southeast,2,United States,us,US-TN,,,,,,2023-07-24
 Italy,2,Italy,it,,,,,,,2024-07-16
 Kyushu,2,Japan,jp,,,,,80,2024-12-16,
 Kyushu,2,Japan,jp,,,,,81,2024-12-16,
@@ -590,8 +590,8 @@ Mid-South,2,United States,us,US-MO,Wayne County,,,,,2023-07-24
 Mid-South,2,United States,us,US-MO,Webster County,,,,,2023-07-24
 Mid-South,2,United States,us,US-MO,Wright County,,,,,2023-07-24
 Mid-South,2,United States,us,US-OK,,,,,,2023-07-24
-Netherlands,2,Netherlands,nl,,,,,,2024-07-16,2024-12-16
 Netherlands,2,Netherlands,nl,,,,,,,2023-07-24
+Netherlands,2,Netherlands,nl,,,,,,2024-07-16,2024-12-16
 New England,2,United States,us,US-CT,,,,,2023-07-24,
 New England,2,United States,us,US-MA,,,,,2023-07-24,
 New England,2,United States,us,US-ME,,,,,2023-07-24,
@@ -655,8 +655,8 @@ Yucatan Peninsula,2,Mexico,mx,MX-TAB,,,,,,2024-07-16
 Yucatan Peninsula,2,Mexico,mx,MX-YUC,,,,,,2024-07-16
 "ㅇRecreated Tournament, recalculate score",2,Antarctica,aq,,,,,,,2024-12-16
 A.C.T.,3,Australia,au,AU-ACT,,,,,2023-07-24,
-Alaska,3,United States,us,US-AK,,,,,2023-07-24,
 Alaska,3,United States,us,US-AK,,,,,,2023-07-24
+Alaska,3,United States,us,US-AK,,,,,2023-07-24,
 Alberta,3,Canada,ca,CA-AB,,,,,2023-07-24,
 American Territories,3,American Samoa,us,US-AS,,,,,,
 American Territories,3,Northern Mariana Islands,us,US-MP,,,,,,
@@ -669,6 +669,7 @@ Atlantic Canada,3,Canada,ca,CA-NS,,,,,2023-07-24,
 Atlantic Canada,3,Canada,ca,CA-PE,,,,,2023-07-24,
 Atlantic Canada,3,Saint Pierre and Miquelon,fr,FR-PM,,,,,2023-07-24,
 Australia,3,Australia,au,,,,,,2024-12-16,
+Austria,3,Austria,at,,,,,,2024-12-16,
 Bahamas,3,Bahamas,bs,,,,,,,
 Bahrain,3,Bahrain,bh,,,,,,,
 Barbados,3,Barbados,bb,,,,,,,
@@ -738,8 +739,8 @@ French Guiana,3,French Guiana,fr,FR-973,,,,,,
 Greece,3,Greece,gr,,,,,,,
 Guam,3,Guam,us,US-GU,,,,,,
 Guatemala,3,Guatemala,gt,,,,,,,
-Hawaii,3,United States,us,US-HI,,,,,2023-07-24,
 Hawaii,3,United States,us,US-HI,,,,,,2023-07-24
+Hawaii,3,United States,us,US-HI,,,,,2023-07-24,
 Heartland North,3,United States,us,US-MN,,,,,2024-07-16,
 Heartland North,3,United States,us,US-ND,,,,,2024-07-16,
 Heartland North,3,United States,us,US-SD,,,,,2024-07-16,
@@ -935,8 +936,8 @@ Overseas France,3,Mayotte,fr,FR-976,,,,,,
 Overseas France,3,Wallis and Futuna,fr,FR-WF,,,,,,
 Peru,3,Peru,pe,,,,,,,
 Portugal,3,Portugal,pt,,,,,,,
-Puerto Rico,3,Puerto Rico,us,US-PR,,,,,2024-12-16,
 Puerto Rico,3,Puerto Rico,us,US-PR,,,,,,2023-07-24
+Puerto Rico,3,Puerto Rico,us,US-PR,,,,,2024-12-16,
 Quebec,3,Canada,ca,CA-QC,,,,,2024-12-16,
 Queensland,3,Australia,au,AU-QLD,,,,,2023-07-24,
 Reunion,3,Reunion,fr,FR-974,,,,,,
