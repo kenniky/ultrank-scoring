@@ -74,7 +74,7 @@ class CountedValue:
     def __str__(self):
         if self.tag == self.player_value.hex_:
             full_tag = self.tag
-        elif self.alt_tag == self.player_value.tag:
+        elif self.alt_tag.lower() == self.player_value.tag.lower():
             full_tag = self.alt_tag
         else:
             full_tag = f'{self.alt_tag} (aka {self.player_value.tag})'
@@ -817,7 +817,8 @@ def get_entrants(event_slug):
             except Exception as e:
                 print(e)
                 print(resp)
-                raise e
+                print(entrant)
+                # raise e
 
         if page >= resp['data']['event']['entrants']['pageInfo']['totalPages']:
             break
