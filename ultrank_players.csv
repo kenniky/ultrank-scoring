@@ -90,7 +90,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0 - Ranking,2022 OrionRank #089,ShinyMark,1cbc6e18,184005,70,2022-12-19,2023-07-25,
 0 - Ranking,2022 OrionRank #090,ヤマナクション,902ef190,1405882,70,2022-12-19,2023-07-25,
 0 - Ranking,2022 OrionRank #091,IcyMist,1466a72e,147658,60,2022-12-19,2023-07-25,
-0 - Ranking,2022 OrionRank #092,Mugen,0895a60d,71079,60,2022-12-19,2023-07-25,
+0 - Ranking,2022 OrionRank #092,HyperKirby,0895a60d,71079,60,2022-12-19,2023-07-25,
 0 - Ranking,2022 OrionRank #093,Zinoto,9c882d5c,3662,60,2022-12-19,2023-07-25,
 0 - Ranking,2022 OrionRank #094,Munekin,db6ec18d,1336568,60,2022-12-19,2023-07-25,
 0 - Ranking,2022 OrionRank #095,Umeki,e4d2585c,30009,60,2022-12-19,2023-07-25,
@@ -1205,7 +1205,7 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 230422 WAVE #4 (A+) - 3rd,Kome,0910174c,320526,100,2022-12-20,2023-12-18,
 0.2 - Placement-Based Points,HB2 - 230422 Xanadu Homecoming - Xanadu 500 Edition (C) - 1st,IcyMist,1466a72e,147658,30,2022-12-20,2023-12-18,
 0.2 - Placement-Based Points,HB2 - 230423 CIRQUE du CFL (B) - 1st,Kobe,74f4eeb5,55138,50,2022-12-20,2023-12-18,
-0.2 - Placement-Based Points,HB2 - 230423 CIRQUE du CFL (B) - 4th,Mugen,0895a60d,71079,30,2022-12-20,2023-12-18,
+0.2 - Placement-Based Points,HB2 - 230423 CIRQUE du CFL (B) - 4th,HyperKirby,0895a60d,71079,30,2022-12-20,2023-12-18,
 0.2 - Placement-Based Points,HB2 - 230429 Code Crimson 2 (C) - 1st,Xerzal,39b26497,1760924,30,2022-12-20,2023-12-18,
 0.2 - Placement-Based Points,HB2 - 230430 La Super Liga : Bloom To Fight (C) - 1st,Yei,c1358c01,1026031,30,2022-12-20,2023-12-18,
 0.2 - Placement-Based Points,HB2 - 230430 MaesumaTOP#12 (S+) -  3rd,Gackt,e8f0cdcd,484575,150,2022-12-20,2023-12-18,
@@ -2998,6 +2998,30 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 0.2 - Placement-Based Points,HB2 - 250601 Uzes Symphonic Gaming Festival 2025 (A) - 5th,ShinyMark,1cbc6e18,184005,50,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 250601 Uzes Symphonic Gaming Festival 2025 (A) - 7th,Luugi,57bd7962,1777711,50,2024-12-16,2026-01-01,
 0.2 - Placement-Based Points,HB2 - 250601 Uzes Symphonic Gaming Festival 2025 (A) - 7th,Susu,ca62afb5,2494022,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Di'Spawn All Stars (C) - 1st,Raflow,1e53f5f2,1352543,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 1st,マイルドなH.O/Mild na H.O,ad9e1744,3211966,100,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 2nd,ヤマナクション,902ef190,1405882,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 3rd,KEN,8881ab7d,212701,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 4th,なおちゃ,d7d9f3cc,2929281,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 5th,Lunamado,028c2bbc,861505,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 5th,Noi,9b3c0744,1342372,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 7th,Te-sHi,e1a1e202,2582647,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250607 Weekly Smash Party #191 [Extended] (B+) - 7th,Yaura,5e9efb3c,2331494,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250608 Hyogo Tournament 29 (C) - 1st,らき,0bf3d8f1,3179471,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250614 Breach 2025 (C) - 1st,Lucky,9f0cae57,307127,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250614 Garden Brawl 2025 (C) - 1st,Zomba,880cbc79,370802,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250614 MI TEMPS x ROOFTOP (C) - 1st,crêpe salée,c28aec41,1292149,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250614 Shizutona#11 (C) - 1st,Lv.1,98c978f4,1334871,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 Area Zero #8 (C) - 1st,Sisqui,e97f144e,539193,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 1st,Onin,55206a63,1063610,100,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 2nd,ApolloKage,ca0e602a,1099727,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 3rd,Kola,86e42aaa,18802,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 4th,Ploopy,f4a9d513,2986120,50,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 5th,HyperKirby,0895a60d,71079,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 5th,Lima,b26c2ab1,216617,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 7th,Karu!,ac2b447a,1964751,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 CEO 2025 (B+) - 7th,Toon,a29fb55b,1250001,30,2024-12-16,2026-01-01,
+0.2 - Placement-Based Points,HB2 - 250615 Round Table Rumble 4 (C) - 1st,Tarik,b78faa57,215623,30,2024-12-16,2026-01-01,
 0.3 - National Rankings,Europe [23.1] #01,Glutonny,7611d833,6122,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #02,Bloom4Eva,17afe34e,1198828,120,2023-12-18,2024-01-26,
 0.3 - National Rankings,Europe [23.1] #03,Sisqui,e97f144e,539193,120,2023-12-18,2024-01-26,
@@ -3249,43 +3273,51 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 1.1 - USA Region Seat,Georgia [23.3] #2,omega,823fda2c,24638,50,2023-10-12,2023-01-13,https://twitter.com/GeorgiaSmash/status/1712324823651692952
 1.1 - USA Region Seat,Georgia [23.3] #3,Jahzz0,a7d34adf,946548,50,2023-10-12,2023-01-13,https://twitter.com/GeorgiaSmash/status/1712324823651692952
 1.1 - USA Region Seat,Georgia [23.3] #4,Sonido,1e9f8443,6905,50,2023-10-12,2023-01-13,https://twitter.com/GeorgiaSmash/status/1712324823651692952
-1.1 - USA Region Seat,Georgia [23.3] #5,Spickles,636303d4,1154793,50,2023-10-12,2023-01-13,https://twitter.com/GeorgiaSmash/status/1712324823651692952
+1.1 - USA Region Seat,Georgia [23.3] #5,spickles,636303d4,1154793,50,2023-10-12,2023-01-13,https://twitter.com/GeorgiaSmash/status/1712324823651692952
 1.1 - USA Region Seat,Georgia [23.4] #1,omega,823fda2c,24638,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
 1.1 - USA Region Seat,Georgia [23.4] #2,Jahzz0,a7d34adf,946548,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
-1.1 - USA Region Seat,Georgia [23.4] #3,Spickles,636303d4,1154793,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
+1.1 - USA Region Seat,Georgia [23.4] #3,spickles,636303d4,1154793,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
 1.1 - USA Region Seat,Georgia [23.4] #4,Penn,b8cfab2b,764843,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
 1.1 - USA Region Seat,Georgia [23.4] #5,Vivid,e18de92b,499333,50,2023-01-13,2024-05-10,https://twitter.com/GeorgiaSmash/status/1746238465224659178
 1.1 - USA Region Seat,Georgia [24.1] #1,omega,823fda2c,24638,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] #2,Sonido,1e9f8443,6905,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] #3,Jahzz0,a7d34adf,946548,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
-1.1 - USA Region Seat,Georgia [24.1] #4,Spickles,636303d4,1154793,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
+1.1 - USA Region Seat,Georgia [24.1] #4,spickles,636303d4,1154793,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] #5,Sakana,612f9f3f,1045059,50,2024-05-10,2024-07-16,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] eff. #1 (#2),Sonido,1e9f8443,6905,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
-1.1 - USA Region Seat,Georgia [24.1] eff. #2 (#4),Spickles,636303d4,1154793,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
+1.1 - USA Region Seat,Georgia [24.1] eff. #2 (#4),spickles,636303d4,1154793,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] eff. #3 (#5),Sakana,612f9f3f,1045059,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] eff. #4 (#6),Dusk,aa4b4fca,253909,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
 1.1 - USA Region Seat,Georgia [24.1] eff. #5 (#7),Vivid,e18de92b,499333,50,2024-07-16,2024-09-26,https://twitter.com/GeorgiaSmash/status/1788978434502214010
-1.1 - USA Region Seat,Georgia [24.2] eff. #1 (#4),Spickles,636303d4,1154793,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
-1.1 - USA Region Seat,Georgia [24.2] eff. #2 (#5),Mugen,0895a60d,71079,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
+1.1 - USA Region Seat,Georgia [24.2] eff. #1 (#4),spickles,636303d4,1154793,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
+1.1 - USA Region Seat,Georgia [24.2] eff. #2 (#5),HyperKirby,0895a60d,71079,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2] eff. #3 (#6),Vendetta,a9ab0c5a,343421,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2] eff. #4 (#7),Sonido,1e9f8443,6905,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2] eff. #5 (#8),ROB Slayer,905b2512,2414381,50,2024-09-26,2024-12-16,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #1 (#01),DDee,e6d10518,1480393,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
-1.1 - USA Region Seat,Georgia [24.2*] eff. #2 (#04),Spickles,636303d4,1154793,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
-1.1 - USA Region Seat,Georgia [24.2*] eff. #3 (#05),Mugen,0895a60d,71079,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
+1.1 - USA Region Seat,Georgia [24.2*] eff. #2 (#04),spickles,636303d4,1154793,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
+1.1 - USA Region Seat,Georgia [24.2*] eff. #3 (#05),HyperKirby,0895a60d,71079,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #4 (#06),Vendetta,a9ab0c5a,343421,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #5 (#08),ROB Slayer,905b2512,2414381,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #6 (#09),Eleven,d7dea54e,2348605,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #7 (#10),Sakana,612f9f3f,1045059,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
 1.1 - USA Region Seat,Georgia [24.2*] eff. #8 (#11),Shaine,02195e32,1482843,30,2024-12-16,2025-02-05,https://x.com/GeorgiaSmash/status/1839382402298437649
-1.1 - USA Region Seat,Georgia [24.3] eff. #1 (#02),Spickles,636303d4,1154793,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #2 (#04),DDee,e6d10518,1480393,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #3 (#06),ROB Slayer,905b2512,2414381,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #4 (#07),Vivid,e18de92b,499333,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #5 (#08),Monolithic,4f815b01,1926775,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #6 (#09),Dusk,aa4b4fca,253909,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #7 (#10),Eleven,d7dea54e,2348605,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
-1.1 - USA Region Seat,Georgia [24.3] eff. #8 (#11),,,,30,2025-02-05,,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #1 (#02),spickles,636303d4,1154793,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #2 (#04),DDee,e6d10518,1480393,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #3 (#06),ROB Slayer,905b2512,2414381,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #4 (#07),Vivid,e18de92b,499333,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #5 (#08),Monolithic,4f815b01,1926775,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #6 (#09),Dusk,aa4b4fca,253909,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #7 (#10),Eleven,d7dea54e,2348605,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [24.3] eff. #8 (#11),,,,30,2025-02-05,2025-06-14,https://x.com/GeorgiaSmash/status/1887211045766504875
+1.1 - USA Region Seat,Georgia [25.1] eff. #1 (#03),spickles,636303d4,1154793,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #2 (#05),DDee,e6d10518,1480393,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #3 (#06),Sakana,612f9f3f,1045059,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #4 (#07),Eleven,d7dea54e,2348605,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #5 (#08),Dusk,aa4b4fca,253909,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #6 (#09),Ave~,799a1bfd,38830,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #7 (#10),Vivid,e18de92b,499333,30,2025-06-14,,
+1.1 - USA Region Seat,Georgia [25.1] eff. #8 (#11),ToxiC,b014afee,2585804,30,2025-06-14,,
 1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #1,Wildz,3baf4fc3,2356872,30,2024-12-16,2025-01-27,https://x.com/KyUltPRPanel/status/1853259966867517500
 1.1 - USA Region Seat,Great Lakes East (KY) [24 Q3] #2,Roger,84ca8be6,253421,30,2024-12-16,2025-01-27,https://x.com/KyUltPRPanel/status/1853259966867517500
 1.1 - USA Region Seat,Great Lakes East (KY) [24 Q4] #1,worry,c42fc83c,1458183,30,2025-01-27,2025-04-18,https://www.youtube.com/watch?v=d1GyKi7nS44
@@ -5700,11 +5732,11 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 3.1 - Japan,Shikoku [22*] eff. #3 (#5),のっとん,db161a28,1630427,30,2024-12-16,2025-01-05,https://twitter.com/bayashire/status/1610244828612427780
 3.1 - Japan,Shikoku [22*] eff. #4 (#6),マキノ,bfde2278,2872780,30,2024-12-16,2025-01-05,https://twitter.com/bayashire/status/1610244828612427780
 3.1 - Japan,Shikoku [22*] eff. #5 (#7),タクテリア,c5ceb518,2793294,30,2024-12-16,2025-01-05,https://twitter.com/bayashire/status/1610244828612427780
-3.1 - Japan,Shikoku [24] eff. #1 (#2),水上のガケガニ,5135c75e,2744394,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233?t=4FNI79js-Lu2llHZgp-T8Q&s=19
-3.1 - Japan,Shikoku [24] eff. #2 (#4),マキノ,bfde2278,2872780,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233?t=4FNI79js-Lu2llHZgp-T8Q&s=19
-3.1 - Japan,Shikoku [24] eff. #3 (#5),タクテリア,c5ceb518,2793294,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233?t=4FNI79js-Lu2llHZgp-T8Q&s=19
-3.1 - Japan,Shikoku [24] eff. #4 (#6),つごもり,66edbc6c,2894875,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233?t=4FNI79js-Lu2llHZgp-T8Q&s=19
-3.1 - Japan,Shikoku [24] eff. #5 (#7),ゆーふぉ,5cd85ad6,2721531,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233?t=4FNI79js-Lu2llHZgp-T8Q&s=19
+3.1 - Japan,Shikoku [24] eff. #1 (#2),水上のガケガニ,5135c75e,2744394,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233
+3.1 - Japan,Shikoku [24] eff. #2 (#4),マキノ,bfde2278,2872780,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233
+3.1 - Japan,Shikoku [24] eff. #3 (#5),タクテリア,c5ceb518,2793294,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233
+3.1 - Japan,Shikoku [24] eff. #4 (#6),つごもり,66edbc6c,2894875,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233
+3.1 - Japan,Shikoku [24] eff. #5 (#7),ゆーふぉ,5cd85ad6,2721531,30,2025-01-05,,https://x.com/bayashire/status/1875882471604265233
 3.1 - Japan,Tohoku [22 ΩR] #1,Riteshia,284b08b4,2544532,50,,2023-02-25,
 3.1 - Japan,Tohoku [22 ΩR] #2,FW/アイゴスキー,42bc1809,1340015,40,,2023-02-25,
 3.1 - Japan,Tohoku [22 ΩR] #3,haruka.,4edc693c,1489301,30,,2023-02-25,
@@ -5975,11 +6007,16 @@ Category,Note,Player,Start.gg Hex ID,Start.gg Num ID,Points,Start Date,End Date,
 4.1 - Oceania,Queensland [24 Q2] #3,Dags,a1e27952,1145387,30,2024-12-22,2025-05-11,https://x.com/QueenslandUlt/status/1870758376239702385
 4.1 - Oceania,Queensland [24 Q2] #4,BakedGoods,d2cc01d0,2298960,30,2024-12-22,2025-05-11,https://x.com/QueenslandUlt/status/1870758376239702385
 4.1 - Oceania,Queensland [24 Q2] #5,Stacked,7d5ebd35,1474688,30,2024-12-22,2025-05-11,https://x.com/QueenslandUlt/status/1870758376239702385
-4.1 - Oceania,Queensland [24 Q4] #1,Bro1,eb6151e4,1836860,30,2025-05-11,,https://x.com/QueenslandUlt/status/1921498721188987332
-4.1 - Oceania,Queensland [24 Q4] #2,Smasio,b73767a9,1362324,30,2025-05-11,,https://x.com/QueenslandUlt/status/1921498721188987332
-4.1 - Oceania,Queensland [24 Q4] #3,Dags,a1e27952,1145387,30,2025-05-11,,https://x.com/QueenslandUlt/status/1921498721188987332
-4.1 - Oceania,Queensland [24 Q4] #4,Pram,8ae5b596,1808393,30,2025-05-11,,https://x.com/QueenslandUlt/status/1921498721188987332
-4.1 - Oceania,Queensland [24 Q4] #5,BakedGoods,d2cc01d0,2298960,30,2025-05-11,,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [24 Q4] #1,Bro1,eb6151e4,1836860,30,2025-05-11,2025-06-14,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [24 Q4] #2,Smasio,b73767a9,1362324,30,2025-05-11,2025-06-14,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [24 Q4] #3,Dags,a1e27952,1145387,30,2025-05-11,2025-06-14,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [24 Q4] #4,Pram,8ae5b596,1808393,30,2025-05-11,2025-06-14,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [24 Q4] #5,BakedGoods,d2cc01d0,2298960,30,2025-05-11,2025-06-14,https://x.com/QueenslandUlt/status/1921498721188987332
+4.1 - Oceania,Queensland [25 T1] #1,AlastairBL,cb8678b4,617549,30,2025-06-14,,
+4.1 - Oceania,Queensland [25 T1] #2,J-Rods,3ebde16a,2010441,30,2025-06-14,,
+4.1 - Oceania,Queensland [25 T1] #3,Joser,2c0d4253,1045008,30,2025-06-14,,
+4.1 - Oceania,Queensland [25 T1] #4,Litty,3742685b,1834478,30,2025-06-14,,
+4.1 - Oceania,Queensland [25 T1] #5,Dags,a1e27952,1145387,30,2025-06-14,,
 4.1 - Oceania,South Australia [22.3] #1,Ghost,29b631ce,41133,50,,2023-05-18,
 4.1 - Oceania,South Australia [22.3] #2,Taicho,4806df71,64016,40,,2023-05-18,
 4.1 - Oceania,South Australia [22.3] #3,SA Q,ac11eb64,944338,30,,2023-05-18,
