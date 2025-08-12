@@ -315,22 +315,41 @@ class RegionValue:
 
         match = 0
 
+        nullify = False
+
         if address.get('country_code', '') == self.country_code:
             match += 2
 
             if self.iso2 == '':
                 match += 1
+
+                if self.county == '':
+                    match += 0.5
             elif address.get('ISO3166-2-lvl4', '') == self.iso2 or address.get('ISO3166-2-lvl3', '') == self.iso2:
                 match += 2
 
-                if self.county == '' and self.city == '' and self.state_district == '':
+                if self.county == '':
                     match += 1
-                elif self.county != '' and address.get('county', '') == self.county:
+                elif address.get('county', '') == self.county:
                     match += 2
-                elif self.city != '' and address.get('city', '') == self.city:
+                else:
+                    nullify = True
+
+                if self.city == '':
+                    match += 1
+                elif address.get('city', '') == self.city:
                     match += 2
-                elif self.state_district != '' and address.get('state_district', '') == self.state_district:
+                else:
+                    nullify = True
+
+                if self.state_district == '':
+                    match += 1
+                elif address.get('state_district', '') == self.state_district:
                     match += 2
+                else:
+                    nullify = True
+            else:
+                nullify = True
 
             if self.country_code == 'jp':
                 jp_postal = address.get('postcode', 'XX')[0:2]
@@ -339,6 +358,11 @@ class RegionValue:
                     match += 1
                 elif jp_postal == self.jp_postal:
                     match += 2
+                else:
+                    nullify = True
+
+            if nullify:
+                match = 0
 
         return match
 
