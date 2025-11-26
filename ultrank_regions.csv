@@ -2,7 +2,6 @@ Note,Multiplier,Entity,country_code,ISO3166-2,county,city,state_district,jp-post
 Baja California,1,Mexico,mx,MX-BCN,,,,,,2023-07-24
 Baja California,1,Mexico,mx,MX-BCS,,,,,,2023-07-24
 British Columbia,1,Canada,ca,CA-BC,,,,,,
-Canada Blanket,1,Canada,ca,,,,,,,
 Central France,1,France,fr,FR-BFC,,,,,2024-12-16,
 Central France,1,France,fr,FR-CVL,,,,,2024-12-16,
 Central France,1,France,fr,FR-IDF,,,,,2024-12-16,
@@ -90,7 +89,6 @@ Heartland Midwest,1,United States,us,US-KS,Shawnee County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-KS,Washington County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-KS,Wyandotte County,,,,,2023-07-24
 Heartland Midwest,1,United States,us,US-MO,,,,,,2023-07-24
-Japan Blanket,1,Japan,jp,,,,,,,
 Kansai,1,Japan,jp,,,,,51,,
 Kansai,1,Japan,jp,,,,,52,,
 Kansai,1,Japan,jp,,,,,53,,
@@ -156,7 +154,6 @@ MD/VA,1,United States,us,US-WV,Hardy County,,,,2023-07-24,2024-12-16
 MD/VA,1,United States,us,US-WV,Jefferson County,,,,2023-07-24,2024-12-16
 MD/VA,1,United States,us,US-WV,Morgan County,,,,2023-07-24,2024-12-16
 MD/VA,1,United States,us,US-WV,Pendleton County,,,,2023-07-24,2024-12-16
-Mexico Blanket,1,Mexico,mx,,,,,,,
 NorCal,1,United States,us,US-CA,,,,,2023-07-24,2024-12-16
 Northeast France,1,France,fr,FR-GES,,,,,2024-12-16,
 Northeast France,1,France,fr,FR-HDF,,,,,2024-12-16,
@@ -240,7 +237,6 @@ Tristate,1,United States,us,US-NY,Ulster County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,Westchester County,,,,2023-07-24,
 Tristate,1,United States,us,US-NY,,City of New York,,,2023-07-24,
 Tristate,1,United States,us,US-PA,,,,,2023-07-24,
-United States Blanket,1,United States,us,,,,,,,
 "ㅇRecreated Tournament, recalculate score",1,Antarctica,aq,,,,,,2024-12-16,
 Alberta,2,Canada,ca,CA-AB,,,,,,2023-07-24
 Australia,2,Australia,au,,,,,,,2024-12-16
@@ -742,6 +738,7 @@ Alaska,3,United States,us,US-AK,,,,,2023-07-24,
 Albania,3,Albania,al,,,,,,,
 Alberta,3,Canada,ca,CA-AB,,,,,2023-07-24,
 Algeria,3,Algeria,dz,,,,,,,
+American Samoa,3,American Samoa,us,US-AS,,,,,,
 American Territories,3,American Samoa,us,US-AS,,,,,,
 American Territories,3,Northern Mariana Islands,us,US-MP,,,,,,
 American Territories,3,US Minor Outlying Islands,us,US-UM,,,,,,
@@ -780,7 +777,6 @@ Central-West Brazil,3,Brazil,br,BR-GO,,,,,,2024-12-16
 Central-West Brazil,3,Brazil,br,BR-MS,,,,,,2024-12-16
 Central-West Brazil,3,Brazil,br,BR-MT,,,,,,2024-12-16
 Chile,3,Chile,cl,,,,,,,
-China Blanket,3,China,cn,,,,,,,
 Chugoku,3,Japan,jp,,,,,68,,2023-07-24
 Chugoku,3,Japan,jp,,,,,69,,2023-07-24
 Chugoku,3,Japan,jp,,,,,70,,2023-07-24
@@ -1039,6 +1035,7 @@ Northern China,3,China,cn,CN-HE,,,,,2024-12-16,
 Northern China,3,China,cn,CN-SD,,,,,2024-12-16,
 Northern China,3,China,cn,CN-SX,,,,,2024-12-16,
 Northern China,3,China,cn,CN-TJ,,,,,2024-12-16,
+Northern Mariana Islands,3,Northern Mariana Islands,us,US-MP,,,,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northeastern Ontario,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northwestern Ontario,,,
 Northern Territories,3,Australia,au,AU-NT,,,,,2023-07-24,
@@ -1134,6 +1131,8 @@ Trinidad & Tobago,3,Trinidad & Tobago,tt,,,,,,,
 Turkey,3,Turkey,tr,,,,,,,
 Turkmenistan,3,Turkmenistan,tm,,,,,,,
 U.A.E.,3,United Arab Emirates,ae,,,,,,,
+United States Minor Outlying Islands,3,United States Minor Outlying Islands,us,US-UM,,,,,,
+United States Virgin Islands,3,United States Virgin Islands,us,US-VI,,,,,,
 Upstate NY,3,United States,us,US-NY,,,,,2023-07-24,
 Uruguay,3,Uruguay,uy,,,,,,,
 Uzbekistan,3,Uzbekistan,uz,,,,,,,
