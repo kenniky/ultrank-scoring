@@ -1,6 +1,8 @@
 Note,Multiplier,Entity,country_code,ISO3166-2,county,city,state_district,jp-postal-code,Start Date,End Date
 Baja California,1,Mexico,mx,MX-BCN,,,,,,2023-07-24
 Baja California,1,Mexico,mx,MX-BCS,,,,,,2023-07-24
+Baja California,1,Mexico,mx,MX-BCN,,,,,2025-12-15,
+Baja California,1,Mexico,mx,MX-BCS,,,,,2025-12-15,
 British Columbia,1,Canada,ca,CA-BC,,,,,,
 Central France,1,France,fr,FR-BFC,,,,,2024-12-16,
 Central France,1,France,fr,FR-CVL,,,,,2024-12-16,
@@ -22,7 +24,7 @@ Chubu,1,Japan,jp,,,,,48,2024-07-16,
 Chubu,1,Japan,jp,,,,,49,2024-07-16,
 Chubu,1,Japan,jp,,,,,50,2024-07-16,
 Florida,1,United States,us,US-FL,,,,,,2023-07-24
-Florida,1,United States,us,US-FL,,,,,2023-07-24,
+Florida,1,United States,us,US-FL,,,,,2023-07-24,2025-12-15
 France,1,France,fr,,,,,,,
 Georgia,1,United States,us,US-GA,,,,,2023-07-24,2024-07-16
 Georgia,1,United States,us,US-SC,Aiken County,,,,2023-07-24,2024-07-16
@@ -160,11 +162,11 @@ Northeast France,1,France,fr,FR-HDF,,,,,2024-12-16,
 Northwest France,1,France,fr,FR-BRE,,,,,2024-12-16,2025-07-07
 Northwest France,1,France,fr,FR-NOR,,,,,2024-12-16,2025-07-07
 Northwest France,1,France,fr,FR-PDL,,,,,2024-12-16,2025-07-07
-Ontario,1,Canada,ca,CA-ON,,,Central Ontario,,,
-Ontario,1,Canada,ca,CA-ON,,,Eastern Ontario,,,
-Ontario,1,Canada,ca,CA-ON,,,Golden Horseshoe,,,
-Ontario,1,Canada,ca,CA-ON,,,Southwestern Ontario,,,
-Ontario,1,Canada,ca,CA-ON,,,,,,
+Ontario,1,Canada,ca,CA-ON,,,Central Ontario,,,2025-12-15
+Ontario,1,Canada,ca,CA-ON,,,Eastern Ontario,,,2025-12-15
+Ontario,1,Canada,ca,CA-ON,,,Golden Horseshoe,,,2025-12-15
+Ontario,1,Canada,ca,CA-ON,,,Southwestern Ontario,,,2025-12-15
+Ontario,1,Canada,ca,CA-ON,,,,,,2025-12-15
 Pacific Northwest,1,United States,us,US-ID,Benewah County,,,,2023-07-24,2024-12-16
 Pacific Northwest,1,United States,us,US-ID,Bonner County,,,,2023-07-24,2024-12-16
 Pacific Northwest,1,United States,us,US-ID,Boundary County,,,,2023-07-24,2024-12-16
@@ -210,7 +212,7 @@ Southwest,1,United States,us,US-TX,Ward County,,,,2023-07-24,2024-07-16
 Southwest,1,United States,us,US-TX,Winkler County,,,,2023-07-24,2024-07-16
 Southwest,1,United States,us,US-UT,,,,,2023-07-24,2024-07-16
 Texas,1,United States,us,US-LA,,,,,2023-07-24,2023-12-18
-Texas,1,United States,us,US-TX,,,,,2023-07-24,
+Texas,1,United States,us,US-TX,,,,,2023-07-24,2025-12-15
 Tristate,1,United States,us,US-NY,Bronx County,,,,,2023-07-24
 Tristate,1,United States,us,US-NY,Kings County,,,,,2023-07-24
 Tristate,1,United States,us,US-NY,Nassau County,,,,,2023-07-24
@@ -239,10 +241,11 @@ Tristate,1,United States,us,US-NY,,City of New York,,,2023-07-24,
 Tristate,1,United States,us,US-PA,,,,,2023-07-24,
 "ㅇRecreated Tournament, recalculate score",1,Antarctica,aq,,,,,,2024-12-16,
 Alberta,2,Canada,ca,CA-AB,,,,,,2023-07-24
+Alberta,2,Canada,ca,CA-AB,,,,,2025-12-15,
 Australia,2,Australia,au,,,,,,,2024-12-16
 Austria,2,Austria,at,,,,,,,2024-12-16
-Baja California,2,Mexico,mx,MX-BCN,,,,,2023-07-24,
-Baja California,2,Mexico,mx,MX-BCS,,,,,2023-07-24,
+Baja California,2,Mexico,mx,MX-BCN,,,,,2023-07-24,2025-12-15
+Baja California,2,Mexico,mx,MX-BCS,,,,,2023-07-24,2025-12-15
 Belgium,2,Belgium,be,,,,,,,2024-07-16
 Carolinas,2,United States,us,US-NC,,,,,,2023-07-24
 Carolinas,2,United States,us,US-SC,,,,,,2023-07-24
@@ -275,11 +278,12 @@ Chugoku,2,Japan,jp,,,,,72,2023-07-24,
 Chugoku,2,Japan,jp,,,,,73,2023-07-24,
 Chugoku,2,Japan,jp,,,,,74,2023-07-24,
 Chugoku,2,Japan,jp,,,,,75,2023-07-24,
-Dominican Republic,2,Dominican Republic,do,,,,,,2023-07-24,
+Dominican Republic,2,Dominican Republic,do,,,,,,2023-07-24,2025-12-15
 East Mexico,2,Mexico,mx,MX-HID,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-PUE,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-TLA,,,,,,2023-07-24
 East Mexico,2,Mexico,mx,MX-VER,,,,,,2023-07-24
+Florida,2,United States,us,US-FL,,,,,2025-12-15,
 Georgia,2,United States,us,US-GA,,,,,2024-07-16,
 Georgia,2,United States,us,US-SC,Aiken County,,,,2024-07-16,
 Georgia,2,United States,us,US-SC,Edgefield County,,,,2024-07-16,
@@ -656,6 +660,10 @@ Northwest MX,2,Mexico,mx,MX-DUR,,,,,,
 Northwest MX,2,Mexico,mx,MX-SIN,,,,,,
 Northwest MX,2,Mexico,mx,MX-SON,,,,,,
 Nova Scotia,2,Canada,ca,CA-NS,,,,,,2023-07-24
+Ontario,2,Canada,ca,CA-ON,,,Central Ontario,,2025-12-15,
+Ontario,2,Canada,ca,CA-ON,,,Golden Horseshoe,,2025-12-15,
+Ontario,2,Canada,ca,CA-ON,,,Southwestern Ontario,,2025-12-15,
+Ontario,2,Canada,ca,CA-ON,,,,,2025-12-15,
 Pacific Northwest,2,United States,us,US-ID,Benewah County,,,,2024-12-16,
 Pacific Northwest,2,United States,us,US-ID,Bonner County,,,,2024-12-16,
 Pacific Northwest,2,United States,us,US-ID,Boundary County,,,,2024-12-16,
@@ -671,6 +679,7 @@ Pacific Northwest,2,United States,us,US-WA,,,,,2024-12-16,
 Prince Edward Island,2,Canada,ca,CA-PE,,,,,,2023-07-24
 Puerto Rico,2,Puerto Rico,us,US-PR,,,,,2023-07-24,2024-12-16
 Quebec,2,Canada,ca,CA-QC,,,,,2023-07-24,2024-12-16
+Quebec & Ottawa,2,Canada,ca,CA-ON,,,Eastern Ontario,,2025-12-15,
 Saskatchewan,2,Canada,ca,CA-SK,,,,,,2023-07-24
 Scotland,2,Great Britain,gb,GB-SCT,,,,,2024-12-16,2025-07-07
 SoCal,2,United States,us,US-CA,Imperial County,,,,2024-12-16,
@@ -717,6 +726,7 @@ Southern England,2,Great Britain,gb,GB-ENG,Wiltshire,,,,2024-12-16,
 Southern England,2,Great Britain,gb,GB-ENG,,,Greater London,,2024-12-16,
 Spain,2,Spain,es,,,,,,,
 Switzerland,2,Switzerland,ch,,,,,,,2023-07-24
+Texas,2,United States,us,US-TX,,,,,2025-12-15,
 Upstate NY,2,United States,us,US-NY,,,,,,2023-07-24
 Victoria,2,Australia,au,AU-VIC,,,,,2023-07-24,2024-12-16
 West Germany,2,Germany,de,DE-HE,,,,,2024-12-16,
@@ -736,12 +746,9 @@ A.C.T.,3,Australia,au,AU-ACT,,,,,2023-07-24,
 Alaska,3,United States,us,US-AK,,,,,,2023-07-24
 Alaska,3,United States,us,US-AK,,,,,2023-07-24,
 Albania,3,Albania,al,,,,,,,
-Alberta,3,Canada,ca,CA-AB,,,,,2023-07-24,
+Alberta,3,Canada,ca,CA-AB,,,,,2023-07-24,2025-12-15
 Algeria,3,Algeria,dz,,,,,,,
 American Samoa,3,American Samoa,us,US-AS,,,,,,
-American Territories,3,American Samoa,us,US-AS,,,,,,
-American Territories,3,Northern Mariana Islands,us,US-MP,,,,,,
-American Territories,3,US Minor Outlying Islands,us,US-UM,,,,,,
 Argentina,3,Argentina,ar,,,,,,,
 Arizona,3,United States,us,US-AZ,,,,,2024-07-16,
 Armenia,3,Armenia,am,,,,,,,
@@ -750,6 +757,7 @@ Austria,3,Austria,at,,,,,,2024-12-16,
 Azerbaijan,3,Azerbaijan,az,,,,,,,
 Bahamas,3,Bahamas,bs,,,,,,,
 Bahrain,3,Bahrain,bh,,,,,,,
+Bangalore,3,India,in,IN-KA,,,,,2025-12-15,
 Barbados,3,Barbados,bb,,,,,,,
 Belarus,3,Belarus,by,,,,,,,
 Belgium,3,Belgium,be,,,,,,2024-07-16,
@@ -772,6 +780,17 @@ Caribbean,3,Jamaica,jm,,,,,,,
 Caribbean,3,Saint Lucia,lc,,,,,,,
 Caribbean,3,Aruba,nl,NL-AW,,,,,,
 Caribbean,3,Virgin Islands,us,US-VI,,,,,,
+Central Chile,3,Chile,cl,CL-AI,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-AR,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-BI,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-LI,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-LL,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-LR,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-MA,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-ML,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-NB,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-RM,,,,,2025-12-15,
+Central Chile,3,Chile,cl,CL-VS,,,,,2025-12-15,
 Central-West Brazil,3,Brazil,br,BR-DF,,,,,,2024-12-16
 Central-West Brazil,3,Brazil,br,BR-GO,,,,,,2024-12-16
 Central-West Brazil,3,Brazil,br,BR-MS,,,,,,2024-12-16
@@ -791,10 +810,27 @@ Croatia,3,Croatia,hr,,,,,,,
 Cuba,3,Cuba,cu,,,,,,,
 Denmark,3,Denmark,dk,,,,,,,
 Dominican Republic,3,Dominican Republic,do,,,,,,,2023-07-24
+Dominican Republic,3,Dominican Republic,do,,,,,,2025-12-15,
 East Mexico,3,Mexico,mx,MX-HID,,,,,2023-07-24,
 East Mexico,3,Mexico,mx,MX-PUE,,,,,2023-07-24,
 East Mexico,3,Mexico,mx,MX-TLA,,,,,2023-07-24,
 East Mexico,3,Mexico,mx,MX-VER,,,,,2023-07-24,
+East Venezuela,3,Venezuela,ve,VE-A,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-B,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-C,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-D,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-F,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-G,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-H,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-J,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-M,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-N,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-O,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-R,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-W,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-X,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-Y,,,,,2025-12-15,
+East Venezuela,3,Venezuela,ve,VE-Z,,,,,2025-12-15,
 Eastern China,3,China,cn,CN-AH,,,,,2024-12-16,
 Eastern China,3,China,cn,CN-CQ,,,,,2024-12-16,
 Eastern China,3,China,cn,CN-FJ,,,,,2024-12-16,
@@ -996,6 +1032,11 @@ North Central MX,3,Mexico,mx,MX-GUA,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-QUE,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-SLP,,,,,2023-07-24,
 North Central MX,3,Mexico,mx,MX-ZAC,,,,,2023-07-24,
+North Chile,3,Chile,cl,CL-AN,,,,,2025-12-15,
+North Chile,3,Chile,cl,CL-AP,,,,,2025-12-15,
+North Chile,3,Chile,cl,CL-AT,,,,,2025-12-15,
+North Chile,3,Chile,cl,CL-CO,,,,,2025-12-15,
+North Chile,3,Chile,cl,CL-TA,,,,,2025-12-15,
 North Korea,3,North Korea,kp,,,,,,,
 Northeast Brazil,3,Brazil,br,BR-AL,,,,,,2024-12-16
 Northeast Brazil,3,Brazil,br,BR-BA,,,,,,2024-12-16
@@ -1039,9 +1080,79 @@ Northern Mariana Islands,3,Northern Mariana Islands,us,US-MP,,,,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northeastern Ontario,,,
 Northern Ontario,3,Canada,ca,CA-ON,,,Northwestern Ontario,,,
 Northern Territories,3,Australia,au,AU-NT,,,,,2023-07-24,
+Northwest Mountains,3,United States,us,US-ID,,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-MT,,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Baker County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Crook County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Gilliam County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Grant County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Harney County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Lake County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Malheur County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Morrow County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Sherman County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Umatilla County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Union County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Wallowa County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-OR,Wheeler County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Adams County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Asotin County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Benton County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Chelan County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Columbia County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Douglas County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Ferry County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Franklin County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Garfield County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Grant County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Kittitas County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Lincoln County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Okanogan County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Pend Oreille County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Spokane County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Stevens County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Walla Walla County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Whitman County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WA,Yakima County,,,,2025-12-15,
+Northwest Mountains,3,United States,us,US-WY,,,,,2025-12-15,
 Norway,3,Norway,no,,,,,,,
 Nova Scotia,3,Canada,ca,CA-NS,,,,,2023-07-24,
 Okinawa,3,Japan,jp,,,,,90,,
+Other India,3,India,in,IN-AN,,,,,2025-12-15,
+Other India,3,India,in,IN-AP,,,,,2025-12-15,
+Other India,3,India,in,IN-AR,,,,,2025-12-15,
+Other India,3,India,in,IN-AS,,,,,2025-12-15,
+Other India,3,India,in,IN-BR,,,,,2025-12-15,
+Other India,3,India,in,IN-CG,,,,,2025-12-15,
+Other India,3,India,in,IN-CH,,,,,2025-12-15,
+Other India,3,India,in,IN-DH,,,,,2025-12-15,
+Other India,3,India,in,IN-DL,,,,,2025-12-15,
+Other India,3,India,in,IN-GA,,,,,2025-12-15,
+Other India,3,India,in,IN-GJ,,,,,2025-12-15,
+Other India,3,India,in,IN-HP,,,,,2025-12-15,
+Other India,3,India,in,IN-HR,,,,,2025-12-15,
+Other India,3,India,in,IN-JH,,,,,2025-12-15,
+Other India,3,India,in,IN-JK,,,,,2025-12-15,
+Other India,3,India,in,IN-KL,,,,,2025-12-15,
+Other India,3,India,in,IN-LA,,,,,2025-12-15,
+Other India,3,India,in,IN-LD,,,,,2025-12-15,
+Other India,3,India,in,IN-MH,,,,,2025-12-15,
+Other India,3,India,in,IN-ML,,,,,2025-12-15,
+Other India,3,India,in,IN-MN,,,,,2025-12-15,
+Other India,3,India,in,IN-MP,,,,,2025-12-15,
+Other India,3,India,in,IN-MZ,,,,,2025-12-15,
+Other India,3,India,in,IN-NL,,,,,2025-12-15,
+Other India,3,India,in,IN-OD,,,,,2025-12-15,
+Other India,3,India,in,IN-PB,,,,,2025-12-15,
+Other India,3,India,in,IN-PY,,,,,2025-12-15,
+Other India,3,India,in,IN-RJ,,,,,2025-12-15,
+Other India,3,India,in,IN-SK,,,,,2025-12-15,
+Other India,3,India,in,IN-TN,,,,,2025-12-15,
+Other India,3,India,in,IN-TR,,,,,2025-12-15,
+Other India,3,India,in,IN-TS,,,,,2025-12-15,
+Other India,3,India,in,IN-UK,,,,,2025-12-15,
+Other India,3,India,in,IN-UP,,,,,2025-12-15,
+Other India,3,India,in,IN-WB,,,,,2025-12-15,
 Overseas France,3,Mayotte,fr,FR-976,,,,,,
 Overseas France,3,Clipperton,fr,FR-CP,,,,,,
 Overseas France,3,French Polynesia,fr,FR-PF,,,,,,
@@ -1058,14 +1169,15 @@ Prince Edward Island,3,Canada,ca,CA-PE,,,,,2023-07-24,
 Puerto Rico,3,Puerto Rico,us,US-PR,,,,,,2023-07-24
 Puerto Rico,3,Puerto Rico,us,US-PR,,,,,2024-12-16,
 Qatar,3,Qatar,qa,,,,,,,
-Quebec,3,Canada,ca,CA-QC,,,,,2024-12-16,
+Quebec,3,Canada,ca,CA-QC,,,,,2024-12-16,2025-12-15
+Quebec & Ottawa,3,Canada,ca,CA-QC,,,,,2025-12-15,
 Queensland,3,Australia,au,AU-QLD,,,,,2023-07-24,
 Reunion,3,Reunion,fr,FR-974,,,,,,
 Rocky Mountains,3,United States,us,US-ID,,,,,2023-07-24,
 Rocky Mountains,3,United States,us,US-MT,,,,,2023-07-24,
 Rocky Mountains,3,United States,us,US-OR,Malheur County,,,,2023-07-24,
 Rocky Mountains,3,United States,us,US-WY,,,,,2023-07-24,
-Russia,3,Russia,ru,,,,,,,
+Russia,3,Russia,ru,,,,,,2025-12-15,
 Saskatchewan,3,Canada,ca,CA-SK,,,,,2023-07-24,
 Saudi Arabia,3,Saudi Arabia,sa,,,,,,,
 Scotland,3,Great Britain,gb,GB-SCT,,,,,2025-07-07,
@@ -1139,6 +1251,15 @@ Uzbekistan,3,Uzbekistan,uz,,,,,,,
 Venezuela,3,Venezuela,ve,,,,,,,
 Victoria,3,Australia,au,AU-VIC,,,,,2024-12-16,
 Viet Nam,3,Viet Nam,vn,,,,,,,
+West Venezuela,3,Venezuela,ve,VE-E,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-I,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-K,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-L,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-P,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-S,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-T,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-U,,,,,2025-12-15,
+West Venezuela,3,Venezuela,ve,VE-V,,,,,2025-12-15,
 Western Australia,3,Australia,au,AU-WA,,,,,2023-07-24,
 Yucatan Peninsula,3,Mexico,mx,MX-CAM,,,,,2024-07-16,
 Yucatan Peninsula,3,Mexico,mx,MX-ROO,,,,,2024-07-16,
