@@ -530,18 +530,11 @@ class Tournament:
             print(resp)
             raise e
 
-    def calculate_tier(self, refresh=False):
+    def calculate_tier(self):
         """Calculates point value of event."""
 
         if self.tier != None:
             return self.tier
-
-        if refresh:
-            refresh_startgg_key()
-            self.gather_entrant_counts()
-            self.retrieve_start_time()
-            if self.use_location:
-                self.gather_location_info()
 
         # add things up
         total_score = 0
