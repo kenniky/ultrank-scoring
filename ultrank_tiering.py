@@ -9,7 +9,7 @@ Requirements:
   ultrank_invitational.csv
 """
 
-from startgg_toolkit import send_request, isolate_slug
+from startgg_toolkit import send_request, isolate_slug, refresh_startgg_key
 from geopy.geocoders import Nominatim
 import csv
 import re
@@ -32,6 +32,8 @@ ENTRANT_FLOOR = {
 }
 
 NEW_MULT_SYSTEM_DATE = datetime.date.fromisoformat('2024-12-16')
+
+ADDRESS_DEBUG = False
 
 
 class PotentialMatchWithDqs:
@@ -445,6 +447,8 @@ class Tournament:
             self.gather_location_info()
         else:
             self.address = {'country_code': 'aq'}
+        if ADDRESS_DEBUG:
+            print(self.address)
         self.retrieve_start_time()
 
     def gather_entrant_counts(self):
@@ -493,6 +497,10 @@ class Tournament:
             print(resp)
             raise e
 
+        if ADDRESS_DEBUG:
+            print(self.lat)
+            print(self.lng)
+
         if self.lat < -80:
             self.address = {'country_code': 'aq'}
             return
@@ -521,11 +529,14 @@ class Tournament:
             print(resp)
             raise e
 
-    def calculate_tier(self):
+    def calculate_tier(self, refresh=False):
         """Calculates point value of event."""
 
         if self.tier != None:
             return self.tier
+
+        if refresh:
+            refresh_startgg_key()
 
         # add things up
         total_score = 0
@@ -536,8 +547,8 @@ class Tournament:
 
         for region in region_mults:
             match = region.match(self.address, time=self.start_time)
-            # if match != 0:
-            #     print('{} {}'.format(match, str(region)))
+            if ADDRESS_DEBUG and match != 0:
+                print('{} {}'.format(match, str(region)))
             if match > best_match:
                 best_region = region
                 best_match = match

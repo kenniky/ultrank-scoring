@@ -74,6 +74,17 @@ def isolate_slug(url):
     match = startgg_slug_regex.search(url)
 
     if not match:
-        raise InvalidEventUrlException 
+        raise InvalidEventUrlException(url)
 
     return match.group(0).replace('/events/', '/event/')
+
+
+def refresh_startgg_key():
+    '''
+    Rereads the start.gg key from the file again.
+    '''
+    global ggheader
+    ggkeyfile = open('smashgg.key')
+    ggkey = ggkeyfile.read()
+    ggkeyfile.close()
+    ggheader = {"Authorization": "Bearer " + ggkey}
