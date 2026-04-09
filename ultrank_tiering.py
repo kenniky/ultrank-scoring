@@ -441,9 +441,10 @@ class Tournament:
         self.event_slug = isolate_slug(event_slug)
         self.is_invitational = is_invitational
         self.tier = None
+        self.use_location = location
 
         self.gather_entrant_counts()
-        if location:
+        if self.use_location:
             self.gather_location_info()
         else:
             self.address = {'country_code': 'aq'}
@@ -537,6 +538,10 @@ class Tournament:
 
         if refresh:
             refresh_startgg_key()
+            self.gather_entrant_counts()
+            self.retrieve_start_time()
+            if self.use_location:
+                self.gather_location_info()
 
         # add things up
         total_score = 0
