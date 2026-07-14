@@ -33,6 +33,17 @@ ENTRANT_FLOOR = {
 
 NEW_MULT_SYSTEM_DATE = datetime.date.fromisoformat('2024-12-16')
 
+MIDPOINT_DEPRECIATION = {
+    300: 250,
+    250: 200,
+    200: 150,
+    150: 100,
+    100: 50,
+    50: 30,
+    30: 30,
+    0: 0
+}
+
 ADDRESS_DEBUG = False
 
 
@@ -120,9 +131,15 @@ class PlayerValueGroup:
         self.invitational_values = []
         self.other_tags = [tag_.lower() for tag_ in other_tags]
 
-    def add_value(self, points, category='', note='', start_time=None, end_time=None):
-        self.values.append(PlayerValue(
-            self.id_, self.hex_, self.tag, points, category, note, start_time, end_time))
+    def add_value(self, points, category='', note='', start_time=None, end_time=None, midpt_time=None):
+        if midpt_time is None:
+            self.values.append(PlayerValue(
+                self.id_, self.hex_, self.tag, points, category, note, start_time, end_time))
+        else:
+            self.values.append(PlayerValue(
+                self.id_, self.hex_, self.tag, points, category, note, start_time, midpt_time))
+            self.values.append(PlayerValue(
+                self.id_, self.hex_, self.tag, MIDPOINT_DEPRECIATION[points], category, note + " (dep.)", midpt_time, end_time))
 
         self.values.sort(reverse=True, key=lambda val: val.points)
 
@@ -966,13 +983,15 @@ def read_players():
                 row['Start Date']) if row['Start Date'] != '' else None
             end_date = datetime.date.fromisoformat(
                 row['End Date']) if row['End Date'] != '' else None
+            midpt_date = datetime.date.fromisoformat(
+                row['Midpt Date']) if row['Midpt Date'] != '' else None
 
             if id_ not in players:
                 player_value_group = PlayerValueGroup(
                     id_, slug, tag, other_tags=alt_tags.get(row['Player'], []))
                 players[id_] = player_value_group
 
-            players[id_].add_value(points, row['Category'], row['Note'], start_date, end_date)
+            players[id_].add_value(points, row['Category'], row['Note'], start_date, end_date, midpt_date)
 
             tags.add(tag.lower())
 
