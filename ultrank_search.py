@@ -215,7 +215,7 @@ def retrieve_event_slugs(start_time, end_time, directory='tts_values'):
     if not os.path.isdir(directory):
         os.mkdir(directory)
 
-    with open(os.path.join(directory, 'events.csv'), newline='', mode='w') as events_file:
+    with open(os.path.join(directory, 'events.csv'), newline='', mode='w', encoding='utf-8') as events_file:
         writer = csv.DictWriter(
             events_file, ['Tournament', 'Event', 'Slug', 'Used', 'Skip Reason'])
         writer.writeheader()
