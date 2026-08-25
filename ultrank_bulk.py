@@ -32,7 +32,7 @@ def bulk_score(slugs, directory='tts_values'):
 
                 print('writing for slug {}'.format(result.slug))
 
-                with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w') as write_file:
+                with open(os.path.join(directory, '{}.txt'.format(re.sub(r'tournament\/([a-z0-9-_]*)\/event\/([a-z0-9-_]*)', r'\1_\2', result.slug))), mode='w', encoding='utf-8') as write_file:
                     result.write_result(write_file)
 
             except Exception as e:
@@ -54,7 +54,7 @@ def write_results(results, directory='tts_values'):
     if not os.path.isdir(directory):
         os.mkdir(directory)
 
-    with open(os.path.join(directory, 'summary.csv'), newline='', mode='w') as summary_file:
+    with open(os.path.join(directory, 'summary.csv'), newline='', mode='w', encoding='utf-8') as summary_file:
         writer = csv.DictWriter(summary_file, ['Tournament', 'Event', 'Slug', 'URL', 'Invitational?', 'Score', 'Max Potential Score', 'Num Entrants', 'Meets Reqs'])
         writer.writeheader()
 
@@ -96,7 +96,7 @@ if __name__ == '__main__':
     _, ext = os.path.splitext(file)
 
     if ext == '.csv':
-        with open(file, newline='') as file_obj:
+        with open(file, newline='', encoding='utf-8') as file_obj:
             reader = csv.DictReader(file_obj)
 
             for row in reader:
@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
                 slugs.append({'slug': slug, 'invit': is_invit})
     else:
-        with open(file) as file_obj:
+        with open(file, encoding='utf-8') as file_obj:
             for row in file_obj:
                 slugs.append({'slug': row.strip(), 'invit': False})
 
