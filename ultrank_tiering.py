@@ -1026,7 +1026,7 @@ def read_players():
 def read_regions():
     regions = set()
 
-    with open('ultrank_regions.csv', newline='') as regions_file:
+    with open('ultrank_regions.csv', newline='', encoding='utf-8') as regions_file:
         reader = csv.DictReader(regions_file)
 
         for row in reader:
